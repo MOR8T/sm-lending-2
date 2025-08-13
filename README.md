@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Проект DILPUR
 
-## Getting Started
+> Макет business в Figma: [ссылка](https://www.figma.com/design/Lrhk1JCno3yf4ggEnQj5m0/Untitled?node-id=0-1&p=f&t=GKQQR1E8pc7okZF1-0)
 
-First, run the development server:
+## О проекте
+
+ Проект построен на **Next.js 14 + TypeScript 5**, состояние хранится в **Zustand**, данные запрашиваются через **Axios**, стили написаны на **Tailwind CSS**.
+
+
+## Технологии
+
+- **Next.js 14 / TypeScript 5** — базовый стек, сборка через `create-next-app`
+- **Zustand** — глобальное состояние корзины
+- **Axios** — REST‑запросы
+- **Tailwind CSS** — стили и адаптивная вёрстка (CSS Grid + Flexbox)
+
+## Как запустить проект локально
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 1. Клонируйте репозиторий
+git clone https://github.com/Mehrob007/dilpur.git
+cd test-task
+
+# 2. Установите зависимости
+pnpm install        # или npm install / yarn
+
+# 3. Настройте переменные окружения
+# Создайте файл .env.local и добавьте, например:
+NEXT_PUBLIC_API_URL=https://api.example.com
+
+# 4. Запустите dev‑сервер
+pnpm dev            # http://localhost:3000
+
+# 5. Сборка production
+pnpm build          # создаётся папка .next
+pnpm start          # запуск production‑сервера
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Структура проекта
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+├─ public/            # статические ассеты
+│  ├─ icons/          # иконки
+│  └─ images/         # изображения
+├─ src/
+│  ├─ api/            # обёртка Axios
+│  ├─ ui/             # UI‑компоненты
+│  ├─ hooks/          # кастомные хуки
+│  ├─ app/            # маршруты (Next App Router)
+│  ├─ modules/        # бизнес‑модули (Cart, ProductItems и т. д.)
+│  ├─ store/          # Zustand‑слайсы
+│  ├─ types/          # общие типы TS
+│  ├─ constants/      # const
+│  └─ utils/          # вспомогательные функции
+│  └─ fonts/          # шрифты страниц
+└─ README.md
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Лицензия
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT

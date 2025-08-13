@@ -1,7 +1,7 @@
 "use client";
 import { Locale, useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
-import DropdownUI from "@/ui/dropdown/DropdownUI";
+import DropdownUI from "@/ui/main-page/dropdown/DropdownUI";
 // import { useParams } from "next/navigation";
 
 export default function LocaleSwicherSelect() {
