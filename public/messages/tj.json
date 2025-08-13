@@ -1,6 +1,10 @@
 {
   "HomePage": {},
-  "Header": {},
+  "Header": {
+    "personal": "Шахсони воқеӣ",
+    "business": "Тиҷорат",
+    "bank": "Стандарт Молия"
+  },
   "Footer": {},
   "Manifest": {
     "name": "Стандарт Молия",
