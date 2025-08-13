@@ -1,3 +1,5 @@
 export default function Business() {
-  return <div>business</div>;
+  return <div>
+    <Сards />
+  </div>;
 }
