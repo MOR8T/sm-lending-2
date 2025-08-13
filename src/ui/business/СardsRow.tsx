@@ -2,7 +2,7 @@ import { cardsT } from "@/types/business/cards";
 import Image from "next/image";
 import React from "react";
 
-export default function Сards({ cards }: cardsT) {
+export default function СardsRow({ cards }: cardsT) {
   return (
     <div className=" max-w-[1128px] w-full mx-auto flex gap-[26px]">
       {cards.map((card, i) => (

@@ -1,8 +1,10 @@
 import { businessCards1 } from "@/constants/business/const";
-import Сards from "@/ui/business/Сards"
+import СardsRow from "@/ui/business/СardsRow";
 
 export default function Business() {
-  return <div>
-    <Сards cards={businessCards1} />
-  </div>;
+  return (
+    <div>
+      <СardsRow cards={businessCards1} />
+    </div>
+  );
 }
