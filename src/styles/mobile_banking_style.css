@@ -1,0 +1,9 @@
+.mobile_banking_fon {
+  background-image: url("/images/backgrounds/mobile_banking_fon.svg");
+  background-size: cover;
+}
+
+.mobile_banking_blur {
+  background: rgba(243, 244, 246, 0.72);
+  backdrop-filter: blur(1000px);
+}

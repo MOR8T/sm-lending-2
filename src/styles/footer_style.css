@@ -1,0 +1,7 @@
+.deposits_text_blur {
+  background: linear-gradient(
+    360deg,
+    #ffffff 23.85%,
+    rgba(255, 255, 255, 0) 95.1%
+  );
+}
