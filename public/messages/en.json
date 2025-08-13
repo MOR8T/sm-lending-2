@@ -1,0 +1,13 @@
+{
+  "HomePage": {},
+  "Header": {},
+  "Footer": {},
+  "Manifest": {
+    "name": "Standart Finance",
+    "short_name": "Standart Finance"
+  },
+  "LocaleLayout": {
+    "title": "Standart Finance",
+    "description": "Standart Finance"
+  }
+}

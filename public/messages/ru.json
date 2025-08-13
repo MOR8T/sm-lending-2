@@ -1,0 +1,13 @@
+{
+  "HomePage": {},
+  "Header": {},
+  "Footer": {},
+  "Manifest": {
+    "name": "Стандарт Финанс",
+    "short_name": "Стандарт Финанс"
+  },
+  "LocaleLayout": {
+    "title": "Стандарт Финанс",
+    "description": "Стандарт Финанс"
+  }
+}

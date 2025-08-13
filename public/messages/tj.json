@@ -1,0 +1,13 @@
+{
+  "HomePage": {},
+  "Header": {},
+  "Footer": {},
+  "Manifest": {
+    "name": "Стандарт Молия",
+    "short_name": "Стандарт Молия"
+  },
+  "LocaleLayout": {
+    "title": "Стандарт Молия",
+    "description": "Стандарт Молия"
+  }
+}
