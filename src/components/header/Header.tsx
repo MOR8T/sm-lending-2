@@ -6,6 +6,8 @@ import LocaleSwicherSelect from "../localeSwicherSelect/LocaleSwicherSelect";
 import { Link, usePathname } from "@/i18n/navigation";
 import { personal_navbar } from "@/constants/main-page/header-const";
 import SubHeader from "./SubHeader";
+import { business_navbar } from "@/constants/business/header-const";
+import { navbarsT } from "@/types/business/header";
 
 function Header() {
   const t = useTranslations("Header");
@@ -14,6 +16,12 @@ function Header() {
   const pathname = usePathname();
 
   const activeModuleClass = "border-b-[2px] border-[#3a6178]";
+
+  const navbars: navbarsT = {
+    "1": personal_navbar,
+    "2": business_navbar,
+    "3": [],
+  };
 
   useLayoutEffect(() => {
     if (pathname.includes("/business")) {
@@ -62,7 +70,7 @@ function Header() {
         </div>
         <LocaleSwicherSelect />
       </div>
-      <SubHeader data={activeModule === "1" ? personal_navbar : []} />
+      <SubHeader data={navbars?.[activeModule]} />
     </div>
   );
 }
