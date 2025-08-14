@@ -1,6 +1,6 @@
-# Проект DILPUR
+# Проект SM
 
-> Макет business в Figma: [ссылка](https://www.figma.com/design/Lrhk1JCno3yf4ggEnQj5m0/Untitled?node-id=0-1&p=f&t=GKQQR1E8pc7okZF1-0)
+> Макет в Figma: [ссылка](https://www.figma.com/design/Lrhk1JCno3yf4ggEnQj5m0/Untitled?node-id=0-1&p=f&t=GKQQR1E8pc7okZF1-0)
 
 ## О проекте
 
