@@ -10,5 +10,5 @@ export interface ServicesSectionT extends CardsT {
 }
 
 export interface stylesServicesSectionT {
-  [key: number]: { div: string; h1: string; h2: string; img: string };
+  [key: number]: { div: string; h1: string; h2: string; img: string, imgDiv: string };
 }

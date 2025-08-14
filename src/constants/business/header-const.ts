@@ -1,5 +1,4 @@
 export const business_navbar = [
-  { label: "Alif Business", href: "" },
   { label: "Зарплатный проект", href: "" },
   { label: "Продажи в рассрочку", href: "" },
   { label: "Эквайринг", href: "" },

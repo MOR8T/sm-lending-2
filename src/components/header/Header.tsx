@@ -20,7 +20,7 @@ function Header() {
   const navbars: navbarsT = {
     "1": personal_navbar,
     "2": business_navbar,
-    "3": [],
+    "3": [],  
   };
 
   useLayoutEffect(() => {

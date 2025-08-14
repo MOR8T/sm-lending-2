@@ -1,30 +1,42 @@
 import { stylesServicesSection } from "@/constants/business/const";
 import { ServicesSectionT } from "@/types/business/cards";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
-export default function ServicesSection({ cards, title }: ServicesSectionT) {
+export default function ServicesSection({
+  cards,
+  title,
+  translation,
+}: ServicesSectionT) {
+  const t = useTranslations(translation);
   return (
-    <div className="flex flex-col gap-[40px] mt-[156px] max-w-[1128px] w-full mx-auto">
-      <h1 className="text-[38px] leading-7 font-bold text-gray-900">{title}</h1>
-      <div className=" grid grid-cols-3 grid-rows-2 h-[872px] gap-[26px]">
+    <div className="flex flex-col md:gap-[40px] gap-[32px] mt-[156px] max-w-[1128px] w-full mx-auto px-[20px]">
+      <h1 className="md:text-[38px] md:leading-7 text-[28px] font-bold text-gray-900">
+        {title}
+      </h1>
+      <div className=" grid md:grid-cols-3 md:grid-rows-2 md:h-[872px] gap-[26px] grid-cols-2 grid-rows-[]">
         {cards.map((card, i) => (
           <div
             key={i}
-            className={` relative pt-[40px] px-[32px] rounded-[24px] text-gray-900 flex flex-col gap-[18px] ${stylesServicesSection[i].div}`}
+            className={` px-[24px] py-[24px] relative md:py-[40px] md:px-[32px] md:!rounded-[24px] !rounded-2xl text-gray-900 flex flex-col gap-[18px] transition-all duration-300  hover:scale-[1.02]  ${stylesServicesSection[i].div}`}
           >
             <h1
-              className={`text-[22px] leading-7 font-bold ${stylesServicesSection[i].h1}`}
+              className={`md:text-[22px] md:leading-7 md:m-0 leading-[1.25rem] text-[16px] md:font-bold  ${stylesServicesSection[i].h1}`}
             >
-              {card.title}
+              {t(card.title)}
             </h1>
             <h2 className={`leading-[1.5] ${stylesServicesSection[i].h2}`}>
-              {card.subTitle}
+              {t(card.subTitle)}
             </h2>
             <div
-              className={` absolute bottom-0 w-full flex justify-center ml-[-32px] ${stylesServicesSection[i].img}`}
+              className={` absolute bottom-0 w-full flex justify-center ml-[-32px] ${stylesServicesSection[i].imgDiv}`}
             >
-              <Image src={card.img} alt="img-card" />
+              <Image
+                className={`${stylesServicesSection[i].img}`}
+                src={card.img}
+                alt="img-card"
+              />
             </div>
           </div>
         ))}
