@@ -2,8 +2,9 @@ import React from "react";
 import { Dropdown } from "antd";
 import { ItemType } from "antd/es/menu/interface";
 import Image from "next/image";
+import { DropdownUIT } from "@/types/main-page/ui/types";
 
-function DropdownUI({ text, items }: { text: string; items: ItemType[] }) {
+function DropdownUI({ text, items }: DropdownUIT) {
   return (
     <div>
       <Dropdown

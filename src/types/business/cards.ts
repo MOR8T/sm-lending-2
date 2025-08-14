@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 
 export interface CardsT {
   cards: { title: string; subTitle: string; img: StaticImageData }[];
+  translation?: string;
 }
 
 export interface ServicesSectionT extends CardsT {

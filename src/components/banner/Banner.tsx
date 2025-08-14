@@ -1,5 +1,5 @@
 "use client";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./style.css";
 import "swiper/css";
@@ -7,37 +7,14 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 import BannerButton from "@/ui/main-page/buttons/BannerButton";
-
-type oneData = {
-  key: string;
-  onClick: () => void;
-  title: string;
-  description: string;
-  textColor: string;
-  button: {
-    text: string;
-    bgColor: string;
-    color: string;
-  };
-  img: {
-    src: string | StaticImageData;
-    alt: string;
-  };
-  bgColor: string;
-};
-
-type Props = {
-  spaceBetween?: number;
-  slidesPerView?: number;
-  items: oneData[];
-};
+import { BannerTtype } from "@/types/main-page/ui/types";
 
 // Pagination Autoplay
 export default function Banner({
   spaceBetween = 30,
   slidesPerView = 1,
   items,
-}: Props) {
+}: BannerTtype) {
   return (
     <div className="container rounded-3xl overflow-hidden banner-swiper">
       <Swiper

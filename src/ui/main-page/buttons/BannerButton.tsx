@@ -1,15 +1,10 @@
-import { ReactNode } from "react";
+import { BannerButtonT } from "@/types/main-page/ui/types";
 
 export default function BannerButton({
   style,
   className,
   children,
-}: {
-  className?: string;
-  // eslint-disable-next-line
-  style: any;
-  children: ReactNode;
-}) {
+}: BannerButtonT) {
   return (
     <button
       className={`text-[18px] p-[16px_32px] rounded-lg cursor-pointer font-bold md:w-auto w-full ${className}`}
