@@ -53,3 +53,11 @@ export interface ServiceCardsT {
   translation?: string;
   items: serviceItemT[];
 }
+
+export interface InfoNavicationBannerT {
+  img: StaticImageData;
+  title: string;
+  description: string;
+  href: string;
+  linkText:string;
+}
