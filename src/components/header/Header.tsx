@@ -4,6 +4,8 @@ import Image from "next/image";
 import React, { useLayoutEffect, useState } from "react";
 import LocaleSwicherSelect from "../localeSwicherSelect/LocaleSwicherSelect";
 import { Link, usePathname } from "@/i18n/navigation";
+import { personal_navbar } from "@/constants/main-page/header-const";
+import SubHeader from "./SubHeader";
 
 function Header() {
   const t = useTranslations("Header");
@@ -32,6 +34,7 @@ function Header() {
             alt=""
             width="271"
             height="45"
+            className="pt-[6px]"
           />
           <ul className="flex gap-5">
             <li
@@ -59,6 +62,7 @@ function Header() {
         </div>
         <LocaleSwicherSelect />
       </div>
+      <SubHeader data={activeModule === "1" ? personal_navbar : []} />
     </div>
   );
 }
