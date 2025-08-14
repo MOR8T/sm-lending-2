@@ -1,7 +1,6 @@
 "use client"
 import Banner from "@/components/banner/Banner";
 import { bannerBusiness, businessCards1, businessCards2 } from "@/constants/business/const";
-import { items } from "@/constants/main-page/home-page";
 import ServicesSection from "@/ui/business/ServicesSection";
 import СardsRow from "@/ui/business/СardsRow";
 import { useTranslations } from "use-intl";

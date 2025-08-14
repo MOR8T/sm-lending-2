@@ -5,7 +5,27 @@
     "business": "Тиҷорат",
     "bank": "Стандарт Молия"
   },
-  "Footer": {},
+  "Subheader": {
+    "personal": {
+      "deposits": "Амонатҳо",
+      "loans": "Қарзҳо",
+      "tequirements_for_opening_an_account": "Требования к открытию счет",
+      "tariffs": "Тарифы",
+      "online_questionnaire": "Онлайн-анкет",
+      "other_services": "Другие услуги"
+    },
+    "business": {
+      "deposits": "Амонатҳо",
+      "loans": "Қарзҳо",
+      "tequirements_for_opening_an_account": "Требования к открытию счет",
+      "tariffs": "Тарифы",
+      "online_questionnaire": "Онлайн-анкет",
+      "other_services": "Другие услуги"
+    }
+  },
+  "Footer": {
+    "logo": "Стандарт Молия"
+  },
   "Manifest": {
     "name": "Стандарт Молия",
     "short_name": "Стандарт Молия"

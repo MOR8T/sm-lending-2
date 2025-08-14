@@ -1,7 +1,9 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
 
 function SubHeader({ data }: { data: { href: string; label: string }[] }) {
+  const t = useTranslations("Subheader");
   return (
     <div className="container">
       <ul className="text-[16px] md:px-[20px] mt-6 pb-6 text-gray-400 font-medium flex gap-6 overflow-x-auto">
@@ -12,7 +14,7 @@ function SubHeader({ data }: { data: { href: string; label: string }[] }) {
               className="hover:text-[#3a6178] font-medium text-nowrap"
             >
               <Link href={el.href} className="">
-                {el.label}
+                {t(el.label)}
               </Link>
             </li>
           );
