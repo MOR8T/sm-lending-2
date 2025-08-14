@@ -44,10 +44,11 @@ export default function Banner({
                 className="md:h-[480px] w-full grid md:grid-cols-2"
                 style={{ background: el.bgColor }}
               >
-                <div className="md:py-[105.5px] py-[30px] md:px-[80px] px-[20px]">
+                <div className="md:py-[105.5px] py-[30px] md:px-[80px] px-[20px] md:pr-[10px]">
                   <h1
                     style={{
-                      color: el.textColor,
+                      color: el.h1.color,
+                      width: el.h1.width,
                     }}
                     className="font-bold max-w-[410px] md:text-[40px] text-[22px] leading-[51px]"
                   >
@@ -55,7 +56,8 @@ export default function Banner({
                   </h1>
                   <p
                     style={{
-                      color: el.textColor,
+                      color: el.p.color,
+                      width: el.p.width,
                     }}
                     className="md:text-[18px] text-[14px] md:mt-[20px] mb-[40px]"
                   >
