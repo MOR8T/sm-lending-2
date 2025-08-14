@@ -5,6 +5,7 @@ import ServicesSectionImg1 from "@/../public/icons/ServicesSectionImg1.svg";
 import ServicesSectionImg2 from "@/../public/icons/ServicesSectionImg2.svg";
 import ServicesSectionImg3 from "@/../public/icons/ServicesSectionImg3.svg";
 import ServicesSectionImg4 from "@/../public/icons/ServicesSectionImg4.svg";
+import bannerBusinessImg from "@/../public/images/bannerBusiness.svg";
 import { stylesServicesSectionT } from "@/types/business/cards";
 
 export const businessCards1 = [
@@ -75,5 +76,35 @@ export const businessCards2 = [
     title: `Следите с любой точки \n Земли`,
     subTitle: `Управляйте прогрессом вашего \nбизнеса, где бы вы ни находились`,
     img: ServicesSectionImg4,
+  },
+];
+
+export const bannerBusiness = [
+  {
+    key: "1",
+    onClick: () => {
+      console.log("hello");
+    },
+    title: "Банк, который можно взять с собой",
+    description:
+      "Alif Business – это современный и удобный интернет-банк для юридических и частных лиц",
+    h1: {
+      width: "410px",
+      color: "#fff",
+    },
+    p: {
+      width: "410px",
+      color: "#fff",
+    },
+    button: {
+      text: "Подключить",
+      bgColor: "#00AF66",
+      color: "#fff",
+    },
+    img: {
+      src: bannerBusinessImg,
+      alt: "",
+    },
+    bgColor: "#363636",
   },
 ];
