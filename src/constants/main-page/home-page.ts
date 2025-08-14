@@ -23,7 +23,14 @@ export const items = [
     title: "Интиқол ба Чин осон шуд",
     description:
       "Ба ҳамёнҳои Alipay ва WeChat бо барномаи Alif бе комиссия пул фиристед",
-    textColor: "rgb(255,250,200)",
+    h1: {
+      color: "rgb(255,250,200)",
+      width: "370px",
+    },
+    p: {
+      color: "rgb(255,250,200)",
+      width: "370px",
+    },
     button: {
       text: "Муфассал",
       bgColor: "rgb(255,221,136)",
@@ -43,7 +50,14 @@ export const items = [
     title: "Интиқол ба Чин осон шуд",
     description:
       "Ба ҳамёнҳои Alipay ва WeChat бо барномаи Alif бе комиссия пул фиристед",
-    textColor: "rgb(255,250,200)",
+    h1: {
+      color: "rgb(255,250,200)",
+      width: "370px",
+    },
+    p: {
+      color: "rgb(255,250,200)",
+      width: "370px",
+    },
     button: {
       text: "Муфассал",
       bgColor: "rgb(255,221,136)",
@@ -63,7 +77,14 @@ export const items = [
     title: "Интиқол ба Чин осон шуд",
     description:
       "Ба ҳамёнҳои Alipay ва WeChat бо барномаи Alif бе комиссия пул фиристед",
-    textColor: "rgb(255,250,200)",
+    h1: {
+      color: "rgb(255,250,200)",
+      width: "370px",
+    },
+    p: {
+      color: "rgb(255,250,200)",
+      width: "370px",
+    },
     button: {
       text: "Муфассал",
       bgColor: "rgb(255,221,136)",

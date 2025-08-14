@@ -19,7 +19,8 @@ export interface oneBannerData {
   onClick: () => void;
   title: string;
   description: string;
-  textColor: string;
+  h1: { width: string; color: string };
+  p: { width: string; color: string };
   button: {
     text: string;
     bgColor: string;

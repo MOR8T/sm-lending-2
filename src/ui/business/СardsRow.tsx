@@ -10,7 +10,7 @@ export default function CardsRow({
 }: CardsT) {
   const t = useTranslations(translation);
   return (
-    <div className=" max-w-[1128px] w-full mx-auto flex md:flex-row flex-col gap-[26px] px-[24px]">
+    <div className=" mt-[80px] max-w-[1128px] w-full mx-auto flex md:flex-row flex-col gap-[26px] px-[24px]">
       {cards.map((card, i) => (
         <div
           key={i}
