@@ -7,6 +7,13 @@ import businessCardsImg3 from "@/../public/icons/homePageCard.png";
 // import ServicesSectionImg4 from "@/../public/icons/ServicesSectionImg4.svg";
 // import { stylesServicesSectionT } from "@/types/business/cards";
 
+import money from "@/../public/icons/servise/money.svg";
+import faq from "@/../public/icons/servise/faq.svg";
+import location from "@/../public/icons/servise/location.svg";
+import basket from "@/../public/icons/servise/basket.svg";
+import sell from "@/../public/icons/servise/sell.svg";
+import documents from "@/../public/icons/servise/documents.svg";
+
 export const items = [
   {
     key: "1",
@@ -85,6 +92,45 @@ export const personalCards1 = [
     title: "title3",
     subTitle: "subTitle3",
     img: businessCardsImg3,
+  },
+];
+
+export const personalServiceItems = [
+  {
+    img: money,
+    text: "text1",
+    key: "1",
+    href: "",
+  },
+  {
+    img: faq,
+    text: "text2",
+    key: "2",
+    href: "",
+  },
+  {
+    img: location,
+    text: "text3",
+    key: "3",
+    href: "",
+  },
+  {
+    img: basket,
+    text: "text4",
+    key: "4",
+    href: "",
+  },
+  {
+    img: sell,
+    text: "text5",
+    key: "5",
+    href: "",
+  },
+  {
+    img: documents,
+    text: "text6",
+    key: "6",
+    href: "",
   },
 ];
 
