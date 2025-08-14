@@ -31,13 +31,13 @@ export const stylesServicesSection: stylesServicesSectionT = {
     h1: "w-auto",
     h2: "hidden md:grid ",
     img: "md:w-[360px] ",
-    imgDiv: "md:w-[360px] w-full h-[136px]",
+    imgDiv: "md:w-[360px] md:h-auto w-full h-[136px]",
   },
   1: {
     div: "md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2 h-[212px] md:h-auto col-start-2 col-end-3 row-start-1 row-end-2 bg-[#F4F8FB]",
     h1: "md:w-[220px]",
     h2: "md:w-[291px] hidden md:grid",
-    img: "",
+    img: "md:h-auto h-[167px]",
     imgDiv: "md:right-0 md:!w-[393px] ",
   },
   2: {
