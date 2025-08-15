@@ -106,6 +106,9 @@
       }
     }
   },
+  "frequentlyQuestions": {
+    "title": "Часто задаваемые вопросы"
+  },
   "form": {
     "consultation": {
       "title": "Маълумоти бештар гиред",
