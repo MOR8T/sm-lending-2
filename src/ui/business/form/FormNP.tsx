@@ -1,5 +1,5 @@
 import { FormNPT } from "@/types/business/formNP";
-import React, { useState } from "react";
+import React from "react";
 import InputForm from "./InputForm";
 import { useTranslations } from "next-intl";
 import { TextWithDollarLinks } from "./FormaterLink";
@@ -50,3 +50,4 @@ export default function FormNP({
     </div>
   );
 }
+  
