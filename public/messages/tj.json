@@ -93,6 +93,17 @@
         "label": "1 год",
         "value": "от 1 сом."
       }
+    },
+    "depositsAccount3": {
+      "title": "Расчётный счёт",
+      "contents1": {
+        "label": "Обслуживание",
+        "value": "Бесплатно"
+      },
+      "contents2": {
+        "label": "Валюта",
+        "value": "TJS, USD, RUB и другие"
+      }
     }
   },
   "form": {
