@@ -189,3 +189,23 @@ export const inputsFromConsultation = [
     key: "phone",
   },
 ];
+
+export const depositsAccountContents1 = [
+  {
+    label: "contents1.label",
+    value: "contents1.value",
+  },
+  {
+    label: "contents2.label",
+    value: "contents2.value",
+  },
+  {
+    label: "contents3.label",
+    value: "contents3.value",
+  },
+  {
+    label: "contents4.label",
+    value: "contents4.value",
+  },
+
+];
