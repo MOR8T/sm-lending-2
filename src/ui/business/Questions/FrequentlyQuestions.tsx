@@ -7,7 +7,7 @@ export default function FrequentlyQuestions({
   questions,
 }: FrequentlyQuestionsT) {
   return (
-    <div>
+    <div className="md:pb-[120px] pb-[60px]">
       <h1
         className="md:text-[30px] md:leading-[38px] md:pt-0 pt-[32px] text-[20px]
 leading-[28px] mb-[32px] md:mb-[48px]"

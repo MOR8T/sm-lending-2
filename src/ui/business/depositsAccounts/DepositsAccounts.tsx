@@ -22,24 +22,24 @@ export default function DepositsAccounts({ title }: DepositsAccountsT) {
           img={depositsAccountImg1}
           contents={depositsAccountContents1}
           translation="depositsAccounts.depositsAccount1"
-          button={{ title: "Открыть вклад", action: () => {} }}
-          detail={{ title: "Подробнее", action: () => {} }}
+          button={{ title: t("buttons.openContribution"), action: () => {} }}
+          detail={{ title: t("buttons.detail"), action: () => {} }}
         />
          <DepositsAccount
           title={t("depositsAccount1.title")}
           img={depositsAccountImg2}
           contents={depositsAccountContents1}
           translation="depositsAccounts.depositsAccount1"
-          button={{ title: "Открыть вклад", action: () => {} }}
-          detail={{ title: "Подробнее", action: () => {} }}
+          button={{ title: t("buttons.openContribution"), action: () => {} }}
+          detail={{ title: t("buttons.detail"), action: () => {} }}
         />
          <DepositsAccount
           title={t("depositsAccount3.title")}
           img={depositsAccountImg3}
           contents={depositsAccountContents3}
           translation="depositsAccounts.depositsAccount3"
-          button={{ title: "Открыть вклад", action: () => {} }}
-          detail={{ title: "Подробнее", action: () => {} }}
+          button={{ title: t("buttons.openContribution"), action: () => {} }}
+          detail={{ title: t("buttons.detail"), action: () => {} }}
           calssName="!bg-[#343D52] !text-[#fff]"
         />
          <DepositsAccount
@@ -47,8 +47,8 @@ export default function DepositsAccounts({ title }: DepositsAccountsT) {
           img={depositsAccountImg4}
           contents={depositsAccountContents1}
           translation="depositsAccounts.depositsAccount1"
-          button={{ title: "Открыть вклад", action: () => {} }}
-          detail={{ title: "Подробнее", action: () => {} }}
+          button={{ title: t("buttons.openContribution"), action: () => {} }}
+          detail={{ title: t("buttons.detail"), action: () => {} }}
           calssName="!bg-[#F4FBF9]"
         />
         
