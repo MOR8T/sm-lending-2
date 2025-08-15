@@ -18,8 +18,9 @@ export default function Business() {
     <div>
       <Banner items={bannerBusiness} />
       <СardsRow cards={businessCards1} />
-      <ServicesSection cards={businessCards2} title={t("title")} />
+      <ServicesSection typeStyleBox={1} cards={businessCards2} title={t("title")} />
       <Reviews items={reviews} />
+      <ServicesSection typeStyleBox={2} cards={businessCards2} title={t("title")} />
     </div>
   );
 }

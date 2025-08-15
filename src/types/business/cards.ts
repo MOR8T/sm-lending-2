@@ -7,6 +7,7 @@ export interface CardsT {
 
 export interface ServicesSectionT extends CardsT {
   title: string;
+  typeStyleBox: 1 | 2
 }
 
 export interface stylesServicesSectionT {
