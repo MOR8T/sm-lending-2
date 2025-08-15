@@ -62,7 +62,7 @@ export const stylesServicesSection2: stylesServicesSectionT = {
     div: "md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 h-[212px] md:h-auto col-start-1 col-end-3 row-start-1 row-end-2 bg-[#F7F8F9]",
     h1: "w-auto",
     h2: "hidden md:grid ",
-    img: " md:h-auto h-[167px]",
+    img: " md:h-auto h-[136px]",
     imgDiv: "md:right-0 md:!w-[393px]",
   },
   1: {
@@ -70,21 +70,21 @@ export const stylesServicesSection2: stylesServicesSectionT = {
     h1: "md:w-[220px]",
     h2: "md:w-[291px] hidden md:grid",
     img: "md:w-[300px]",
-    imgDiv: "md:w-[360px] md:h-auto w-full h-[136px]",
+    imgDiv: "md:w-[360px] md:h-auto w-full h-[167px]",
   },
   2: {
-    div: "md:col-start-2 md:col-end-4 md:row-start-2 md:row-end-3 h-[130px] md:h-auto col-start-1 col-end-3 row-start-3 row-end-5 bg-[#F7F8F9]",
+    div: "md:col-start-2 md:col-end-4 md:row-start-2 md:row-end-3 h-[130px] md:h-auto col-start-1 col-end-4 row-start-3 row-end-5 bg-[#F7F8F9]",
     h1: "",
     h2: " hidden md:grid",
     img: "right-0 md:!w-[393px] !w-[154px]",
     imgDiv: "right-0 md:!w-[393px] !w-[154px]",
   },
   3: {
-    div: "md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 h-[130px] md:h-auto col-start-1 col-end-3 row-start-2 row-end-2  bg-[#DAE6F8]",
+    div: "md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 h-[130px] md:h-auto col-start-1 col-end-4 row-start-2 row-end-2  bg-[#DAE6F8]",
     h1: "md:w-[209px]",
     h2: "md:w-[278px] hidden md:grid",
-    img: "right-0 md:!w-[300px] !w-[1524px]",
-    imgDiv: "right-0 md:!w-full !w-[1524px]",
+    img: "right-0 md:!w-[300px] !w-[124px]",
+    imgDiv: "right-0 md:!w-full !w-[124px]",
   },
 };
 export const businessCards2 = [

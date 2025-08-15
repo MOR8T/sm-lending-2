@@ -28,5 +28,5 @@ export function TextWithDollarLinks({ text }: { text: string }) {
     });
   };
 
-  return <p className="text-white text-[14px] leading-[18px] w-[240px]">{parseText(text)}</p>;
+  return <p className="text-white text-[14px] leading-[18px] md:w-[240px]">{parseText(text)}</p>;
 }
