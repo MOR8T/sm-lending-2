@@ -1,6 +1,6 @@
 import { FormNPT } from "@/types/business/formNP";
 import React, { useState } from "react";
-import InputFrom from "./InputFrom";
+import InputForm from "./InputForm";
 import { useTranslations } from "next-intl";
 import { TextWithDollarLinks } from "./FormaterLink";
 
@@ -29,7 +29,7 @@ export default function FormNP({
       </div>
       <div className="md:max-w-[456px] w-full">
         {inputs.map((e, i) => (
-          <InputFrom
+          <InputForm
             key={i}
             title={t(e.label)}
             keyID={e.key}
