@@ -178,3 +178,14 @@ export const reviews = [
     },
   },
 ];
+
+export const inputsFromConsultation = [
+  {
+    label: "fullName",
+    key: "fullName",
+  },
+  {
+    label: "phone",
+    key: "phone",
+  },
+];
