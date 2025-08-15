@@ -58,7 +58,7 @@ export default function Reviews({ items }: ReviewsT) {
         <button
           onClick={() => limitLeft && setSlide(slide - 1)}
           className={`bg-[#FFFFFF] flex justify-center items-center rounded-full h-[56px] w-[56px] cursor-pointer hover:text-[#3a6178] ${
-            !limitLeft && "text-[#3a6178]"
+            limitLeft && "text-[#3a6178]"
           }`}
         >
           <FaArrowLeft />
@@ -66,7 +66,7 @@ export default function Reviews({ items }: ReviewsT) {
         <button
           onClick={() => limitNext && setSlide(slide + 1)}
           className={`bg-[#FFFFFF] flex justify-center items-center rounded-full h-[56px] w-[56px] cursor-pointer hover:text-[#3a6178] ${
-            !limitNext && "text-[#3a6178]"
+            limitNext && "text-[#3a6178]"
           }`}
         >
           <FaArrowRight />

@@ -6,6 +6,7 @@ import {
   businessCards2,
   reviews,
 } from "@/constants/business/const";
+import Consultation from "@/ui/business/consultationOnProduct/Consultation";
 import Reviews from "@/ui/business/Reviews";
 import ServicesSection from "@/ui/business/ServicesSection";
 import СardsRow from "@/ui/business/СardsRow";
@@ -17,8 +18,10 @@ export default function Business() {
     <div>
       <Banner items={bannerBusiness} />
       <СardsRow cards={businessCards1} />
-      <ServicesSection cards={businessCards2} title={t("title")} />
+      <ServicesSection typeStyleBox={1} cards={businessCards2} title={t("title")} />
       <Reviews items={reviews} />
+      <ServicesSection typeStyleBox={2} cards={businessCards2} title={t("title")} />
+      <Consultation />
     </div>
   );
 }

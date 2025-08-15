@@ -1,6 +1,6 @@
 export const business_navbar = [
   {
-    href: "",
+    href: "./business/deposits",
     label: "business.deposits",
   },
   {
