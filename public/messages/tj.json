@@ -73,6 +73,28 @@
     "title3": "Назорат аз ҳар ҷои рӯи замин",
     "subTitle3": "Пешрафти тиҷорати худро дар куҷое, ки набошед, идора кунед"
   },
+  "depositsAccounts": {
+    "title": "Амонат ва ҳисобҳо",
+    "depositsAccount1": {
+      "title": "«Максад»",
+      "contents1": {
+        "label": "Ставка в сом.",
+        "value": "до 11%"
+      },
+      "contents2": {
+        "label": "Ставка в долл.",
+        "value": "до 5%"
+      },
+      "contents3": {
+        "label": "Срок",
+        "value": "Сумма"
+      },
+      "contents4": {
+        "label": "1 год",
+        "value": "от 1 сом."
+      }
+    }
+  },
   "form": {
     "consultation": {
       "title": "Маълумоти бештар гиред",
