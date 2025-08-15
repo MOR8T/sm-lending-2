@@ -1,11 +1,37 @@
 {
-  "HomePage": {},
+  "HomePage": {
+    "infoBanner": {
+      "title": "Ҷавоби саволатон инҷост",
+      "description": "Ба ҳамаи саволҳои муҳим оид ба хизматрасониҳо ва маҳсулотамон ҷавоб додем",
+      "link": "Ҷавоби лозимаро ёфтан"
+    }
+  },
   "Header": {
     "personal": "Шахсони воқеӣ",
     "business": "Тиҷорат",
     "bank": "Стандарт Молия"
   },
-  "Footer": {},
+  "Subheader": {
+    "personal": {
+      "deposits": "Амонатҳо",
+      "loans": "Қарзҳо",
+      "tequirements_for_opening_an_account": "Требования к открытию счет",
+      "tariffs": "Тарифы",
+      "online_questionnaire": "Онлайн-анкет",
+      "other_services": "Другие услуги"
+    },
+    "business": {
+      "deposits": "Амонатҳо",
+      "loans": "Қарзҳо",
+      "tequirements_for_opening_an_account": "Требования к открытию счет",
+      "tariffs": "Тарифы",
+      "online_questionnaire": "Онлайн-анкет",
+      "other_services": "Другие услуги"
+    }
+  },
+  "Footer": {
+    "logo": "Стандарт Молия"
+  },
   "Manifest": {
     "name": "Стандарт Молия",
     "short_name": "Стандарт Молия"
@@ -21,6 +47,15 @@
     "subTitle2": "Пули таҳсил дар донишгоҳ ё курсҳоро ба насия то 24 моҳ пардохт кунед",
     "title3": "Пардохт бо Google Pay",
     "subTitle3": "Visa ё Mastercard-и моро пайваст карда, дар кишвар ва хориҷа бетамос пардохт намоед"
+  },
+  "personalServiceCards": {
+    "title": "Шояд ба шумо лозиманд",
+    "text1": "Қарзи нақдӣ",
+    "text2": "Саволҳо ва ҷавобҳо",
+    "text3": "Суроғаҳо ва банкоматҳо",
+    "text4": "Хариди онлайн",
+    "text5": "Хариди доллар",
+    "text6": "Бурдарасонии ҳуҷҷатҳо"
   },
   "businessCards": {
     "title1": "Мо кори муҳосиби шуморо осон мекунем",

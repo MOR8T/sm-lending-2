@@ -6,7 +6,6 @@ import {
   businessCards2,
   reviews,
 } from "@/constants/business/const";
-import { items } from "@/constants/main-page/home-page";
 import Reviews from "@/ui/business/Reviews";
 import ServicesSection from "@/ui/business/ServicesSection";
 import СardsRow from "@/ui/business/СardsRow";

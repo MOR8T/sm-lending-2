@@ -1,9 +1,26 @@
 export const business_navbar = [
-  { label: "Зарплатный проект", href: "" },
-  { label: "Продажи в рассрочку", href: "" },
-  { label: "Эквайринг", href: "" },
-  { label: "Расчётный счёт", href: "" },
-  { label: "Visa Business", href: "" },
-  { label: "Переводы", href: "" },
-  { label: "Финансирование", href: "" },
+  {
+    href: "",
+    label: "business.deposits",
+  },
+  {
+    href: "",
+    label: "business.loans",
+  },
+  {
+    href: "",
+    label: "business.tequirements_for_opening_an_account",
+  },
+  {
+    href: "",
+    label: "business.tariffs",
+  },
+  {
+    href: "",
+    label: "business.online_questionnaire",
+  },
+  {
+    href: "",
+    label: "business.other_services",
+  },
 ];

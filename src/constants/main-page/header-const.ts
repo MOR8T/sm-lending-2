@@ -1,26 +1,26 @@
 export const personal_navbar = [
   {
     href: "",
-    label: "Амонатҳо",
+    label: "personal.deposits",
   },
   {
     href: "",
-    label: "Қарзҳо",
+    label: "personal.loans",
   },
   {
     href: "",
-    label: "Требования к открытию счет",
+    label: "personal.tequirements_for_opening_an_account",
   },
   {
     href: "",
-    label: "Тарифы",
+    label: "personal.tariffs",
   },
   {
     href: "",
-    label: "Онлайн-анкет",
+    label: "personal.online_questionnaire",
   },
   {
     href: "",
-    label: "Другие услуги",
+    label: "personal.other_services",
   },
 ];

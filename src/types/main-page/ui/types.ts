@@ -38,3 +38,26 @@ export interface BannerTtype {
   slidesPerView?: number;
   items: oneBannerData[];
 }
+
+export interface ServiceCardT {
+  img: StaticImageData;
+  text: string;
+  href: string;
+}
+
+export interface serviceItemT extends ServiceCardT {
+  key: string;
+}
+
+export interface ServiceCardsT {
+  translation?: string;
+  items: serviceItemT[];
+}
+
+export interface InfoNavicationBannerT {
+  img: StaticImageData;
+  title: string;
+  description: string;
+  href: string;
+  linkText:string;
+}
