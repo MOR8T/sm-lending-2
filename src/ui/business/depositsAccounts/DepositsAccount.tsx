@@ -15,7 +15,7 @@ export default function DepositsAccount({
   const t = useTranslations(translation);
   return (
     <div
-      className={`flex md:flex-row flex-col md:gap-[88px] md:px-[0] px-[22px] items-center bg-[#F7F8F9] rounded-[28px] ${calssName}`}
+      className={`flex md:flex-row flex-col md:mb-[48px] mb-[24px] md:gap-[88px] md:px-[0] px-[22px] items-center  rounded-[28px] text-[#222222] bg-[#F7F8F9] ${calssName} `}
     >
       <div>
         <Image src={img} className="h-[171px] w-[276px] md:h-[360px] md:w-[400px]" alt="img-account" />
@@ -31,7 +31,7 @@ export default function DepositsAccount({
                 key={i}
                 className="md:flex-1 flex md:flex-col flex-row items-center justify-between md:w-auto w-full"
               >
-                <h1 className="whitespace-nowrap text-base md:text-sm text-[16px] font-normal text-[#222222]">
+                <h1 className="whitespace-nowrap text-base md:text-sm text-[16px] font-normal ">
                   {t(e.label)}
                 </h1>
                 <p className="headRegular whitespace-nowrap text-[22px] leading-[28px] font-normal">

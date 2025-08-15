@@ -207,5 +207,15 @@ export const depositsAccountContents1 = [
     label: "contents4.label",
     value: "contents4.value",
   },
+];
 
+export const depositsAccountContents3 = [
+  {
+    label: "contents1.label",
+    value: "contents1.value",
+  },
+  {
+    label: "contents2.label",
+    value: "contents2.value",
+  }
 ];

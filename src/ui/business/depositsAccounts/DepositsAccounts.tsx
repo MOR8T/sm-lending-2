@@ -7,7 +7,7 @@ import depositsAccountImg1 from "@/../public/icons/depositsAccountImg1.svg";
 import depositsAccountImg2 from "@/../public/icons/depositsAccountImg2.svg";
 import depositsAccountImg3 from "@/../public/icons/depositsAccountImg3.svg";
 import depositsAccountImg4 from "@/../public/icons/depositsAccountImg4.svg";
-import { depositsAccountContents1 } from "@/constants/business/const";
+import { depositsAccountContents1, depositsAccountContents3 } from "@/constants/business/const";
 
 export default function DepositsAccounts({ title }: DepositsAccountsT) {
   const t = useTranslations("depositsAccounts");
@@ -24,6 +24,32 @@ export default function DepositsAccounts({ title }: DepositsAccountsT) {
           translation="depositsAccounts.depositsAccount1"
           button={{ title: "Открыть вклад", action: () => {} }}
           detail={{ title: "Подробнее", action: () => {} }}
+        />
+         <DepositsAccount
+          title={t("depositsAccount1.title")}
+          img={depositsAccountImg2}
+          contents={depositsAccountContents1}
+          translation="depositsAccounts.depositsAccount1"
+          button={{ title: "Открыть вклад", action: () => {} }}
+          detail={{ title: "Подробнее", action: () => {} }}
+        />
+         <DepositsAccount
+          title={t("depositsAccount3.title")}
+          img={depositsAccountImg3}
+          contents={depositsAccountContents3}
+          translation="depositsAccounts.depositsAccount3"
+          button={{ title: "Открыть вклад", action: () => {} }}
+          detail={{ title: "Подробнее", action: () => {} }}
+          calssName="!bg-[#343D52] !text-[#fff]"
+        />
+         <DepositsAccount
+          title={t("depositsAccount1.title")}
+          img={depositsAccountImg4}
+          contents={depositsAccountContents1}
+          translation="depositsAccounts.depositsAccount1"
+          button={{ title: "Открыть вклад", action: () => {} }}
+          detail={{ title: "Подробнее", action: () => {} }}
+          calssName="!bg-[#F4FBF9]"
         />
         
       </section>
