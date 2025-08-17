@@ -61,3 +61,35 @@ export interface InfoNavicationBannerT {
   href: string;
   linkText:string;
 }
+
+export interface rate {
+  nbt: number;
+  nominal: number;
+  card_sale: null | number;
+  wallet_sale: null | number;
+  currency_num: string;
+  card_purchase: null | number;
+  exchange_sale: null | number;
+  transfer_sale: null | number;
+  nbt_difference: number;
+  wallet_purchase: null | number;
+  exchange_purchase: null | number;
+  transfer_purchase: null | number;
+  currency_char_code: string;
+  card_sale_difference: number;
+  wallet_sale_difference: number;
+  card_purchase_difference: number;
+  exchange_sale_difference: number;
+  transfer_sale_difference: number;
+  wallet_purchase_difference: number;
+  exchange_purchase_difference: number;
+  transfer_purchase_difference: number;
+  country_code: string;
+  country_flag_url: string;
+}
+
+export interface CurrencyRateT {
+  date: string;
+  base_flag_url: string;
+  rates: rate[];
+}

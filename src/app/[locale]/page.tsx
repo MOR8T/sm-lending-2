@@ -10,6 +10,7 @@ import СardsRow from "@/ui/business/СardsRow";
 import ServiceCards from "@/ui/main-page/serviceCards/ServiceCards";
 import bannerImg from "@/../public/icons/info_banner_faq.svg";
 import { useTranslations } from "next-intl";
+import CurrencyRate from "@/ui/main-page/currency-rate/CurrencyRate";
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
@@ -22,6 +23,9 @@ export default function HomePage() {
       </div>
       <div className="mt-[100px]">
         <ServiceCards items={personalServiceItems} />
+      </div>
+      <div>
+        <CurrencyRate />
       </div>
       <div className="mt-[100px]">
         <InfoNavigationBanner
