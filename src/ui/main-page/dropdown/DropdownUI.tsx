@@ -14,7 +14,7 @@ function DropdownUI({ text, items }: DropdownUIT) {
       >
         <button
           onClick={() => {}}
-          className="text-[#1F2937] text-[15px] leading-[19px] flex items-center gap-[15px] cursor-pointer"
+          className="text-[#595959] hover:text-[#3980A0] text-[16px] leading-[22.4px] flex items-center gap-[5px] cursor-pointer transition duration-100"
         >
           {text}
           <Image

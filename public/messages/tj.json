@@ -7,9 +7,10 @@
     }
   },
   "Header": {
+    "main": "Асосӣ",
     "personal": "Шахсони воқеӣ",
     "business": "Тиҷорат",
-    "bank": "Стандарт Молия"
+    "about_us":"Дар бораи мо"
   },
   "Subheader": {
     "personal": {
@@ -32,7 +33,7 @@
   "Footer": {
     "logo": "Стандарт Молия",
     "full_company_name": "ҶДММ ТАҚХ \"СТАНДАРТ МОЛИЯ\"",
-    "license":""
+    "license": ""
   },
   "Manifest": {
     "name": "Стандарт Молия",

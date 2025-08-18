@@ -2,14 +2,12 @@
 import { Locale, useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import DropdownUI from "@/ui/main-page/dropdown/DropdownUI";
-// import { useParams } from "next/navigation";
 
 export default function LocaleSwicherSelect() {
   const locale: string = useLocale();
   const router = useRouter();
 
   const pathname = usePathname();
-  // const params = useParams();
 
   function onSelectLang(nextLocale: string) {
     router.replace({ pathname }, { locale: nextLocale as Locale });
@@ -21,11 +19,14 @@ export default function LocaleSwicherSelect() {
     { value: "tj", label: "Тоҷикӣ" },
   ];
 
+  const btnClass =
+    "text-[#595959] hover:text-[#3980A0] cursor-pointer transition duration-100";
+
   const items = [
     {
       key: "en",
       label: (
-        <button onClick={() => onSelectLang("en")} className="cursor-pointer">
+        <button onClick={() => onSelectLang("en")} className={btnClass}>
           English
         </button>
       ),
@@ -33,7 +34,7 @@ export default function LocaleSwicherSelect() {
     {
       key: "ru",
       label: (
-        <button onClick={() => onSelectLang("ru")} className="cursor-pointer">
+        <button onClick={() => onSelectLang("ru")} className={btnClass}>
           Русский
         </button>
       ),
@@ -41,7 +42,7 @@ export default function LocaleSwicherSelect() {
     {
       key: "tj",
       label: (
-        <button onClick={() => onSelectLang("tj")} className="cursor-pointer">
+        <button onClick={() => onSelectLang("tj")} className={btnClass}>
           Тоҷикӣ
         </button>
       ),
@@ -54,17 +55,6 @@ export default function LocaleSwicherSelect() {
         text={options.find((el) => el.value === locale)?.label || ""}
         items={items}
       />
-      {/* <select
-         value={locale}
-         onChange={(e) => onSelectLang(e.target.value)}
-         className="text-[#1F2937] text-[15px] leading-[19px] bg-transparent border-none rounded p-1 cursor-pointer"
-       >
-         {options.map((el) => (
-           <option key={el.value} value={el.value}>
-             {el.label}
-           </option>
-         ))}
-       </select> */}
     </div>
   );
 }
