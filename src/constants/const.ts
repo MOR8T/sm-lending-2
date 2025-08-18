@@ -20,32 +20,32 @@ export const footerLinks = [
   },
   {
     href: "#",
-    img: link_icon,
-    alt: "link_icon",
-  },
-  {
-    href: "#",
-    img: ok_icon,
-    alt: "ok_icon",
-  },
-  {
-    href: "#",
     img: inst_icon,
     alt: "inst_icon",
   },
   {
     href: "#",
-    img: youtube_icon,
-    alt: "youtube_icon",
+    img: link_icon,
+    alt: "link_icon",
   },
-  {
-    href: "#",
-    img: vk_icon,
-    alt: "vk_icon",
-  },
-  {
-    href: "#",
-    img: tik_tok_icon,
-    alt: "tik_tok_icon",
-  },
+  // {
+  //   href: "#",
+  //   img: ok_icon,
+  //   alt: "ok_icon",
+  // },
+  // {
+  //   href: "#",
+  //   img: youtube_icon,
+  //   alt: "youtube_icon",
+  // },
+  // {
+  //   href: "#",
+  //   img: vk_icon,
+  //   alt: "vk_icon",
+  // },
+  // {
+  //   href: "#",
+  //   img: tik_tok_icon,
+  //   alt: "tik_tok_icon",
+  // },
 ];

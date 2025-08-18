@@ -3,6 +3,24 @@ import appStore from "@/../public/icons/app_store_black.svg";
 import Image from "next/image";
 import React from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { footerLinks } from "@/constants/const";
+
+function TitleWithDesc({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
+  return (
+    <div>
+      <h3 className="text-[20px] mb-2">{title}</h3>
+      <p className="text-[14px]">{description}</p>
+    </div>
+  );
+}
+
 function Footer() {
   const t = useTranslations("Footer");
 
@@ -69,66 +87,38 @@ function Footer() {
     },
   ];
   return (
-    <div className="bg-[rgba(34,34,34,1)] min-h-[653px] py-[80px] mt-[150px]">
-      <div className="container text-white md:text-[15px] text-[14px]">
-        <div className="xl:px-0 md:px-[60px]">
-          <div className="grid lg:grid-cols-[260px_192px_288px] md:grid-cols-[260px_192px] grid-cols-1 md:gap-[150px] gap-8">
-            <div className="flex flex-col md:gap-[30px] gap-5">
-              <div className="flex gap-[15px] items-center">
+    <div className="bg-[rgba(34,34,34,1)] min-h-[614px] md:p-[80px_0px] p-[24px_0px_29px_0px] mt-[150px]">
+      <div className="container-lg text-white text-[14px]">
+        <div className="xl:px-0 md:px-[20px]">
+          <div className="grid lg:grid-cols-[260px_350px_288px] md:grid-cols-[260px_192px] grid-cols-1 md:gap-[115px] gap-8">
+            <div className="flex flex-col md:gap-8 gap-5">
+              <div className="">
                 <Image
-                  src={`/images/logo_sm_white.png`}
+                  src={`/images/footer_logo.svg`}
                   alt=""
-                  width="35"
-                  height="35"
+                  width="172"
+                  height="40"
                   className="pt-[6px]"
                 />
-                <span className="text-[24px] leading-[35px]">{t("logo")}</span>
               </div>
-              <p>Индекс: 734025, ҶТ</p>
-              <p>
-                Суроғаи ва суроғаи ҳуқуқӣ: ш.Душанбе, н.И.Сомонӣ, куч.Шевченко
-                113
-              </p>
-              <p>
-                Шаҳодатнома дар бораи бақайдгирии давлатӣ: №0309053 аз
-                18.06.с2024
-              </p>
-              {/* <p>Филиал ва нуқтаҳои хизматрасонӣ</p> */}
+              <p>ш.Душанбе, кучаи Шевченко 113 </p>
+              <TitleWithDesc
+                title="info@sm.tj"
+                description="Для онлайн-обращений"
+              />
             </div>
-            <div className="flex flex-col gap-[30px] ">
-              <div>
-                <h3 className="md:text-[24px] text-[20px] leading-[32px]">
-                  +992 44 603 2020
-                </h3>
-                <p>Барои зангҳо дар дохили Тоҷикистон</p>
-              </div>
-              <div>
-                <h3 className="md:text-[24px] text-[20px] leading-[32px]">
-                  +992 44 603 2020 +992 44 603 1515
-                </h3>
-                <p>Барои саволҳои умумӣ</p>
-              </div>
-              {/* <div>
-              <h3 className="md:text-[24px] text-[20px] leading-[32px]">+992 48 888 1111</h3>
-              <p>Барои зангҳо аз хориҷи кишвар</p>
-            </div> */}
-              <div>
-                <h3 className="md:text-[24px] text-[20px] leading-[32px]">
-                  +992 44 600 1520
-                </h3>
-                <p>
-                  Телефони боварии Бонки миллии Тоҷикистон барои арзу шикоятҳо
-                </p>
-              </div>
-              <div>
-                <h3 className="md:text-[24px] text-[20px] leading-[32px]">
-                  info@sm.tj
-                </h3>
-                <p>Барои онлайн-муроҷиатҳо</p>
-              </div>
+            <div className="flex flex-col gap-8 max-w-[192px] ">
+              <TitleWithDesc
+                title="44-603-20-20"
+                description="Для звонков из любой точки мира"
+              />{" "}
+              <TitleWithDesc
+                title="+992 44 600 1520"
+                description="Телефон доверия Национального банка Таджикистана для жалоб и обращений"
+              />
             </div>
             <div>
-              <div>
+              {/* <div>
                 <p>Ҳамёни мобилӣ</p>
                 <div className="flex gap-[5px] mt-[10px]">
                   <Image
@@ -144,45 +134,38 @@ function Footer() {
                     height={40}
                   />
                 </div>
+              </div> */}
+              <div className="">
+                <p>Соцмедиа</p>
+                <div className="flex flex-wrap gap-8 mt-[12px]">
+                  {footerLinks.map((el) => {
+                    return (
+                      <Link href={el.href} key={el.alt}>
+                        <Image
+                          src={el.img}
+                          alt={el.alt}
+                          width={40}
+                          height={40}
+                        />
+                      </Link>
+                    );
+                  })}
+                </div>
               </div>
-              {/* <div className="mt-[50px]">
-              <p>Ҳамёни мобилӣ</p>
-              <div className="flex flex-wrap gap-8 mt-[10px]">
-                {footerLinks.map((el) => {
-                  return (
-                    <Link href={el.href} key={el.alt}>
-                      <Image src={el.img} alt={el.alt} width={40} height={40} />
-                    </Link>
-                  );
-                })}
-              </div>
-            </div> */}
             </div>
           </div>
-          <div className="py-[39px] my-[39px] flex flex-wrap md:gap-13 gap-8 border-y border-[rgba(255,255,255,0.1)]">
-            {data.map((el) => {
-              return (
-                <div key={el.title} className="">
-                  <h4 className="text-[18px] leading-[22px] mb-[10px]">
-                    {el.title}
-                  </h4>
-                  <p className="text-[16px] leading-[18px]">{el.description}</p>
-                </div>
-              );
-            })}
-            {/* <div>Дар бораи мо</div>
-            <div> Суроғаҳо ва реҷаи корӣ</div>
-            <div>Ҳуҷҷатҳо ва тарофаҳо</div>
-            <div>Ҷойҳои кор</div>
-            <div>Робита бо мо</div> */}
-          </div>
+          <ul className="md:py-[38px] py-[24px] md:mb-[40px] mb-[24px] md:mt-[60px] mt-[40px] flex flex-wrap md:justify-between md:gap-13 gap-6 border-y border-[rgba(255,255,255,0.1)]">
+            <li>Главная</li>
+            <li> Частным лицам</li>
+            <li>Юридическим лицам</li>
+            <li>О нас</li>
+            <li>Лицензия</li>
+            <li>Реквизиты</li>
+            <li>Контакты</li>
+          </ul>
           <ul className="flex md:gap-13 gap-8 flex-wrap justify-between">
-            <li>© 2025 ҶДММ ТАҚХ “СТАНДАРТ МОЛИЯ”</li>
-            <li> Иҷозатномаи БМТ №0000331 аз 08.11.2024</li>
-            {/* <li className="max-w-[376] text-right">
-            ҶДММ ТАҚХ “СТАНДАРТ МОЛИЯ” узви Хазинаи суғуртаи амонату пасандозҳои Тоҷикистон
-            мебошад
-          </li> */}
+            <li>© 2025</li>
+            <li>№000331 от 8 ноября 2024</li>
           </ul>
         </div>
       </div>

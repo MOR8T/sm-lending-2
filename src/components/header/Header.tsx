@@ -8,8 +8,8 @@ import { personal_navbar } from "@/constants/main-page/header-const";
 import { business_navbar } from "@/constants/business/header-const";
 import { navbarsT } from "@/types/business/header";
 import { Button } from "antd";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { CiSearch } from "react-icons/ci";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function Header() {
   const t = useTranslations("Header");
@@ -37,9 +37,9 @@ function Header() {
   }, [pathname]);
 
   return (
-    <div className="md:border-b md:border-b-gray-300 mb-[40px]">
+    <div className="border-b border-b-gray-300 mb-[40px]">
       <div className="container flex justify-between items-center md:pt-0 pt-[16px]">
-        <div className="flex gap-8 items-center text-[#595959] text-[16px] leading-[22.4px]">
+        <div className="flex gap-8 items-center text-[#595959] text-[16px] leading-[22.4px] md:py-0 py-[12px]">
           <Image
             src={`/images/header_logo.svg`}
             alt=""
@@ -86,7 +86,7 @@ function Header() {
         </div>
         <div className="md:hidden flex items-end">
           <Button type="text" className="p-0">
-            <GiHamburgerMenu className="text-[24px]" />
+            <RxHamburgerMenu className="text-[24px] text-[#595959]" />
           </Button>
         </div>
       </div>
