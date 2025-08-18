@@ -12,7 +12,7 @@ export default function InfoNavigationBanner({
   linkText,
 }: InfoNavicationBannerT) {
   return (
-    <div className="px-5">
+    <div className="md:px-0 px-5">
       <div className="xl:max-w-[968px] max-w-[728px] xl:min-h-[368px] md:min-h-[334px] w-full min-h-auto mx-auto p-auto bg-[#F7F8F9] rounded-3xl grid md:grid-cols-2">
         <div className="md:p-[56px] p-5 flex flex-col justify-between">
           <div>

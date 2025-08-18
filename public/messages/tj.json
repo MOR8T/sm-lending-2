@@ -15,18 +15,18 @@
     "personal": {
       "deposits": "Амонатҳо",
       "loans": "Қарзҳо",
-      "tequirements_for_opening_an_account": "Требования к открытию счет",
-      "tariffs": "Тарифы",
-      "online_questionnaire": "Онлайн-анкет",
-      "other_services": "Другие услуги"
+      "tequirements_for_opening_an_account": "Талабот барои кушодани суратҳисоб",
+      "tariffs": "Тарифҳо",
+      "online_questionnaire": "Саволномаи онлайн",
+      "other_services": "Дигар хидматҳо"
     },
     "business": {
       "deposits": "Амонатҳо",
       "loans": "Қарзҳо",
-      "tequirements_for_opening_an_account": "Требования к открытию счет",
-      "tariffs": "Тарифы",
-      "online_questionnaire": "Онлайн-анкет",
-      "other_services": "Другие услуги"
+      "tequirements_for_opening_an_account": "Талабот барои кушодани суратҳисоб",
+      "tariffs": "Тарифҳо",
+      "online_questionnaire": "Саволномаи онлайн",
+      "other_services": "Дигар хидматҳо"
     }
   },
   "Footer": {

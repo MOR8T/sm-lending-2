@@ -1,26 +1,26 @@
 export const personal_navbar = [
   {
-    href: "",
+    href: "/deposits",
     label: "personal.deposits",
   },
   {
-    href: "",
+    href: "/loans",
     label: "personal.loans",
   },
   {
-    href: "",
+    href: "/tequirements",
     label: "personal.tequirements_for_opening_an_account",
   },
   {
-    href: "",
+    href: "/tariffs",
     label: "personal.tariffs",
   },
   {
-    href: "",
+    href: "/online-questionnaire",
     label: "personal.online_questionnaire",
   },
   {
-    href: "",
+    href: "/other-services",
     label: "personal.other_services",
   },
 ];
