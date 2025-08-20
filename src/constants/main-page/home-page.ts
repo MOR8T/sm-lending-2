@@ -223,3 +223,30 @@ export const depositsAccountContents1 = [
 //     img: ServicesSectionImg4,
 //   },
 // ];
+
+export const defaultRateTJ = {
+  nbt: 1,
+  nominal: 1,
+  card_sale: 1,
+  wallet_sale: 1,
+  currency_num: "1",
+  card_purchase: 1,
+  exchange_sale: 1,
+  transfer_sale: 1,
+  nbt_difference: 1,
+  wallet_purchase: 1,
+  exchange_purchase: 1,
+  transfer_purchase: 1,
+  currency_char_code: "TJS",
+  card_sale_difference: 1,
+  wallet_sale_difference: 1,
+  card_purchase_difference: 1,
+  exchange_sale_difference: 1,
+  transfer_sale_difference: 1,
+  wallet_purchase_difference: 1,
+  exchange_purchase_difference: 1,
+  transfer_purchase_difference: 1,
+  country_code: "TJ",
+  country_flag_url:
+    "https://ec2-18-156-46-26.eu-central-1.compute.amazonaws.com/currency_rate/flags/tj.png",
+};

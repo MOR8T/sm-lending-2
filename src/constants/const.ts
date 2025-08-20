@@ -1,11 +1,11 @@
 import tg_icon from "@/../public/icons/footer/tg_black.svg";
 import fb_icon from "@/../public/icons/footer/fb_black.svg";
 import link_icon from "@/../public/icons/footer/Link_black.svg";
-import ok_icon from "@/../public/icons/footer/ok_black.svg";
+// import ok_icon from "@/../public/icons/footer/ok_black.svg";
 import inst_icon from "@/../public/icons/footer/inst_black.svg";
-import youtube_icon from "@/../public/icons/footer/youtube_black.svg";
-import vk_icon from "@/../public/icons/footer/vk_black.svg";
-import tik_tok_icon from "@/../public/icons/footer/Tik_tok_black.svg";
+// import youtube_icon from "@/../public/icons/footer/youtube_black.svg";
+// import vk_icon from "@/../public/icons/footer/vk_black.svg";
+// import tik_tok_icon from "@/../public/icons/footer/Tik_tok_black.svg";
 
 export const footerLinks = [
   {
@@ -49,3 +49,4 @@ export const footerLinks = [
   //   alt: "tik_tok_icon",
   // },
 ];
+

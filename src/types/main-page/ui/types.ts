@@ -1,3 +1,4 @@
+import { MenuProps } from "antd";
 import { ItemType } from "antd/es/menu/interface";
 import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
@@ -59,7 +60,7 @@ export interface InfoNavicationBannerT {
   title: string;
   description: string;
   href: string;
-  linkText:string;
+  linkText: string;
 }
 
 export interface rate {
@@ -92,4 +93,30 @@ export interface CurrencyRateT {
   date: string;
   base_flag_url: string;
   rates: rate[];
+}
+
+export interface SectionTitleT {
+  children: ReactNode;
+  className?: string;
+}
+
+export interface LabelT {
+  children: ReactNode;
+  name?: string;
+}
+
+export interface CurrencyOptionT {
+  value: rate | string;
+  label: string;
+}
+
+export interface CurrencyInputT {
+  value: string | number;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  label?: string;
+  name?: string;
+  type?: string;
+  currency: string | number;
+  disabled?: boolean;
+  items: MenuProps["items"];
 }

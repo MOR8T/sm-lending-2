@@ -1,5 +1,5 @@
-import googlePlay from "@/../public/icons/google_play_black.svg";
-import appStore from "@/../public/icons/app_store_black.svg";
+// import googlePlay from "@/../public/icons/google_play_black.svg";
+// import appStore from "@/../public/icons/app_store_black.svg";
 import Image from "next/image";
 import React from "react";
 import { useTranslations } from "next-intl";
@@ -24,68 +24,6 @@ function TitleWithDesc({
 function Footer() {
   const t = useTranslations("Footer");
 
-  const data = [
-    // {
-    //   title: "Шаҳодатнома дар бораи бақайдгирии давлатӣ:",
-    //   description: "№0309053 аз 18.06.с2024",
-    // },
-    // {
-    //   title: "Иҷозатномаи БМТ:",
-    //   description: "№0000331",
-    // },
-    // {
-    //   title: "Индекс:",
-    //   description: "734025, ҶТ",
-    // },
-    // {
-    //   title: "Маркази тамос:",
-    //   description: "+992 44 603 20 20",
-    // },
-    // {
-    //   title: "Барои саволҳои умумӣ:",
-    //   description: "+ 992 (44) 603 20 20, 44 603 15 15",
-    // },
-    // {
-    //   title: "Почтаи электронӣ:",
-    //   description: "info@sm.tj",
-    // },
-    // {
-    //   title: "Суроғаи ҳуқуқӣ:",
-    //   description: "ш.Душанбе, н.И.Сомонӣ, куч.Шевченко 113",
-    // },
-    {
-      title: "Реҷаи корӣ:",
-      description: "Душанбе то ҷумъа аз 08:00 то 17:00",
-    },
-    {
-      title: "Шанбе:",
-      description: " аз 09:00 то 11:00",
-    },
-    {
-      title: "Рӯзҳои истироҳат:",
-      description: "Шанбе, Якшанбе",
-    },
-    // {
-    //   title: "Маркази тамос:",
-    //   description: "(44) 603 20 20",
-    // },
-    // {
-    //   title: "Тел. боварии БМТ:",
-    //   description: "(44) 600 15 20 ё почтаи электронӣ: ALLOMUSHTARI@NBT.TJ",
-    // },
-    {
-      title: "Қабули шаҳрвандон:",
-      description: "",
-    },
-    {
-      title: "Рӯз ва соатҳои қабул:",
-      description: "",
-    },
-    {
-      title: "Директори генералӣ:",
-      description: "АШУРОВ АКМАЛҶОН НУСРАТОВИЧ",
-    },
-  ];
   return (
     <div className="bg-[rgba(34,34,34,1)] min-h-[614px] md:p-[80px_0px] p-[24px_0px_29px_0px] mt-[150px]">
       <div className="container-lg text-white text-[14px]">
