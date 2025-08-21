@@ -5,7 +5,7 @@ export default function BorderButton({
   className,
 }: {
   children: ReactNode;
-  className: string;
+  className?: string;
 }) {
   return (
     <button
