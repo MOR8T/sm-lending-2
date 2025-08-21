@@ -2,7 +2,7 @@
 // import appStore from "@/../public/icons/app_store_black.svg";
 import Image from "next/image";
 import React from "react";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { footerLinks } from "@/constants/const";
 
@@ -22,7 +22,7 @@ function TitleWithDesc({
 }
 
 function Footer() {
-  const t = useTranslations("Footer");
+  // const t = useTranslations("Footer");
 
   return (
     <div className="bg-[rgba(34,34,34,1)] min-h-[614px] md:p-[80px_0px] p-[24px_0px_29px_0px] mt-[150px]">
