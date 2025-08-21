@@ -13,13 +13,13 @@ import "swiper/css";
 export default function MainPCards({ cards }: MainPCardsT) {
   const t = useTranslations();
   return (
-    <div className="overflow-x-auto max-w-[1280px]">
+    <div className="swiper-container overflow-x-auto">
       <Swiper
         spaceBetween={24}
         slidesPerView={1}
         breakpoints={{
           0: {
-            slidesPerView: 1,
+            slidesPerView: 1.2,
             spaceBetween: 24,
           },
           768: {

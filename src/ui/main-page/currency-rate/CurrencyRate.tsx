@@ -183,7 +183,7 @@ function CurrencyRate() {
   }, [type, sale]);
 
   return (
-    <div>
+    <div className="container">
       <div className="flex justify-between items-end mb-[11px]">
         <ul className="flex text-[14px]">
           <li

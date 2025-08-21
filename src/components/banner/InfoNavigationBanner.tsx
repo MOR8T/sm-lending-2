@@ -12,7 +12,7 @@ export default function InfoNavigationBanner({
   linkText,
 }: InfoNavicationBannerT) {
   return (
-    <div className="">
+    <div className="container">
       <div
         style={{
           background:

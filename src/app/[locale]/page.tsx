@@ -12,12 +12,18 @@ export default function HomePage() {
   const t = useTranslations("");
 
   return (
-    <div className="container">
-      <SectionTitle>{t("HomePage.popularProducts")}</SectionTitle>
+    <div className="">
+      <SectionTitle className="container">
+        {t("HomePage.popularProducts")}
+      </SectionTitle>
       <MainPCards cards={mainPCards} />
-      <SectionTitle>{t("HomePage.exchangeRate")}</SectionTitle>
+      <SectionTitle className="container">
+        {t("HomePage.exchangeRate")}
+      </SectionTitle>
       <CurrencyRate />
-      <SectionTitle>{t("HomePage.calculateCredit")}</SectionTitle>
+      <SectionTitle className="container">
+        {t("HomePage.calculateCredit")}
+      </SectionTitle>
 
       <InfoNavigationBanner
         title={t("HomePage.infoBanner.title")}
@@ -26,7 +32,7 @@ export default function HomePage() {
         img={infoBanner}
         linkText={t("HomePage.infoBanner.button")}
       />
-      <SectionTitle>{t("HomePage.news")}</SectionTitle>
+      <SectionTitle className="container">{t("HomePage.news")}</SectionTitle>
       <NewsCards cards={newsCards} />
     </div>
   );
