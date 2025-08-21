@@ -1,22 +1,24 @@
 "use client";
 import SectionTitle from "@/components/sectionTitle/SectionTitle";
-import { mainPCards } from "@/constants/main-page/cards";
+import { mainPCards, newsCards } from "@/constants/main-page/cards";
 import MainPCards from "@/ui/main-page/cards/MainPCards";
+import NewsCards from "@/ui/main-page/cards/NewsCards";
 import CurrencyRate from "@/ui/main-page/currency-rate/CurrencyRate";
-// import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
 export default function HomePage() {
-  // const t = useTranslations("HomePage");
+  const t = useTranslations("");
 
   return (
     <div className="container">
-      <SectionTitle>Популярные продукты</SectionTitle>
+      <SectionTitle>{t("HomePage.popularProducts")}</SectionTitle>
       <MainPCards cards={mainPCards} />
-      <SectionTitle>Курс валют</SectionTitle>
+      <SectionTitle>{t("HomePage.exchangeRate")}</SectionTitle>
       <CurrencyRate />
 
-      <SectionTitle>Расчитать кредит</SectionTitle>
-      <SectionTitle>Новости</SectionTitle>
+      <SectionTitle>{t("HomePage.calculateCredit")}</SectionTitle>
+      <SectionTitle>{t("HomePage.news")}</SectionTitle>
+      <NewsCards cards={newsCards} />
     </div>
   );
 }

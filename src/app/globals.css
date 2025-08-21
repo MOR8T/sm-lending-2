@@ -51,3 +51,10 @@ code {
     padding: 0px 24px;
   }
 }
+
+.limitText3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

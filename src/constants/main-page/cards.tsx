@@ -29,3 +29,24 @@ export const mainPCards = [
     img: wallet,
   },
 ];
+
+export const newsCards = [
+  {
+    title: "news.mainPage.title1",
+    subTitle: "news.mainPage.subTitle1",
+    date: "29.09.2025",
+    href: "/news/id",
+  },
+  {
+    title: "news.mainPage.title2",
+    subTitle: "news.mainPage.subTitle2",
+    date: "30.04.2025",
+    href: "/news/id",
+  },
+  {
+    title: "news.mainPage.title3",
+    subTitle: "news.mainPage.subTitle3",
+    date: "01.10.2025",
+    href: "/news/id",
+  },
+];

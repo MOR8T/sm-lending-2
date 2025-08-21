@@ -11,3 +11,14 @@ export interface MainPCardsT {
   cards: OneMainPCardT[];
   translation?: string;
 }
+
+export interface OneNewsCardT {
+  title: string;
+  subTitle: string;
+  date: string;
+  href: string;
+}
+
+export interface NewsCardsT {
+  cards: OneNewsCardT[];
+}
