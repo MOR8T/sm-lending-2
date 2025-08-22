@@ -1,0 +1,22 @@
+.credit-slider .ant-slider .ant-slider-rail {
+  background: #dbecf2 !important;
+}
+.credit-slider .ant-slider .ant-slider-track {
+  background: #3980a0 !important;
+}
+.credit-slider .ant-slider .ant-slider-handle {
+  width: 24px;
+  height: 24px;
+  top: -5px;
+}
+.credit-slider .ant-slider .ant-slider-handle::after {
+  background: #3980a0 !important;
+  border: #3980a0 !important;
+  box-shadow: none;
+  width: 24px;
+  height: 24px;
+}
+.credit-slider .ant-slider .ant-slider-handle .ant-tooltip-open {
+  background: #3980a0 !important;
+  border: #3980a0 !important;
+}

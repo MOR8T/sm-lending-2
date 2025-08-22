@@ -146,3 +146,11 @@ export interface ItemsT {
   items: ItemT[];
   size?: "small" | "medium";
 }
+
+export interface CreditSelectT {
+  items: MenuProps["items"];
+  value: string;
+  label?: string;
+  className?: string;
+  placeholder?: string;
+}

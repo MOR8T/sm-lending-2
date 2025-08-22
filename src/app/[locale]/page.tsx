@@ -25,11 +25,12 @@ export default function HomePage() {
         {t("HomePage.exchangeRate")}
       </SectionTitle>
       <CurrencyRate />
+      <div className="pt-[40px]"></div>
       <SectionTitle className="container">
         {t("HomePage.calculateCredit")}
       </SectionTitle>
       <CalculateCredit />
-
+      <div className="pt-[60px]"></div>
       <InfoNavigationBanner
         title={t("HomePage.infoBanner.title")}
         description={t("HomePage.infoBanner.description")}
@@ -37,6 +38,7 @@ export default function HomePage() {
         img={infoBanner}
         linkText={t("HomePage.infoBanner.button")}
       />
+      <div className="pt-[20px]"></div>
       <SectionTitle className="container">{t("HomePage.news")}</SectionTitle>
       <NewsCards cards={newsCards} />
     </div>

@@ -10,7 +10,7 @@ export default function ButtonFon({
 }) {
   return (
     <button
-      className={`not-found-button text-white p-[16px_32px] md:w-auto w-full rounded-[12px] text-[16px] ${className}`}
+      className={`cursor-pointer bg-linear-to-b hover:to-0% from-[#3980a0] to-[#054e6e] active:to-[#bbdbe6] transition duration-100 text-white p-[16px_32px] md:w-auto w-full rounded-[12px] text-[16px] ${className}`}
     >
       {children}
     </button>

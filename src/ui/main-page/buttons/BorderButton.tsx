@@ -9,7 +9,7 @@ export default function BorderButton({
 }) {
   return (
     <button
-      className={`text-[#3980A0] text-[16px] leading-[20px] border border-[#3980A0] p-[12px_24px] rounded-[12px] cursor-pointer ${className}`}
+      className={`text-[#3980A0] text-[16px] leading-[20px] border border-[#3980A0] hover:bg-[#BBDBE6] active:border-[#BBDBE6] active:text-white p-[12px_24px] rounded-[12px] cursor-pointer transition duration-100 ${className}`}
     >
       {children}
     </button>
