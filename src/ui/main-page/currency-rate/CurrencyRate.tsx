@@ -1,17 +1,20 @@
 "use client";
 import { getCurrencyRate } from "@/api/main-page/currency-rate";
 import { rateDown, rateUp } from "@/constants/main-page/icons";
-import { CurrencyRateT, rate } from "@/types/main-page/ui/types";
+import {
+  CurrencyRateT,
+  CurrencySaleT,
+  CurrencyTypeT,
+  rate,
+} from "@/types/main-page/ui/types";
 import { Avatar } from "antd";
 
 import { useEffect, useLayoutEffect, useState } from "react";
 import CurrencyInput from "../input/CurrencyInput";
 import { defaultRateTJ } from "@/constants/main-page/home-page";
 import { addZero } from "@/utils/main-page/globalFunction";
-import { useTranslations } from "next-intl";
-
-type TypeT = "exchange" | "transfer" | "card";
-type SaleT = "purchase" | "sale";
+// import { useTranslations } from "next-intl";
+import Items from "../items/Items";
 
 const currenyText = { "810": "Росс. Рубль", "840": "Долл. США", "978": "Евро" };
 
@@ -24,9 +27,9 @@ function countCurrency(
 }
 
 function CurrencyRate() {
-  const t = useTranslations();
-  const [sale, setSale] = useState<SaleT>("sale");
-  const [type, setType] = useState<TypeT>("exchange");
+  // const t = useTranslations();
+  const [sale, setSale] = useState<CurrencySaleT>("sale");
+  const [type, setType] = useState<CurrencyTypeT>("exchange");
   const [currencyRate, setCurrencyRate] = useState<CurrencyRateT | null>(null);
   const [currentTime, setCurrentTime] = useState("");
 
@@ -36,27 +39,24 @@ function CurrencyRate() {
   const [reciveCurrency, setReciveCurrency] = useState<rate | null>(null);
   const [payCurrency, setPayCurrency] = useState<rate | null>(defaultRateTJ);
 
-  const activeClass = "border-[#3980A0] text-[#3980A0]";
-  const disactiveClass = "border-[#8C8C8C] text-[#8C8C8C]";
+  // function currencyCode(rate: rate) {
+  //   const sale_: {
+  //     sale: "purchase";
+  //     purchase: "sale";
+  //   } = {
+  //     sale: "purchase",
+  //     purchase: "sale",
+  //   };
 
-  function currencyCode(rate: rate) {
-    const sale_: {
-      sale: "purchase";
-      purchase: "sale";
-    } = {
-      sale: "purchase",
-      purchase: "sale",
-    };
-
-    switch (rate.currency_num) {
-      case "1": {
-        return rate?.[`${type}_${sale_[sale]}`]; //sale_[sale];
-      }
-      default: {
-        return rate?.[`${type}_${sale}`];
-      }
-    }
-  }
+  //   switch (rate.currency_num) {
+  //     case "1": {
+  //       return rate?.[`${type}_${sale_[sale]}`]; //sale_[sale];
+  //     }
+  //     default: {
+  //       return rate?.[`${type}_${sale}`];
+  //     }
+  //   }
+  // }
   const getRate = async () => {
     const data: CurrencyRateT | null = await getCurrencyRate();
     const date = new Date();
@@ -185,40 +185,28 @@ function CurrencyRate() {
   return (
     <div className="container">
       <div className="flex justify-between items-end mb-[11px]">
-        <ul className="flex text-[14px]">
-          <li
-            className={`pb-[12px] px-[12px] border-b cursor-pointer ${
-              type === "exchange" ? activeClass : disactiveClass
-            }`}
-            onClick={() => setType("exchange")}
-          >
-            {"Касса"}
-          </li>
-          <li
-            className={`pb-[12px] px-[12px] border-b cursor-pointer ${
-              type === "transfer" ? activeClass : disactiveClass
-            }`}
-            onClick={() => setType("transfer")}
-          >
-            {"Кошелёк"}
-          </li>
-          {/* <li
-            className={`pb-[12px] px-[12px] border-b cursor-pointer ${
-              type === "3" ? activeClass : disactiveClass
-            }`}
-            onClick={() => setType("3")}
-          >
-            {"Денежные переводы"}
-          </li> */}
-          <li
-            className={`pb-[12px] px-[12px] border-b cursor-pointer ${
-              type === "card" ? activeClass : disactiveClass
-            }`}
-            onClick={() => setType("card")}
-          >
-            {"Карта"}
-          </li>
-        </ul>
+        <Items
+          value={type}
+          onChange={(type) => setType(type as CurrencyTypeT)}
+          items={[
+            {
+              label: "Касса",
+              value: "exchange",
+            },
+            {
+              label: "Кошелёк",
+              value: "transfer",
+            },
+            // {
+            //   label: "Денежные переводы",
+            //   value: "3",
+            // },
+            {
+              label: "Карта",
+              value: "card",
+            },
+          ]}
+        />
         <p className="text-[16px] md:block hidden">{currentTime}</p>
       </div>
       <div className="grid xl:grid-cols-[2fr_1fr] gap-6">
@@ -278,7 +266,13 @@ function CurrencyRate() {
                         <p className="md:text-[20px] text-[16px] font-semibold mb-[4px] text-[#262626]">
                           {el.currency_char_code}
                         </p>
-                        <p>{currenyText?.[el.currency_num]}</p>
+                        <p>
+                          {
+                            currenyText?.[
+                              el.currency_num as "810" | "840" | "978"
+                            ]
+                          }
+                        </p>
                       </div>
                     </div>
                     <p className="md:text-[20px] text-[16px] font-semibold text-[#262626] md:flex hidden items-center gap-1 justify-center">
@@ -296,28 +290,21 @@ function CurrencyRate() {
           </div>
         </div>
         <div className="bg-[#F5F5F5] md:rounded-[40px] rounded-3xl md:p-10 p-[24px_16px] flex flex-col gap-6">
-          <ul className="flex">
-            <li
-              className={`pb-[8px] px-[12px] border-b cursor-pointer ${
-                sale === "sale" ? activeClass : disactiveClass
-              }`}
-              onClick={() => {
-                setSale("sale");
-              }}
-            >
-              {"Купить"}
-            </li>
-            <li
-              className={`pb-[8px] px-[12px] border-b cursor-pointer ${
-                sale === "purchase" ? activeClass : disactiveClass
-              }`}
-              onClick={() => {
-                setSale("purchase");
-              }}
-            >
-              {"Продать"}
-            </li>
-          </ul>
+          <Items
+            value={sale}
+            onChange={(sale) => setSale(sale as CurrencySaleT)}
+            items={[
+              {
+                label: "Купить",
+                value: "sale",
+              },
+              {
+                label: "Продать",
+                value: "purchase",
+              },
+            ]}
+            size="medium"
+          />
           <CurrencyInput
             label={sale === "sale" ? "Получу" : "Заплачу"}
             value={recive}

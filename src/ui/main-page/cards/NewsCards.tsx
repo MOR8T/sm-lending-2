@@ -51,7 +51,7 @@ export default function NewsCards({ cards }: NewsCardsT) {
                     {t(card.subTitle)}
                   </h2>
                 </div>
-                <div className="flex justify-between items-end">
+                <div className="flex flex-wrap gap-2 justify-between items-end">
                   <p className="text-[#8C8C8C] text-[16px] leading-6">
                     {card.date}
                   </p>

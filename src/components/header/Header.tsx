@@ -4,9 +4,9 @@ import Image from "next/image";
 import React, { useLayoutEffect, useState } from "react";
 import LocaleSwicherSelect from "../localeSwicherSelect/LocaleSwicherSelect";
 import { Link, usePathname } from "@/i18n/navigation";
-import { personal_navbar } from "@/constants/main-page/header-const";
-import { business_navbar } from "@/constants/business/header-const";
-import { navbarsT } from "@/types/business/header";
+// import { personal_navbar } from "@/constants/main-page/header-const";
+// import { business_navbar } from "@/constants/business/header-const";
+// import { navbarsT } from "@/types/business/header";
 import { Button } from "antd";
 import { CiSearch } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -18,11 +18,11 @@ function Header() {
 
   const activeModuleClass = "border-b border-[#3980A0] text-[#3980A0]";
 
-  const navbars: navbarsT = {
-    "1": personal_navbar,
-    "2": business_navbar,
-    "3": [],
-  };
+  // const navbars: navbarsT = {
+  //   "1": personal_navbar,
+  //   "2": business_navbar,
+  //   "3": [],
+  // };
 
   useLayoutEffect(() => {
     if (pathname.includes("/about")) {
@@ -40,13 +40,15 @@ function Header() {
     <div className="border-b border-b-gray-300 mb-[40px]">
       <div className="container flex justify-between items-center md:pt-0 pt-[16px]">
         <div className="flex gap-8 items-center text-[#595959] text-[16px] leading-[22.4px] md:py-0 py-[12px]">
-          <Image
-            src={`/images/header_logo.svg`}
-            alt=""
-            width="45"
-            height="40"
-            className="pt-[0px]"
-          />
+          <Link href="/">
+            <Image
+              src={`/images/header_logo.svg`}
+              alt=""
+              width="45"
+              height="40"
+              className="pt-[0px]"
+            />
+          </Link>
           <ul className="md:flex hidden gap-6">
             <li
               className={`pt-[20px] pb-[20px] mb-[-1px] ${

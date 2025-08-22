@@ -1,6 +1,6 @@
 "use client";
 import img_404 from "@/../public/images/404-page.svg";
-import NotFoundButton from "@/ui/main-page/buttons/NotFoundButton";
+import NotFoundButton from "@/ui/main-page/buttons/ButtonFon";
 import Image from "next/image";
 import "./style.css";
 import { useTranslations } from "next-intl";

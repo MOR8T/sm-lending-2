@@ -39,7 +39,7 @@ export default function InfoNavigationBanner({
             alt="info"
             width={322}
             height={322}
-            className="max-w-[322px]"
+            className="md:w-[322px] w-full"
           />
         </div>
       </div>

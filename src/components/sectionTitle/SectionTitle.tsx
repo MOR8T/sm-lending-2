@@ -6,7 +6,7 @@ export default function SectionTitle({
 }: SectionTitleT) {
   return (
     <h1
-      className={`md:display2 md:my-[48px] md:text-[32px] text-[24px] font-semibold my-4 ${className}`}
+      className={`md:display2 md:my-[38px] my-4 md:text-[32px] text-[24px] font-semibold ${className}`}
     >
       {children}
     </h1>

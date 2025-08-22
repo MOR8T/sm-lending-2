@@ -40,6 +40,17 @@ export interface BannerTtype {
   items: oneBannerData[];
 }
 
+export interface oneBlueBannerT {
+  title: string;
+  subTitle: string;
+  href: string;
+  img: StaticImageData;
+}
+
+export interface BlueBannerT {
+  items: oneBlueBannerT[];
+}
+
 export interface ServiceCardT {
   img: StaticImageData;
   text: string;
@@ -119,4 +130,19 @@ export interface CurrencyInputT {
   currency: string | number;
   disabled?: boolean;
   items: MenuProps["items"];
+}
+
+export type CurrencyTypeT = "exchange" | "transfer" | "card";
+export type CurrencySaleT = "purchase" | "sale";
+
+export interface ItemT {
+  value: string;
+  label: string;
+}
+
+export interface ItemsT {
+  onChange: (type: string) => void;
+  value: string;
+  items: ItemT[];
+  size?: "small" | "medium";
 }

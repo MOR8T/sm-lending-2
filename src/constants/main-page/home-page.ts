@@ -14,6 +14,8 @@ import basket from "@/../public/icons/servise/basket.svg";
 import sell from "@/../public/icons/servise/sell.svg";
 import documents from "@/../public/icons/servise/documents.svg";
 
+import bannerImg from "@/../public/images/banners/cash_banner.svg";
+
 export const items = [
   {
     key: "1",
@@ -95,6 +97,33 @@ export const items = [
       alt: "",
     },
     bgColor: "rgb(0,0,0)",
+  },
+];
+
+export const homePageBanner = [
+  {
+    title: "HomePage.banner.title1",
+    subTitle: "HomePage.banner.subTitle1",
+    href: "/",
+    img: bannerImg,
+  },
+  {
+    title: "HomePage.banner.title2",
+    subTitle: "HomePage.banner.subTitle2",
+    href: "/",
+    img: bannerImg,
+  },
+  {
+    title: "HomePage.banner.title3",
+    subTitle: "HomePage.banner.subTitle3",
+    href: "/",
+    img: bannerImg,
+  },
+  {
+    title: "HomePage.banner.title4",
+    subTitle: "HomePage.banner.subTitle4",
+    href: "/",
+    img: bannerImg,
   },
 ];
 

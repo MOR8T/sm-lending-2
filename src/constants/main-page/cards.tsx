@@ -1,4 +1,4 @@
-import piggyBank from "@/../public/images/cards/piggy_bank.png";
+import arrowUp from "@/../public/images/cards/arrowUp.svg";
 import safe from "@/../public/images/cards/safe.svg";
 import creditCards from "@/../public/images/cards/credit-cards.svg";
 import wallet from "@/../public/images/cards/wallet.svg";
@@ -8,7 +8,7 @@ export const mainPCards = [
     title: "homeCards.title1",
     subTitle: "homeCards.subTitle1",
     href: "/",
-    img: piggyBank,
+    img: arrowUp,
   },
   {
     title: "homeCards.title2",
