@@ -10,7 +10,7 @@ export default async function NewsById({
   const locale = await params;
   console.log(locale);
   return (
-    <div className="max-w-[894px] mx-auto px-[24px]">
+    <div className="container-2md">
       <h1 className="md:text-[24px] text-[20px] md:leading-6 leading-5 font-bold text-[#262626]">
         "СТАНДАРТ МОЛИЯ" представляет новый депозит «Пайванд+»: ваши сбережения
         работают на вас!

@@ -40,6 +40,15 @@ code {
   margin-right: auto;
 }
 
+.container-2md {
+  /* margin-inline: auto;
+  padding-inline: 1rem; */
+  width: 100%;
+  max-width: 846;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .swiper-container {
   /* margin-inline: auto;
   padding-inline: 1rem; */
@@ -58,14 +67,20 @@ code {
   }
 }
 
+@media (max-width: 1128) {
+  .container-lg {
+    padding: 0px 24px;
+  }
+}
+
 @media (max-width: 768) {
   .swiper-container {
     padding-right: 0px;
   }
 }
 
-@media (max-width: 1128) {
-  .container-lg {
+@media (max-width: 846) {
+  .container-2md {
     padding: 0px 24px;
   }
 }
