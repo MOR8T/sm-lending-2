@@ -81,9 +81,11 @@ function Header() {
           </ul>
         </div>
         <div className="md:flex items-center hidden ">
-          <button className="cursor-pointer p-[4px_12px] mr-[12px] rounded-[5px] hover:bg-[rgba(0,0,0,0.05)] active:bg-[rgba(0,0,0,0.1)]">
-            <CiSearch className="text-[#595959] text-[20px]" />
-          </button>
+          <Link href="/search">
+            <button className="cursor-pointer p-[4px_12px] mr-[12px] rounded-[5px] hover:bg-[rgba(0,0,0,0.05)] active:bg-[rgba(0,0,0,0.1)]">
+              <CiSearch className="text-[#595959] text-[20px]" />
+            </button>
+          </Link>
           <LocaleSwicherSelect />
         </div>
         <div className="md:hidden flex items-end">
