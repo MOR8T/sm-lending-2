@@ -231,7 +231,7 @@ function CurrencyRate() {
                   <>
                     {el?.[`${type}_purchase`]}
                     {el?.[`${type}_purchase`]
-                      ? el?.[`${type}_purchase`] -
+                      ? (el?.[`${type}_purchase`] || 0) -
                           el?.[`${type}_purchase_difference`] >
                         0
                         ? rateUp
@@ -243,7 +243,8 @@ function CurrencyRate() {
                   <>
                     {el?.[`${type}_sale`]}
                     {el?.[`${type}_sale`]
-                      ? el?.[`${type}_sale`] - el?.[`${type}_sale_difference`] >
+                      ? (el?.[`${type}_sale`] || 0) -
+                          el?.[`${type}_sale_difference`] >
                         0
                         ? rateUp
                         : rateDown

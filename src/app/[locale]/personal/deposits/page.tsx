@@ -53,7 +53,7 @@ export default function Deposits() {
   ];
   return (
     <div className="container">
-      <InfoCards data={data} title="Вклады" />
+      <InfoCards data={data} title="Амонатҳо" />
     </div>
   );
 }

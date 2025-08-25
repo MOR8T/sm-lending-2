@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import Items from "../items/Items";
 import ShowInfo from "../showInfo/ShowInfo";
@@ -20,75 +21,88 @@ const creditsOption = {
       label: "Заррини аҷоиб (26-28)",
       maxMoney: 250000,
       maxMonth: 24,
-      precent: "",
+      precent: 26,
     },
     {
       label: "Заррини (26% TSJ - 20% USD)",
       maxMoney: 250000,
       maxMonth: 36,
-      precent: "",
+      precent: 26,
     },
     {
       label: "Амонат (24% TSJ - 18% USD - 24% RUB)",
       maxMoney: 250000,
       maxMonth: 36,
-      precent: "",
+      precent: 24,
     },
     {
       label: "Дастгирӣ (20-26% TJS / 20-26% USD)",
       maxMoney: 250000,
       maxMonth: 36,
-      precent: "",
+      precent: 0,
     },
     {
       label: "Молҳо ба кредит (насия) (22%)",
       maxMoney: 10000,
       maxMonth: 18,
-      precent: "",
+      precent: 20,
     },
     {
       label: "Ҳамсафари мо (28)",
       maxMoney: 200000,
       maxMonth: 24,
-      precent: "",
+      precent: 28,
     },
     {
       label: "Лаҳза (Овердрафт)",
       maxMoney: 0,
       maxMonth: 3,
-      precent: "",
+      precent: 0,
     },
   ],
   business: [],
 };
 
-export default function CalculateCredit() {
-  const [type, setType] = useState<CreditTypeT>("personal");
+export default function CalculateCredit({
+  isPersonal = true,
+  isBusiness = true,
+}: {
+  isPersonal?: boolean;
+  isBusiness?: boolean;
+}) {
+  const [type, setType] = useState<CreditTypeT>(
+    isPersonal ? "personal" : "business"
+  );
   const [money, setMoney] = useState(10000);
   const [month, setMonth] = useState(6);
   const [creditType, setCreditType] = useState("");
+  const [formModal, setFormModal] = useState(false);
+  const [successModal, setSuccessModal] = useState(false);
+
   return (
     <div className="container">
-      <div className="mb-[12px]">
-        <Items
-          value={type}
-          onChange={(t) => {
-            setType(t as CreditTypeT);
-            if (money > maxMoney[t as CreditTypeT])
-              setMoney(maxMoney[t as CreditTypeT]);
-          }}
-          items={[
-            {
-              label: "Физ. лица",
-              value: "personal",
-            },
-            {
-              label: "Юр. лица",
-              value: "business",
-            },
-          ]}
-        />
-      </div>
+      {isPersonal && isBusiness ? (
+        <div className="mb-[12px]">
+          <Items
+            value={type}
+            onChange={(t) => {
+              setType(t as CreditTypeT);
+              if (money > maxMoney[t as CreditTypeT])
+                setMoney(maxMoney[t as CreditTypeT]);
+            }}
+            items={[
+              {
+                label: "Физ. лица",
+                value: "personal",
+              },
+              {
+                label: "Юр. лица",
+                value: "business",
+              },
+            ]}
+          />
+        </div>
+      ) : null}
       <div className="bg-[#F5F5F5] text-[#141414] md:rounded-[40px] rounded-3xl md:p-10 p-[24px] grid xl:grid-cols-[2fr_1fr] gap-[60px]">
         <div className="grid gap-8">
           <div>
@@ -150,11 +164,21 @@ export default function CalculateCredit() {
             />
             <ShowInfo label="Срок кредита" value={`${month} месяцев`} />
           </div>
-          <ButtonFon className="w-full">Оформить онлайн</ButtonFon>
+          <ButtonFon onClick={() => setFormModal(true)} className="w-full">
+            Оформить онлайн
+          </ButtonFon>
         </div>
       </div>
-      <CreditModal options={creditsOption.personal} />
-      <CreditSuccessModal />
+      <CreditModal
+        open={formModal}
+        setOpen={setFormModal}
+        options={creditsOption.personal}
+        onFinish={() => {
+          setFormModal(false);
+          setSuccessModal(true);
+        }}
+      />
+      <CreditSuccessModal open={successModal} setOpen={setSuccessModal} />
     </div>
   );
 }

@@ -42,17 +42,17 @@ function Footer() {
               <p>ш.Душанбе, кучаи Шевченко 113 </p>
               <TitleWithDesc
                 title="info@sm.tj"
-                description="Для онлайн-обращений"
+                description="Барои дархостҳои онлайн"
               />
             </div>
             <div className="flex flex-col gap-8 max-w-[192px] ">
               <TitleWithDesc
                 title="44-603-20-20"
-                description="Для звонков из любой точки мира"
+                description="Барои зангҳо аз ҳар гӯшаи ҷаҳон"
               />{" "}
               <TitleWithDesc
                 title="+992 44 600 1520"
-                description="Телефон доверия Национального банка Таджикистана для жалоб и обращений"
+                description="Телефони боварии Бонки миллии Тоҷикистон оид ба арзу шикоят"
               />
             </div>
             <div>
@@ -93,17 +93,25 @@ function Footer() {
             </div>
           </div>
           <ul className="md:py-[38px] py-[24px] md:mb-[40px] mb-[24px] md:mt-[60px] mt-[40px] flex flex-wrap md:justify-between md:gap-13 gap-6 border-y border-[rgba(255,255,255,0.1)]">
-            <li>Главная</li>
-            <li> Частным лицам</li>
-            <li>Юридическим лицам</li>
-            <li>О нас</li>
-            <li>Лицензия</li>
-            <li>Реквизиты</li>
+            <Link href="/">
+              <li>Асосӣ</li>
+            </Link>
+            <Link href="/personal">
+              <li> Шахсони воқеӣ</li>
+            </Link>
+            <Link href="/business">
+              <li>Барои шахсони ҳуқуқӣ</li>
+            </Link>
+            <Link href="/about">
+              <li>Дар бораи мо</li>
+            </Link>
+            <li>Иҷозатнома</li>
+            <li>Тафсилот</li>
             <li>Контакты</li>
           </ul>
           <ul className="flex md:gap-13 gap-8 flex-wrap justify-between">
             <li>© 2025</li>
-            <li>№000331 от 8 ноября 2024</li>
+            <li>№000331 аз 8 ноябри соли 2024</li>
           </ul>
         </div>
       </div>

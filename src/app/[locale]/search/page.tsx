@@ -1,11 +1,10 @@
 "use client";
 import CustomPagination from "@/ui/main-page/pagination/CustomPagination";
-import { Pagination } from "antd";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import { CiSearch } from "react-icons/ci";
 
 export default function Deposits() {
-  const t = useTranslations();
+  // const t = useTranslations();
 
   const data = [
     {

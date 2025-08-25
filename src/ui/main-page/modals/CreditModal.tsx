@@ -1,3 +1,4 @@
+"use client";
 import { Modal } from "antd";
 import React from "react";
 import CreditSelect from "../select/CreditSelect";
@@ -7,22 +8,29 @@ import ButtonFon from "../buttons/ButtonFon";
 
 export default function CreditModal({
   options,
+  open,
+  setOpen = () => {},
+  onFinish = () => {},
 }: {
-  option: {
+  options: {
     label: string;
-    maxMoneys: number;
-    minMoney: number;
-    precent: string;
+    maxMoney: number;
+    maxMonth: number;
+    precent: number;
   }[];
+  open: boolean;
+  setOpen: (e: boolean) => void;
+  onFinish: () => void;
 }) {
   return (
     <Modal
-      open={false}
+      open={open}
       closable={false}
       width="783px"
       footer={false}
       style={{ padding: "0px" }}
       className="credit-modal"
+      onCancel={() => setOpen(false)}
     >
       <div className="">
         <div className="grid grid-cols-2 gap-x-6 gap-y-10">
@@ -32,17 +40,27 @@ export default function CreditModal({
           <CreditSelect
             placeholder=""
             value=""
-            items={options}
+            items={options.map((el) => ({
+              label: el.label,
+              key: el.precent,
+            }))}
             className="col-span-2"
           />
           <Input placeholder="Фамилия*" value="" onChange={() => {}} />
           <Input placeholder="Имя*" value="" onChange={() => {}} />
           <Input placeholder="Отчество" value="" onChange={() => {}} />
           {/* <Input placeholder="Регион*" value="" onChange={() => {}} /> */}
-          <CreditSelect placeholder="Регион*" value="" items={options} />
+          <CreditSelect
+            placeholder="Регион*"
+            value=""
+            items={options.map((el) => ({
+              label: el.label,
+              key: el.precent,
+            }))}
+          />
           <div className="grid grid-cols-[2fr_1fr] gap-6 col-span-2">
             <Input placeholder="Номер телефона*" value="" onChange={() => {}} />
-            <ButtonFon>Оформить онлайн</ButtonFon>
+            <ButtonFon onClick={() => onFinish()}>Оформить онлайн</ButtonFon>
           </div>
         </div>
       </div>
