@@ -1,6 +1,6 @@
 export const personal_navbar = [
   {
-    href: "/deposits",
+    href: "/personal/deposits",
     label: "personal.deposits",
   },
   {

@@ -1,8 +1,11 @@
+import { useTranslations } from "next-intl";
+
 export default function BoardOfDirectors() {
+  const t = useTranslations();
   return (
     <div className="container-2md text-[#262626]">
       <h1 className="text-[#262626] text-center md:text-[32px] text-[20px] font-semibold md:mt-[60px] mt-8 md:mb-10 mb-6 ">
-        Совет директоров
+        {t('Subheader.about.board_of_directors')}
       </h1>
       <div className="flex flex-wrap justify-center gap-6">
         <div className="bg-[#F5F5F5] rounded-[12px] border border-[#3980A0] p-[12px] md:w-[265px] w-[327px] md:h-[96px] h-[92px] md:hidden flex flex-col items-center justify-center text-center">

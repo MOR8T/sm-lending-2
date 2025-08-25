@@ -1,8 +1,11 @@
+import { useTranslations } from "next-intl";
+
 export default function Management() {
+  const t = useTranslations();
   return (
     <div className="container-2md text-[#262626]">
       <h1 className="text-[#262626] text-center md:text-[32px] text-[20px] font-semibold md:mt-[60px] mt-8 md:mb-10 mb-6 ">
-        Руководство
+        {t("Subheader.about.management")}
       </h1>
       <div className="flex justify-center">
         <div className="bg-[#F5F5F5] rounded-[12px] border border-[#3980A0] py-[24px] px-[12px] md:w-[294px] w-[327px] md:h-[133px] h-[123px] flex flex-col items-center justify-center text-center">

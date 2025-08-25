@@ -36,12 +36,12 @@ export default function Services() {
         <div className="container-2md md:grid md:grid-cols-2 flex flex-col-reverse ">
           <div className="md:max-w-[347px] md:mx-0 mx-auto flex flex-col justify-center md:items-start items-center md:text-left text-center ">
             <h1 className="text-[#262626] md:text-[32px] text-[20px] font-semibold">
-              Наши услуги
+              Хидматхои мо
             </h1>
             <p className="text-[16px] leading-[16px] mt-[12px]">
-              Мы предлагаем широкий спектр финансовых продуктов и услуг,
-              разработанных для удовлетворения потребностей как физических, так
-              и юридических лиц.
+              Мо доираи васеи маҳсулот ва хидматҳои молиявиро пешниҳод менамоем,
+              ки барои қонеъ кардани эҳтиёҷоти ҳам шахсони воқеӣ ва ҳам
+              соҳибкорон пешбинӣ шудаанд.
             </p>
           </div>
           <div className="flex md:justify-end justify-center">

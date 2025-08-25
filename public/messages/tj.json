@@ -23,7 +23,7 @@
   "Header": {
     "main": "Асосӣ",
     "personal": "Шахсони воқеӣ",
-    "business": "Тиҷорат",
+    "business": "Барои шахсони ҳуқуқӣ",
     "about_us": "Дар бораи мо"
   },
   "Subheader": {
@@ -42,6 +42,13 @@
       "tariffs": "Тарифҳо",
       "online_questionnaire": "Саволномаи онлайн",
       "other_services": "Дигар хидматҳо"
+    },
+    "about": {
+      "about_bank": "Дар бораи бонк",
+      "services": "Хизматҳо",
+      "management": "Идоракунӣ",
+      "board_of_directors": "Шӯрои мудирон",
+      "org_structure": "Сохтори ташкилӣ"
     }
   },
   "Footer": {

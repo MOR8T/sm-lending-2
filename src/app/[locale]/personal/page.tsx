@@ -1,12 +1,8 @@
 "use client";
-import { useTranslations } from "next-intl";
+
+import { personal_navbar } from "@/constants/main-page/header-const";
+import { redirect } from "@/i18n/navigation";
 
 export default function Personal() {
-  const t = useTranslations("HomePage");
-
-  return (
-    <div className="mt-[50px]">
-  
-    </div>
-  );
+  redirect({ href: personal_navbar[0]?.href, locale: "tj" });
 }
