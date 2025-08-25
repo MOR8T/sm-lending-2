@@ -67,14 +67,14 @@ function Header() {
                   activeModule === "2" ? activeModuleClass : ""
                 }`}
               >
-                <Link href={"/personal"}>{t("personal")}</Link>
+                <Link href={"/personal/deposits"}>{t("personal")}</Link>
               </li>
               <li
                 className={`pt-[20px] pb-[20px] mb-[-1px] ${
                   activeModule === "3" ? activeModuleClass : ""
                 }`}
               >
-                <Link href={"/business"}>{t("business")}</Link>
+                <Link href={"/business/deposits"}>{t("business")}</Link>
               </li>
               <li
                 className={`pt-[20px] pb-[20px] mb-[-1px] ${

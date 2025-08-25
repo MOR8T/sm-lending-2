@@ -1,5 +1,4 @@
 "use client";
-
 import { personal_navbar } from "@/constants/main-page/header-const";
 import { redirect } from "@/i18n/navigation";
 

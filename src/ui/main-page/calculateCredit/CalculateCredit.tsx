@@ -149,7 +149,7 @@ export default function CalculateCredit({
             step={1}
           />
         </div>
-        <div className="grid gap-6">
+        <div className="flex flex-col gap-6 justify-between">
           <div className="xl:grid xl:grid-cols-2 flex flex-wrap justify-between grid-flow-row-dense gap-x-6 gap-y-[42px] pt-8">
             <ShowInfo
               label="Ежемесячный платеж"

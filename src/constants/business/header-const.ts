@@ -4,23 +4,23 @@ export const business_navbar = [
     label: "business.deposits",
   },
   {
-    href: "",
+    href: "/business/loans",
     label: "business.loans",
   },
   {
-    href: "",
+    href: "/business/tequirements",
     label: "business.tequirements_for_opening_an_account",
   },
   {
-    href: "",
+    href: "/business/tariffs",
     label: "business.tariffs",
   },
   {
-    href: "",
+    href: "/business/online-questionnaire",
     label: "business.online_questionnaire",
   },
   {
-    href: "",
+    href: "/business/other-services",
     label: "business.other_services",
   },
 ];
