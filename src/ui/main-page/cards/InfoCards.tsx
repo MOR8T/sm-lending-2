@@ -2,6 +2,7 @@ import React from "react";
 import BorderButton from "../buttons/BorderButton";
 import ButtonFon from "../buttons/ButtonFon";
 import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 interface InfoCardsT {
   data: {
@@ -19,6 +20,7 @@ interface InfoCardsT {
 }
 
 export default function InfoCards({ data, className = "", title }: InfoCardsT) {
+  const t = useTranslations();
   return (
     <div className={`mt-10 *:${className}`}>
       <div className="mb-6">
@@ -76,8 +78,8 @@ export default function InfoCards({ data, className = "", title }: InfoCardsT) {
                     </span>
                   </Link>
                   <div className="flex gap-[16px]">
-                    <BorderButton>Подробнее</BorderButton>
-                    <ButtonFon>Оформить</ButtonFon>
+                    <BorderButton>{t("buttons.detail")}</BorderButton>
+                    <ButtonFon>{t("buttons.design")}</ButtonFon>
                   </div>
                 </div>
               </div>
