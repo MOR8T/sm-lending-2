@@ -12,10 +12,12 @@ import { CiSearch } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
 import SubHeader from "./SubHeader";
 import { about_navbar } from "@/constants/about-us/header-const";
+import MenuDrawer from "../menuDrawer/MenuDrawer";
 
 function Header() {
   const t = useTranslations("Header");
   const [activeModule, setActiveModule] = useState("1");
+  const [menu, setMenu] = useState(false);
   const pathname = usePathname();
 
   const activeModuleClass = "border-b border-[#3980A0] text-[#3980A0]";
@@ -92,7 +94,7 @@ function Header() {
             <LocaleSwicherSelect />
           </div>
           <div className="md:hidden flex items-end">
-            <Button type="text" className="p-0">
+            <Button onClick={() => setMenu(true)} type="text" className="p-0">
               <RxHamburgerMenu className="text-[24px] text-[#595959]" />
             </Button>
           </div>
@@ -105,6 +107,7 @@ function Header() {
       ) : (
         <div className="h-10"></div>
       )}
+      <MenuDrawer open={menu} onClose={() => setMenu(false)} />
     </div>
   );
 }

@@ -21,6 +21,7 @@ export default function Reviews({ items }: ReviewsT) {
     }, 7000);
 
     return () => clearInterval(intervalId);
+    // eslint-disable-next-line
   }, [slide]);
 
   return (

@@ -13,11 +13,12 @@ export default function FormNP({
   subTitle,
   inputs,
   buttonSend,
-  rulesOfUse
+  rulesOfUse,
 }: FormNPT) {
   const t = useTranslations(translation);
   const onChange = (key: string, value: string) => {
     setData({ ...data, [key]: value });
+    console.log("urlREQ", urlREQ);
   };
   return (
     <div className=" container flex md:flex-row flex-col md:gap-[127px] gap-[24px] h-auto md:!p-[96px] !py-[40px] !px-[20px]">
@@ -25,7 +26,9 @@ export default function FormNP({
         <h1 className="md:head1 md:text-[38px] text-[22px] md:leading-[38px] leading-[28px] md:text-left text-center  font-bold text-[#FFFFFF]">
           {title}
         </h1>
-        <h2 className="md:bodyBig mb-4.2 text-[#FFFFFF] md:text-left text-center md:text-[18px] md:leading-[24px] text-[16px] leading-[20px]">{subTitle}</h2>
+        <h2 className="md:bodyBig mb-4.2 text-[#FFFFFF] md:text-left text-center md:text-[18px] md:leading-[24px] text-[16px] leading-[20px]">
+          {subTitle}
+        </h2>
       </div>
       <div className="md:max-w-[456px] w-full">
         {inputs.map((e, i) => (
@@ -50,4 +53,3 @@ export default function FormNP({
     </div>
   );
 }
-  

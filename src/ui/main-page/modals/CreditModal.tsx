@@ -33,8 +33,8 @@ export default function CreditModal({
       onCancel={() => setOpen(false)}
     >
       <div className="">
-        <div className="grid grid-cols-2 gap-x-6 gap-y-10">
-          <h1 className="text-[#282828] text-[24px] leading-6 font-bold text-center col-span-2">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10">
+          <h1 className="text-[#282828] text-[24px] leading-6 font-bold text-center md:col-span-2">
             Оформите заявку и получите кредит
           </h1>
           <CreditSelect
@@ -44,7 +44,7 @@ export default function CreditModal({
               label: el.label,
               key: el.precent,
             }))}
-            className="col-span-2"
+            className="md:col-span-2"
           />
           <Input placeholder="Фамилия*" value="" onChange={() => {}} />
           <Input placeholder="Имя*" value="" onChange={() => {}} />
@@ -58,7 +58,7 @@ export default function CreditModal({
               key: el.precent,
             }))}
           />
-          <div className="grid grid-cols-[2fr_1fr] gap-6 col-span-2">
+          <div className="grid md:grid-cols-[2fr_1fr] gap-6 md:col-span-2">
             <Input placeholder="Номер телефона*" value="" onChange={() => {}} />
             <ButtonFon onClick={() => onFinish()}>Оформить онлайн</ButtonFon>
           </div>

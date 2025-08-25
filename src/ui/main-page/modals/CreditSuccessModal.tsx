@@ -27,7 +27,7 @@ export default function CreditSuccessModal({
         <h1 className="text-[#282828] text-[24px] leading-6 font-bold text-center col-span-2">
           Ваша заявка упешно отправлена
         </h1>
-        <ButtonFon>Оформить онлайн</ButtonFon>
+        <ButtonFon onClick={() => setOpen(false)}>Оформить онлайн</ButtonFon>
       </div>
     </Modal>
   );
