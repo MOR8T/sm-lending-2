@@ -12,7 +12,10 @@ import { Avatar } from "antd";
 import { useEffect, useLayoutEffect, useState } from "react";
 import CurrencyInput from "../input/CurrencyInput";
 import { defaultRateTJ } from "@/constants/main-page/home-page";
-import { addZero } from "@/utils/main-page/globalFunction";
+import {
+  addZero,
+  currencyRateFormater,
+} from "@/utils/main-page/globalFunction";
 import { useTranslations } from "next-intl";
 import Items from "../items/Items";
 
@@ -23,7 +26,7 @@ function countCurrency(
   c2: number | null | undefined,
   c3: number | null | undefined
 ) {
-  return +((c1 * (c2 || 0)) / (c3 || 0)).toFixed(2);
+  return +((c1 * (c2 || 0)) / (c3 || 0)).toFixed(4);
 }
 
 function CurrencyRate() {
@@ -225,13 +228,13 @@ function CurrencyRate() {
               ?.map((el) => {
                 const nbt = (
                   <>
-                    {el.nbt}
+                    {currencyRateFormater(el.nbt)}
                     {el.nbt - el.nbt_difference > 0 ? rateUp : rateDown}
                   </>
                 );
                 const purchase = (
                   <>
-                    {el?.[`${type}_purchase`]}
+                    {currencyRateFormater(el?.[`${type}_purchase`])}
                     {el?.[`${type}_purchase`]
                       ? (el?.[`${type}_purchase`] || 0) -
                           el?.[`${type}_purchase_difference`] >
@@ -243,7 +246,7 @@ function CurrencyRate() {
                 );
                 const sale = (
                   <>
-                    {el?.[`${type}_sale`]}
+                    {el?.[`${type}_sale`]?.toFixed(4)}
                     {el?.[`${type}_sale`]
                       ? (el?.[`${type}_sale`] || 0) -
                           el?.[`${type}_sale_difference`] >

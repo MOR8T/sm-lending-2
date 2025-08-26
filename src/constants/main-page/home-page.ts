@@ -119,12 +119,12 @@ export const homePageBanner = [
     href: "/",
     img: bannerImg,
   },
-  {
-    title: "HomePage.banner.title4",
-    subTitle: "HomePage.banner.subTitle4",
-    href: "/",
-    img: bannerImg,
-  },
+  // {
+  //   title: "HomePage.banner.title4",
+  //   subTitle: "HomePage.banner.subTitle4",
+  //   href: "/",
+  //   img: bannerImg,
+  // },
 ];
 
 export const personalCards1 = [

@@ -8,6 +8,7 @@ import { formatNumber } from "@/utils/main-page/globalFunction";
 import CreditSelect from "../select/CreditSelect";
 import CreditModal from "../modals/CreditModal";
 import CreditSuccessModal from "../modals/CreditSuccessModal";
+import { useTranslations } from "next-intl";
 
 type CreditTypeT = "personal" | "business";
 const maxMoney = {
@@ -70,6 +71,7 @@ export default function CalculateCredit({
   isPersonal?: boolean;
   isBusiness?: boolean;
 }) {
+  const t = useTranslations();
   const [type, setType] = useState<CreditTypeT>(
     isPersonal ? "personal" : "business"
   );
@@ -92,11 +94,11 @@ export default function CalculateCredit({
             }}
             items={[
               {
-                label: "Физ. лица",
+                label: t("CalculateCredit.personal"),
                 value: "personal",
               },
               {
-                label: "Юр. лица",
+                label: t("CalculateCredit.business"),
                 value: "business",
               },
             ]}
@@ -125,15 +127,15 @@ export default function CalculateCredit({
                   ),
                 };
               })}
-              label="Тип кредита"
+              label={t("CalculateCredit.creditType")}
             />
           </div>
           <CreditSlider
             value={money}
             onChange={(e) => setMoney(e)}
-            label="Сумма кредита"
+            label={t("CalculateCredit.monthlyPayment")}
             unit="TJS"
-            unit2="сомони"
+            unit2={t("CalculateCredit.somoni")}
             max={maxMoney[type]}
             min={1000}
             step={1000}
@@ -141,9 +143,9 @@ export default function CalculateCredit({
           <CreditSlider
             value={month}
             onChange={(e) => setMonth(e)}
-            label="Срок кредита"
-            unit="месяцев"
-            unit2="месяца"
+            label={t("CalculateCredit.loanTerm")}
+            unit={t("CalculateCredit.theMonth")}
+            unit2={t("CalculateCredit.theMonth")}
             max={36}
             min={1}
             step={1}
@@ -152,20 +154,29 @@ export default function CalculateCredit({
         <div className="flex flex-col gap-6 justify-between">
           <div className="xl:grid xl:grid-cols-2 flex flex-wrap justify-between grid-flow-row-dense gap-x-6 gap-y-[42px] pt-8">
             <ShowInfo
-              label="Ежемесячный платеж"
-              value={`${formatNumber(1034)} сомони`}
+              label={t("CalculateCredit.monthlyPayment")}
+              value={`${formatNumber(1034)} ${t("CalculateCredit.somoni")}`}
               className="xl:col-span-2"
             />
-            <ShowInfo label="Вам понадобится" value="Паспорт РТ" />
-            <ShowInfo label="Вероятность одобрения" value="+50%" />
             <ShowInfo
-              label="Сумма кредита"
-              value={`${formatNumber(money)} сомони`}
+              label={t("CalculateCredit.youNeed")}
+              value={t("CalculateCredit.pasportRT")}
             />
-            <ShowInfo label="Срок кредита" value={`${month} месяцев`} />
+            <ShowInfo
+              label={t("CalculateCredit.probabilityOfOpproval")}
+              value="+50%"
+            />
+            <ShowInfo
+              label={t("CalculateCredit.summOfCredit")}
+              value={`${formatNumber(money)} ${t("CalculateCredit.somoni")}`}
+            />
+            <ShowInfo
+              label={t("CalculateCredit.loanTerm")}
+              value={`${month} ${t("CalculateCredit.theMonth")}`}
+            />
           </div>
           <ButtonFon onClick={() => setFormModal(true)} className="w-full">
-            Оформить онлайн
+            {t("CalculateCredit.applyOnline")}
           </ButtonFon>
         </div>
       </div>

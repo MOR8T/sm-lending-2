@@ -4,6 +4,7 @@ import "./style.css";
 import ButtonFon from "../buttons/ButtonFon";
 import Image from "next/image";
 import successIcon from "@/../public/icons/success.svg";
+import { useTranslations } from "next-intl";
 
 export default function CreditSuccessModal({
   open,
@@ -12,6 +13,7 @@ export default function CreditSuccessModal({
   open: boolean;
   setOpen: (e: boolean) => void;
 }) {
+  const t = useTranslations();
   return (
     <Modal
       open={open}
@@ -25,9 +27,11 @@ export default function CreditSuccessModal({
       <div className="flex flex-col gap-6 items-center">
         <Image src={successIcon} alt="success" width={64} height={64} />
         <h1 className="text-[#282828] text-[24px] leading-6 font-bold text-center col-span-2">
-          Ваша заявка упешно отправлена
+          {t("CalculateCredit.successTitle")}
         </h1>
-        <ButtonFon onClick={() => setOpen(false)}>Оформить онлайн</ButtonFon>
+        <ButtonFon onClick={() => setOpen(false)}>
+          {t("CalculateCredit.well")}
+        </ButtonFon>
       </div>
     </Modal>
   );
