@@ -13,7 +13,7 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import CurrencyInput from "../input/CurrencyInput";
 import { defaultRateTJ } from "@/constants/main-page/home-page";
 import { addZero } from "@/utils/main-page/globalFunction";
-// import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import Items from "../items/Items";
 
 const currenyText = { "810": "Росс. Рубль", "840": "Долл. США", "978": "Евро" };
@@ -27,7 +27,7 @@ function countCurrency(
 }
 
 function CurrencyRate() {
-  // const t = useTranslations();
+  const t = useTranslations();
   const [sale, setSale] = useState<CurrencySaleT>("sale");
   const [type, setType] = useState<CurrencyTypeT>("exchange");
   const [currencyRate, setCurrencyRate] = useState<CurrencyRateT | null>(null);
@@ -47,7 +47,6 @@ function CurrencyRate() {
   //     sale: "purchase",
   //     purchase: "sale",
   //   };
-
   //   switch (rate.currency_num) {
   //     case "1": {
   //       return rate?.[`${type}_${sale_[sale]}`]; //sale_[sale];
@@ -57,6 +56,7 @@ function CurrencyRate() {
   //     }
   //   }
   // }
+
   const getRate = async () => {
     const data: CurrencyRateT | null = await getCurrencyRate();
     const date = new Date();
@@ -190,11 +190,11 @@ function CurrencyRate() {
           onChange={(type) => setType(type as CurrencyTypeT)}
           items={[
             {
-              label: "Касса",
+              label: t("CurrencyRate.cashRegister"),
               value: "exchange",
             },
             {
-              label: "Кошелёк",
+              label: t("CurrencyRate.transfer"),
               value: "transfer",
             },
             // {
@@ -202,7 +202,7 @@ function CurrencyRate() {
             //   value: "3",
             // },
             {
-              label: "Карта",
+              label: t("CurrencyRate.card"),
               value: "card",
             },
           ]}
@@ -212,10 +212,12 @@ function CurrencyRate() {
       <div className="grid xl:grid-cols-[2fr_1fr] gap-6">
         <div className="bg-[#F5F5F5] md:rounded-[40px] rounded-3xl md:p-10 p-[24px_16px] text-center">
           <div className="grid sm:grid-cols-4 grid-cols-[1.5fr_1fr_1fr] md:text-[14px] text-[12px] text-[#8C8C8C] md:gap-[22px] gap-[20px] mb-4">
-            <p className="md:ml-[44px] ml-[36] text-left">Валюта</p>
-            <p className="sm:block hidden">Курс НБТ</p>
-            <p>Покумка</p>
-            <p>Продажа</p>
+            <p className="md:ml-[44px] ml-[36] text-left">
+              {t("CurrencyRate.currency")}
+            </p>
+            <p className="sm:block hidden">{t("CurrencyRate.nbtRate")}</p>
+            <p>{t("CurrencyRate.purchase")}</p>
+            <p>{t("CurrencyRate.sale")}</p>
           </div>
           <div className="overflow-x-hidden grid md:gap-6 gap-[20px] md:max-h-[213px]">
             {currencyRate?.rates
@@ -296,18 +298,22 @@ function CurrencyRate() {
             onChange={(sale) => setSale(sale as CurrencySaleT)}
             items={[
               {
-                label: "Купить",
+                label: t("CurrencyRate.buy"),
                 value: "sale",
               },
               {
-                label: "Продать",
+                label: t("CurrencyRate.sell"),
                 value: "purchase",
               },
             ]}
             size="medium"
           />
           <CurrencyInput
-            label={sale === "sale" ? "Получу" : "Заплачу"}
+            label={
+              sale === "sale"
+                ? t("CurrencyRate.willReceive")
+                : t("CurrencyRate.willPay")
+            }
             value={recive}
             items={reciveItems}
             currency={reciveCurrency?.currency_char_code || ""}
@@ -323,7 +329,11 @@ function CurrencyRate() {
             }}
           />
           <CurrencyInput
-            label={sale !== "sale" ? "Получу" : "Заплачу"}
+            label={
+              sale !== "sale"
+                ? t("CurrencyRate.willReceive")
+                : t("CurrencyRate.willPay")
+            }
             // disabled={true}
             value={pay}
             items={payItems}
