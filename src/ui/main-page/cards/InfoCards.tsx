@@ -3,21 +3,8 @@ import BorderButton from "../buttons/BorderButton";
 import ButtonFon from "../buttons/ButtonFon";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-
-interface InfoCardsT {
-  data: {
-    title: string;
-    description: string;
-    title1: string;
-    subTitle1: string;
-    title2: string;
-    subTitle2: string;
-    title3: string;
-    subTitle3: string;
-  }[];
-  className?: string;
-  title: string;
-}
+import { InfoCardsT } from "@/types/main-page/ui/cards";
+import Image from "next/image";
 
 export default function InfoCards({ data, className = "", title }: InfoCardsT) {
   const t = useTranslations();
@@ -29,13 +16,23 @@ export default function InfoCards({ data, className = "", title }: InfoCardsT) {
         </h1>
       </div>
       <div className={` grid gap-10`}>
-        {data.map((el) => {
+        {data.map((el, i) => {
           return (
             <div
               key={el.title}
               className="bg-[#F0F0F0] rounded-[24px] lg:p-[38px_48px_38px_24px] p-[38px_24px] grid lg:grid-cols-[387px_1fr] grid-cols-1 gap-6"
             >
-              <div className="w-full h-[230px] rounded-[16px] bg-white"></div>
+              <div className="max-w-[387px] w-full max-h-[230px] mx-auto rounded-[16px] bg-white overflow-hidden">
+                {el.img ? (
+                  <Image
+                    src={el.img}
+                    alt={`card ${i}`}
+                    width={387}
+                    height={258}
+                    className="w-full h-auto"
+                  />
+                ) : null}
+              </div>
               <div className="flex flex-col justify-between lg:gap-2 gap-6">
                 <div>
                   <h3 className="text-[#262626] text-[24px] font-semibold mb-1">
@@ -71,13 +68,13 @@ export default function InfoCards({ data, className = "", title }: InfoCardsT) {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-between items-center gap-4">
+                <div className="md:flex md:justify-between md:items-center grid grid-cols-1 gap-4">
                   <Link href="">
                     <span className="text-[#595959] text-[16px]">
-                      Остались вопросы?
+                      {t("buttons.haveQuestion")}
                     </span>
                   </Link>
-                  <div className="flex gap-[16px]">
+                  <div className="md:flex grid sm:grid-cols-2 gap-[16px]">
                     <BorderButton>{t("buttons.detail")}</BorderButton>
                     <ButtonFon>{t("buttons.design")}</ButtonFon>
                   </div>
