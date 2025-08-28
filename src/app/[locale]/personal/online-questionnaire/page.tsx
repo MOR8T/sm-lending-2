@@ -1,6 +1,7 @@
 import Image from "next/image";
 import bank_image from "@/../public/images/online-questionnaire/1.svg";
 import { useTranslations } from "next-intl";
+import OnlineQuestionnaireForm from "@/ui/main-page/form/OnlineQuestionnaireForm";
 
 export default function OnlineQuestionnaire() {
   const t = useTranslations("OnlineQuestionnaire");
@@ -28,7 +29,9 @@ export default function OnlineQuestionnaire() {
           </div>
         </div>
       </div>
-      <div className="container-2md md:mt-[60px] mt-[40px]"></div>
+      <div className="container-2md md:mt-[60px] mt-[40px]">
+        <OnlineQuestionnaireForm />
+      </div>
     </div>
   );
 }
