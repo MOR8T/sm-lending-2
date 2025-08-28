@@ -16,7 +16,7 @@ export default function InDevelopment() {
           <h1 className="md:text-[40px] text-[20px] font-bold text-[#282828] mb-8">
             {t("InDevelopment.title")}
           </h1>
-          <NotFoundButton>{t("buttons.toMainPage")}</NotFoundButton>
+          <NotFoundButton>Перейти на главную</NotFoundButton>
         </div>
         <div className="flex md:justify-end md:max-w-0 max-w-[200px]">
           <Image src={img_404} alt="404" width={400} height={416} />
