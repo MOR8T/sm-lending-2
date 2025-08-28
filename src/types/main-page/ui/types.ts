@@ -154,3 +154,14 @@ export interface CreditSelectT {
   className?: string;
   placeholder?: string;
 }
+
+export interface InfoTablesT {
+  data: {
+    title: string;
+    tables: {
+      description: string;
+      requirement: string;
+      dataSource: { key: string; service: string; contract: string }[];
+    }[];
+  }[];
+}

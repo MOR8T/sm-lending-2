@@ -1,0 +1,9 @@
+.info-table .ant-table-thead tr th {
+  background: #f1f9fa !important;
+}
+
+.info-table .ant-table-container {
+  border-start-start-radius: 50px !important;
+  border-start-end-radius: 50px !important;
+}
+
