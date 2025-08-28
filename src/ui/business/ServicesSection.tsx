@@ -31,7 +31,7 @@ export default function ServicesSection({
         {cards.map((card, i) => (
           <div
             key={i}
-            className={` px-[24px] py-[24px] relative md:py-[40px] md:px-[32px] md:!rounded-[24px] !rounded-2xl text-gray-900 flex flex-col gap-[18px] transition-all duration-300  hover:scale-[1.02] ${stylesServicesSection[i].div}`}
+            className={` px-[24px] py-[24px] relative md:py-[40px] md:px-[32px] md:!rounded-3xl !rounded-2xl text-gray-900 flex flex-col gap-[18px] transition-all duration-300  hover:scale-[1.02] ${stylesServicesSection[i].div}`}
           >
             <h1
               className={`md:text-[22px] md:leading-7 md:m-0 leading-[1.25rem] text-[16px] md:font-bold  ${stylesServicesSection[i].h1}`}

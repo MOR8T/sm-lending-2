@@ -105,7 +105,7 @@ export default function CalculateCredit({
           />
         </div>
       ) : null}
-      <div className="bg-[#F5F5F5] text-[#141414] md:rounded-[40px] rounded-3xl md:p-10 p-[24px] grid xl:grid-cols-[2fr_1fr] gap-[60px]">
+      <div className="bg-[#F5F5F5] text-[#141414] md:rounded-[40px] rounded-3xl md:p-10 p-[24px] grid xl:grid-cols-[2fr_1fr] md:gap-[60px] gap-6">
         <div className="grid gap-8">
           <div>
             <CreditSelect
@@ -152,7 +152,7 @@ export default function CalculateCredit({
           />
         </div>
         <div className="flex flex-col gap-6 justify-between">
-          <div className="xl:grid xl:grid-cols-2 flex flex-wrap justify-between grid-flow-row-dense gap-x-6 gap-y-[42px] pt-8">
+          <div className="xl:grid xl:grid-cols-2 flex md:flex-row flex-col flex-wrap justify-between grid-flow-row-dense gap-x-6 md:gap-y-[42px] gap-y-6 pt-8">
             <ShowInfo
               label={t("CalculateCredit.monthlyPayment")}
               value={`${formatNumber(1034)} ${t("CalculateCredit.somoni")}`}
@@ -175,7 +175,7 @@ export default function CalculateCredit({
               value={`${month} ${t("CalculateCredit.theMonth")}`}
             />
           </div>
-          <ButtonFon onClick={() => setFormModal(true)} className="w-full">
+          <ButtonFon onClick={() => setFormModal(true)} className="w-full p-[16px_4px] grid place-content-center">
             {t("CalculateCredit.applyOnline")}
           </ButtonFon>
         </div>

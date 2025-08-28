@@ -14,7 +14,7 @@ export default function CardsRow({
       {cards.map((card, i) => (
         <div
           key={i}
-          className="bg-[#F4FBF9] relative pt-[40px] px-[32px] rounded-[24px] md:w-[360px] md:h-[424px] h-[328px] w-full text-gray-900 flex flex-col md:gap-[18px] gap-[8px]"
+          className="bg-[#F4FBF9] relative pt-[40px] px-[32px] rounded-3xl md:w-[360px] md:h-[424px] h-[328px] w-full text-gray-900 flex flex-col md:gap-[18px] gap-[8px]"
         >
           <h1 className="text-[22px] leading-7 font-bold">{t(card.title)}</h1>
           <h2 className="leading-[1.5]">{t(card.subTitle)}</h2>

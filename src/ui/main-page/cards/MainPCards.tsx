@@ -43,7 +43,7 @@ export default function MainPCards({ cards }: MainPCardsT) {
         {cards.map((card) => (
           <SwiperSlide
             key={card.title}
-            className="bg-[#F5F5F5] rounded-[24px] overflow-hidden"
+            className="bg-[#F5F5F5] rounded-3xl overflow-hidden"
           >
             <Link
               href={card.href}

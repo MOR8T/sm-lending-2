@@ -28,17 +28,17 @@ export default function MoneyTrasferCards({
                   alt={`transfer ${i}`}
                   width={200}
                   height={200}
-                  className="max-w-[200px] w-full max-h-[200px] h-full md:mx-0 mx-auto"
+                  className="md:max-w-[200px] max-w-[120px] w-full md:max-h-[200px] max-h-[120px] h-full md:mx-0 mx-auto"
                 />
               </div>
-              <div className="md:p-[14.5px_24px] p-6 flex flex-col justify-between gap-3">
+              <div className="md:p-[14.5px_24px] p-[12px_24px_24px_24px] flex flex-col justify-between gap-3">
                 <h2 className="text-[#141414] text-[24px] leading-6 font-semibold">
                   {el.title}
                 </h2>
                 <p className="text-[#595959] text-[16px] leading-[24px] limitText3">
                   {el.description}
                 </p>
-                <BorderButton className="max-w-[137px]">
+                <BorderButton className="md:max-w-[137px]">
                   {t("buttons.detail")}
                 </BorderButton>
               </div>

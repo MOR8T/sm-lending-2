@@ -63,7 +63,6 @@ export default function CreditModal({
             value=""
             onChange={() => {}}
           />
-          {/* <Input placeholder="Регион*" value="" onChange={() => {}} /> */}
           <CreditSelect
             placeholder={t("CalculateCredit.region") + "*"}
             value=""

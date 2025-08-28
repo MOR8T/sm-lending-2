@@ -9,7 +9,7 @@ export default function Deposits() {
   const t = useTranslations();
 
   return (
-    <div className="container">
+    <div>
       <SectionTitle className="container">
         {t("HomePage.calculateCredit")}
       </SectionTitle>
@@ -17,7 +17,7 @@ export default function Deposits() {
       <InfoCards
         data={loansData}
         title="Қарзҳо"
-        className="md:mt-[80px] mt-[40px]"
+        className="md:mt-[80px] mt-[40px] container"
       />
     </div>
   );

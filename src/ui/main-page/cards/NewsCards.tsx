@@ -41,7 +41,7 @@ export default function NewsCards({ cards }: NewsCardsT) {
       >
         {cards.map((card) => (
           <SwiperSlide key={card.title} className="p-[2px]">
-            <div className="bg-[#fff] rounded-[24px] border border-b border-[#D9D9D9] h-[281px]">
+            <div className="bg-[#fff] rounded-3xl border border-b border-[#D9D9D9] h-[281px]">
               <div className="flex flex-col gap-4 justify-between md:p-10 p-6 w-full h-[280px] ">
                 <div>
                   <h1 className="text-[#141414] md:text-[24px] text-[20px] md:leading-6 leading-[21px] font-bold limitText3">
