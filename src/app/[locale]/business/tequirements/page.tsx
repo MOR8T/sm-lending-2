@@ -1,3 +1,9 @@
+import InDevelopment from "@/ui/main-page/in-development/InDevelopment";
+
 export default function Tequirements() {
-  return <div className="container">Tequirements</div>;
+  return (
+    <div className="container">
+      <InDevelopment />
+    </div>
+  );
 }

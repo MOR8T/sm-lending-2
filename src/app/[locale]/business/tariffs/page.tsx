@@ -1,3 +1,9 @@
+import InDevelopment from "@/ui/main-page/in-development/InDevelopment";
+
 export default function Tariffs() {
-  return <div className="container">Tariffs</div>;
+  return (
+    <div className="container">
+      <InDevelopment />
+    </div>
+  );
 }

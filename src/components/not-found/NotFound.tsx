@@ -6,18 +6,18 @@ import "./style.css";
 import { useTranslations } from "next-intl";
 
 export default function NotFound() {
-  const t = useTranslations("notFound");
+  const t = useTranslations();
   return (
     <div className="" style={{ minHeight: "calc(100vh-50px)" }}>
       <div className="container md:grid md:grid-cols-2 flex flex-col-reverse md:gap-4 gap-10 items-center pt-[100px] pb-[32px]">
         <div className="max-w-[441px]">
           <h1 className="md:text-[32px] text-[20px] font-bold text-[#282828]">
-            {t("title")}
+            {t("notFound.title")}
           </h1>
           <p className="md:text-[22px] text-[16px] text-[#A9A9A9] mt-3 mb-6">
-            {t("subTitle")}
+            {t("notFound.subTitle")}
           </p>
-          <NotFoundButton>{t("button")}</NotFoundButton>
+          <NotFoundButton>{t("buttons.toMainPage")}</NotFoundButton>
         </div>
         <Image src={img_404} alt="404" width={565} height={416} />
       </div>
