@@ -27,7 +27,7 @@ export default function About() {
       </div>
       <div className="container-2md md:mt-[60px] mt-[40px]">
         <h2 className="text-[#262626] md:text-[24px] text-[20px] leading-5 mb-6 font-semibold">
-          Миссияи СТАНДАРТ МОЛИЯ
+          Ҳадафҳои "СТАНДАРТ МОЛИЯ"
         </h2>
         <div>
           <p className="text-[16px] leading-6">
