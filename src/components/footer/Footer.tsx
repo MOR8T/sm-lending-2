@@ -52,7 +52,7 @@ function Footer() {
               />{" "}
               <TitleWithDesc
                 title="+992 44 600 1520"
-                description="Телефони боварии Бонки миллии Тоҷикистон оид ба арзу шикоят"
+                description="Телефони боварии Бонки миллии Тоҷикистон"
               />
             </div>
             <div>
@@ -96,11 +96,11 @@ function Footer() {
             <Link href="/">
               <li>Асосӣ</li>
             </Link>
-            <Link href="/personal">
+            <Link href="/personal/deposits">
               <li> Шахсони воқеӣ</li>
             </Link>
-            <Link href="/business">
-              <li>Барои шахсони ҳуқуқӣ</li>
+            <Link href="/business/deposits">
+              <li>Шахсони ҳуқуқӣ</li>
             </Link>
             <Link href="/about">
               <li>Дар бораи мо</li>
@@ -108,6 +108,7 @@ function Footer() {
             <li>Иҷозатнома</li>
             <li>Тафсилот</li>
             <li>Контакты</li>
+            <li>Вазифаҳои холӣ</li>
           </ul>
           <ul className="flex md:gap-13 gap-8 flex-wrap justify-between">
             <li>© 2025</li>
