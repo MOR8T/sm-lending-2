@@ -22,9 +22,9 @@ export default function DownloadFile({
     <div className={`mt-[30px] ${className}`}>
       <a
         href={href}
-        target="_blank"
+        // target="_blank"
         download={download}
-        rel="noopener noreferrer"
+        // rel="noopener noreferrer"
       >
         <div className="max-w-[193px] h-[221px] border-[2px] border-[#F0F0F0] rounded-[12px] p-[24px_20px] flex flex-col justify-between">
           <div className="flex flex-col justify-center items-center gap-4">

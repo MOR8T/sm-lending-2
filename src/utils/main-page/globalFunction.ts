@@ -26,6 +26,7 @@ export function calculateAnnuityPayment(
   annualRate: number, // годовая ставка в процентах (например 18 для 18%)
   months: number // количество месяцев
 ): number {
+  if (annualRate === 0) return 0;
   const monthlyRate = annualRate / 12 / 100;
 
   if (monthlyRate === 0) {
@@ -36,5 +37,5 @@ export function calculateAnnuityPayment(
     (principal * (monthlyRate * Math.pow(1 + monthlyRate, months))) /
     (Math.pow(1 + monthlyRate, months) - 1);
 
-  return Math.round(payment); // округляем до целого
+  return +Math.round(payment).toFixed(2); // округляем до целого
 }

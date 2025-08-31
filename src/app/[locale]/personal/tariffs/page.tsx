@@ -13,7 +13,7 @@ export default function Tariffs() {
       </h1>
       <InfoTables data={infoTableData} />
       <DownloadFile
-        href={`${process.env.VERCEL_PROJECT_PRODUCTION_URL}assets/personal_tariffs_document.pdf`}
+        href={`/personal_tariffs_document.pdf`}
         docname={t("Tariffs.title")}
         size="5.38 Mb"
         download="Тарофаи СМ барои Шахсони воқеӣ.pdf"

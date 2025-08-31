@@ -4,6 +4,8 @@ import Input from "../input/Input";
 import ButtonFon from "../buttons/ButtonFon";
 import { Link } from "@/i18n/navigation";
 import TextArea from "../input/TextArea";
+import FastVarivifationModal from "../modals/FastVarivifationModal";
+import { useState } from "react";
 
 interface OpenAnAccountFormT {
   className?: string;
@@ -13,8 +15,11 @@ export default function OnlineQuestionnaireForm({
   className = "",
 }: OpenAnAccountFormT) {
   const t = useTranslations();
+  const [fastVerificationModal, setFastVerificationModal] = useState(false);
 
-  function onFinish() {}
+  function onFinish() {
+    setFastVerificationModal(true);
+  }
 
   return (
     <div
@@ -149,6 +154,10 @@ export default function OnlineQuestionnaireForm({
           </p>
         </div>
       </div>
+      <FastVarivifationModal
+        open={fastVerificationModal}
+        setOpen={setFastVerificationModal}
+      />
     </div>
   );
 }
