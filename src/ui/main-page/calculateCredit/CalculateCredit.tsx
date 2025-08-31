@@ -4,7 +4,10 @@ import Items from "../items/Items";
 import ShowInfo from "../showInfo/ShowInfo";
 import ButtonFon from "../buttons/ButtonFon";
 import CreditSlider from "../slider/CreditSlider";
-import { formatNumber } from "@/utils/main-page/globalFunction";
+import {
+  calculateAnnuityPayment,
+  formatNumber,
+} from "@/utils/main-page/globalFunction";
 import CreditSelect from "../select/CreditSelect";
 import CreditModal from "../modals/CreditModal";
 import CreditSuccessModal from "../modals/CreditSuccessModal";
@@ -19,37 +22,37 @@ const maxMoney = {
 const creditsOption = {
   personal: [
     {
-      label: "Заррини аҷоиб (26-28)",
+      label: "Заррини аҷоиб (26%)",
       maxMoney: 250000,
       maxMonth: 24,
       precent: 26,
     },
     {
-      label: "Заррини (26% TSJ - 20% USD)",
+      label: "Заррини (26%)",
       maxMoney: 250000,
       maxMonth: 36,
       precent: 26,
     },
     {
-      label: "Амонат (24% TSJ - 18% USD - 24% RUB)",
+      label: "Амонат (24%)",
       maxMoney: 250000,
       maxMonth: 36,
       precent: 24,
     },
     {
-      label: "Дастгирӣ (20-26% TJS / 20-26% USD)",
+      label: "Дастгирӣ (20%)",
       maxMoney: 250000,
       maxMonth: 36,
-      precent: 0,
+      precent: 20,
     },
     {
       label: "Молҳо ба кредит (насия) (22%)",
       maxMoney: 10000,
       maxMonth: 18,
-      precent: 20,
+      precent: 22,
     },
     {
-      label: "Ҳамсафари мо (28)",
+      label: "Ҳамсафари мо (28%)",
       maxMoney: 200000,
       maxMonth: 24,
       precent: 28,
@@ -77,7 +80,12 @@ export default function CalculateCredit({
   );
   const [money, setMoney] = useState(10000);
   const [month, setMonth] = useState(6);
-  const [creditType, setCreditType] = useState("");
+  const [creditType, setCreditType] = useState<{
+    label: string;
+    maxMoney: number;
+    maxMonth: number;
+    precent: number;
+  } | null>(null);
   const [formModal, setFormModal] = useState(false);
   const [successModal, setSuccessModal] = useState(false);
 
@@ -109,17 +117,17 @@ export default function CalculateCredit({
         <div className="grid gap-8">
           <div>
             <CreditSelect
-              value={creditType}
+              value={creditType?.label || ""}
               items={creditsOption?.["personal"].map((el) => {
                 return {
                   onClick: () => {
-                    setCreditType(el.label);
+                    setCreditType(el);
                   },
                   key: el.label,
                   label: (
                     <button
                       className={`md:text-[16px] text-[18px] text-left w-full ${
-                        creditType === "type" ? "text-[#3980A0]" : ""
+                        creditType?.label === el.label ? "text-[#3980A0]" : ""
                       }`}
                     >
                       {el.label}
@@ -155,17 +163,21 @@ export default function CalculateCredit({
           <div className="xl:grid xl:grid-cols-2 flex md:flex-row flex-col flex-wrap justify-between grid-flow-row-dense gap-x-6 md:gap-y-[42px] gap-y-6 pt-8">
             <ShowInfo
               label={t("CalculateCredit.monthlyPayment")}
-              value={`${formatNumber(1034)} ${t("CalculateCredit.somoni")}`}
+              value={`${calculateAnnuityPayment(
+                money,
+                creditType?.precent || 0,
+                month
+              )} ${t("CalculateCredit.somoni")}`}
               className="xl:col-span-2"
             />
             <ShowInfo
               label={t("CalculateCredit.youNeed")}
               value={t("CalculateCredit.pasportRT")}
             />
-            <ShowInfo
+            {/* <ShowInfo
               label={t("CalculateCredit.probabilityOfOpproval")}
               value="+50%"
-            />
+            /> */}
             <ShowInfo
               label={t("CalculateCredit.summOfCredit")}
               value={`${formatNumber(money)} ${t("CalculateCredit.somoni")}`}
@@ -175,7 +187,10 @@ export default function CalculateCredit({
               value={`${month} ${t("CalculateCredit.theMonth")}`}
             />
           </div>
-          <ButtonFon onClick={() => setFormModal(true)} className="w-full p-[16px_4px] grid place-content-center">
+          <ButtonFon
+            onClick={() => setFormModal(true)}
+            className="w-full p-[16px_4px] grid place-content-center"
+          >
             {t("CalculateCredit.applyOnline")}
           </ButtonFon>
         </div>

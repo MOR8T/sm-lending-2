@@ -10,6 +10,7 @@ import infoBanner from "@/../public/images/banners/bank_info_banner.svg";
 import { homePageBanner } from "@/constants/main-page/home-page";
 import BlueBanner from "@/components/banner/BlueBanner";
 import CalculateCredit from "@/ui/main-page/calculateCredit/CalculateCredit";
+import HelpSectionInfo from "@/components/sectionInfo/HelpSectionInfo";
 
 export default function HomePage() {
   const t = useTranslations("");
@@ -41,6 +42,8 @@ export default function HomePage() {
       <div className="pt-[20px]"></div>
       <SectionTitle className="container">{t("HomePage.news")}</SectionTitle>
       <NewsCards cards={newsCards} />
+      <SectionTitle className="container">{t("HomePage.infoForHelp")}</SectionTitle>
+      <HelpSectionInfo/>
     </div>
   );
 }
