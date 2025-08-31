@@ -1,8 +1,11 @@
 import Image from "next/image";
 import services_image from "@/../public/images/bank_services.svg";
 import service_icon from "@/../public/icons/bank_service_icon.svg";
+import SectionInfo from "@/components/sectionInfo/SectionInfo";
+import { useTranslations } from "next-intl";
 
 export default function Services() {
+  const t = useTranslations("Services");
   const data = [
     {
       title: "Ҷалби амонат ва пасандозҳои шахсони воқеӣ ва ҳуқуқӣ;",
@@ -32,29 +35,13 @@ export default function Services() {
   ];
   return (
     <div className="text-[#595959]">
-      <div className="w-full bg-[#DBECF2] py-5">
-        <div className="container-2md md:grid md:grid-cols-2 flex flex-col-reverse ">
-          <div className="md:max-w-[347px] md:mx-0 mx-auto flex flex-col justify-center md:items-start items-center md:text-left text-center ">
-            <h1 className="text-[#262626] md:text-[32px] text-[20px] font-semibold">
-              Хизматрасониҳои мо
-            </h1>
-            <p className="text-[16px] leading-[16px] mt-[12px]">
-              Мо доираи васеи маҳсулот ва хизматрасониҳои молиявиро пешниҳод менамоем,
-              ки барои қонеъ кардани эҳтиёҷоти ҳам шахсони воқеӣ ва ҳам
-              соҳибкорон пешбинӣ шудаанд.
-            </p>
-          </div>
-          <div className="flex md:justify-end justify-center">
-            <Image
-              src={services_image}
-              alt="bank"
-              width={343}
-              height={280}
-              className="md:w-[343px] md:h-[280px] w-[200px] h-[200px]"
-            />
-          </div>
-        </div>
-      </div>
+      <SectionInfo
+        title={t("title")}
+        description={t("description")}
+        img={services_image}
+        textMaxWidth="max-w-[347px]"
+        className="md:py-5 py-5"
+      />
       <div className="container-lg05 md:mt-[80px] mt-[41px] grid md:grid-cols-2 gap-6">
         {data.map((el) => {
           return (

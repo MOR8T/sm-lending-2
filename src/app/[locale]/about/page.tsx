@@ -1,30 +1,19 @@
-import Image from "next/image";
+"use client";
 import bank_image from "@/../public/images/bank_with_location.svg";
+import SectionInfo from "@/components/sectionInfo/SectionInfo";
+import { useTranslations } from "next-intl";
 
 export default function About() {
+  const t = useTranslations("About");
+
   return (
     <div className="text-[#595959]">
-      <div className="w-full bg-[#DBECF2] md:py-8 py-10">
-        <div className="container-2md md:grid md:grid-cols-2 flex flex-col-reverse gap-10">
-          <div className="max-w-[347px] md:mx-0 mx-auto flex flex-col justify-center md:items-start items-center md:text-left text-center ">
-            <h1 className="text-[#262626] md:text-[32px] text-[20px] font-semibold">
-              ҶДММ ТАҚХ “СТАНДАРТ МОЛИЯ”
-            </h1>
-            <p className="text-[16px] leading-[16px] mt-[12px]">
-              Дастрасии аҳолӣ ба ҳисоббаробаркуниҳои ғайринақдӣ ва рушди рақамӣ.
-            </p>
-          </div>
-          <div className="flex md:justify-end justify-center">
-            <Image
-              src={bank_image}
-              alt="bank"
-              width={326}
-              height={258}
-              className="md:w-[326px] md:h-[258px] w-[200px] h-[200px]"
-            />
-          </div>
-        </div>
-      </div>
+      <SectionInfo
+        title={t("title")}
+        description={t("description")}
+        img={bank_image}
+        textMaxWidth="max-w-[347px]"
+      />
       <div className="container-2md md:mt-[60px] mt-[40px]">
         <h2 className="text-[#262626] md:text-[24px] text-[20px] leading-5 mb-6 font-semibold">
           {'Ҳадафҳои "СТАНДАРТ МОЛИЯ"'}

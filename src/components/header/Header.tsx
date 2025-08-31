@@ -102,7 +102,7 @@ function Header() {
       </div>
       {activeModule !== "1" ? (
         <div className="border-b border-b-gray-300">
-          <SubHeader data={navbars[activeModule]} />{" "}
+          <SubHeader data={navbars[activeModule]} />
         </div>
       ) : (
         <div className="h-10"></div>
