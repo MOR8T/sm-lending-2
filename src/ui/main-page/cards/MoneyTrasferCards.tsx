@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import SectionTitle from "@/components/sectionTitle/SectionTitle";
 import { MoneyTrasferCardsT } from "@/types/main-page/ui/cards";
+import { Link } from "@/i18n/navigation";
 
 export default function MoneyTrasferCards({
   className = "",
@@ -38,9 +39,11 @@ export default function MoneyTrasferCards({
                 <p className="text-[#595959] text-[16px] leading-[24px] limitText3">
                   {el.description}
                 </p>
-                <BorderButton className="md:max-w-[137px]">
-                  {t("buttons.detail")}
-                </BorderButton>
+                <Link href={`/personal/money_transfer/${i}`}>
+                  <BorderButton className="md:max-w-[137px]">
+                    {t("buttons.detail")}x
+                  </BorderButton>
+                </Link>
               </div>
             </div>
           );
