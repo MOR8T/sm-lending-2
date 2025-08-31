@@ -102,11 +102,13 @@ function Footer() {
             <Link href="/business/deposits">
               <li>Шахсони ҳуқуқӣ</li>
             </Link>
-            <Link href="/about">
+            <Link href="/about/about">
               <li>Дар бораи мо</li>
             </Link>
             <li>Иҷозатнома</li>
-            <li>Тафсилот</li>
+            <Link href="/about/details">
+              <li>Тафсилот</li>
+            </Link>
             <li>Контакты</li>
             <li>Вазифаҳои холӣ</li>
           </ul>

@@ -1,6 +1,6 @@
 export const about_navbar = [
   {
-    href: "/about",
+    href: "/about/about",
     label: "about.about_bank",
   },
   {
@@ -18,5 +18,9 @@ export const about_navbar = [
   {
     href: "/about/structure",
     label: "about.org_structure",
+  },
+  {
+    href: "/about/details",
+    label: "about.details",
   },
 ];

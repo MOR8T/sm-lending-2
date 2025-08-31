@@ -49,7 +49,8 @@
       "services": "Хизматрасонӣ",
       "management": "Мақоми иҷроия",
       "board_of_directors": "Шӯрои нозирон",
-      "org_structure": "Сохтори ташкилӣ"
+      "org_structure": "Сохтори ташкилӣ",
+      "details": "Тафсилот"
     }
   },
   "Footer": {

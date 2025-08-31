@@ -81,7 +81,7 @@ function Header() {
                   activeModule === "4" ? activeModuleClass : ""
                 }`}
               >
-                <Link href={"/about"}>{t("about_us")}</Link>
+                <Link href={"/about/about"}>{t("about_us")}</Link>
               </li>
             </ul>
           </div>

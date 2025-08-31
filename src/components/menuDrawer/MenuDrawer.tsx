@@ -43,21 +43,21 @@ export default function MenuDrawer({ open, onClose }: Props) {
           <span className="text-[#1F2937]">{t("main")}</span>
         </Link>
         <Link
-          href="/personal"
+          href="/personal/deposits"
           className="text-[#1F2937] text-xl font-medium"
           onClick={onClose}
         >
           <span className="text-[#1F2937]">{t("personal")}</span>
         </Link>
         <Link
-          href="/business"
+          href="/business/deposits"
           className="text-[#1F2937] text-xl font-medium"
           onClick={onClose}
         >
           <span className="text-[#1F2937]">{t("business")}</span>
         </Link>
         <Link
-          href="/about"
+          href="/about/about"
           className="text-[#1F2937] text-xl font-medium"
           onClick={onClose}
         >
