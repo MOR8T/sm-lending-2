@@ -19,8 +19,8 @@ export const business_navbar = [
     href: "/business/online-questionnaire",
     label: "business.online_questionnaire",
   },
-  {
-    href: "/business/other-services",
-    label: "business.other_services",
-  },
+  // {
+  //   href: "/business/other-services",
+  //   label: "business.other_services",
+  // },
 ];
