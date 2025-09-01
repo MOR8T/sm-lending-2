@@ -1,6 +1,6 @@
-import image1 from "@/../public/images/deposits/1.svg";
+// import image1 from "@/../public/images/deposits/1.svg";
 import image2 from "@/../public/images/deposits/2.svg";
-import image3 from "@/../public/images/deposits/3.svg";
+// import image3 from "@/../public/images/deposits/3.svg";
 import image4 from "@/../public/images/deposits/4.svg";
 
 export const depositsData = [
