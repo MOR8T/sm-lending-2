@@ -78,7 +78,7 @@ function Footer() {
                   />
                 </div>
               </div>
-              <div className="">
+              <div className="mt-8">
                 <p>Соцмедиа</p>
                 <div className="flex flex-wrap gap-8 mt-[12px]">
                   {footerLinks.map((el) => {
@@ -93,6 +93,15 @@ function Footer() {
                       </Link>
                     );
                   })}
+                </div>
+                <div className="mt-8">
+                  <a
+                    href="/Тартиби_кор_бо_истеъмолкунандагони_СМ.pdf"
+                    download
+                    className="underline"
+                  >
+                    Ҳуқуқи истеъмолкунанда
+                  </a>
                 </div>
               </div>
             </div>
