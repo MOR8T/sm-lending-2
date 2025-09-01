@@ -58,7 +58,7 @@ function Footer() {
             <div>
               <div>
                 <p>Ҳамёни мобилӣ</p>
-                <div className="flex gap-[5px] my-[10px]">
+                <div className="flex flex-wrap gap-[14px] my-[10px]">
                   <a
                     href="https://play.google.com/store/apps/details?id=com.smart.mobile_banking&hl=ru"
                     target="_blank"
@@ -66,16 +66,16 @@ function Footer() {
                     <Image
                       src={googlePlay}
                       alt="google_play"
-                      width={150}
+                      width={128}
                       height={44}
                     />
                   </a>
-                  <Image
+                  {/* <Image
                     src={appStore}
                     alt="app_store"
-                    width={136}
-                    height={40}
-                  />
+                    width={128}
+                    height={44}
+                  /> */}
                 </div>
               </div>
               <div className="mt-8">
