@@ -68,18 +68,31 @@ function CurrencyRate() {
     )}-${date.getFullYear()} ${addZero(date.getHours())}:${addZero(
       date.getMinutes()
     )}:${addZero(date.getSeconds())}`;
+
     setCurrentTime(time);
+
     if (data?.rates) {
+      const rub = data?.rates?.find((el) => el.currency_num === "810");
+      const usd = data?.rates?.find((el) => el.currency_num === "840");
+      const euro = data?.rates?.find((el) => el.currency_num === "978");
+
+      const rates = [];
+
+      if (usd) rates.push(usd);
+      if (rub) rates.push(rub);
+      if (euro) rates.push(euro);
+
       const body = {
         ...data,
-        rates: [
-          ...data?.rates?.filter(
-            (el) =>
-              el.wallet_purchase &&
-              ["840", "810", "978"].includes(el.currency_num)
-          ),
-          defaultRateTJ,
-        ],
+        rates: [...rates, defaultRateTJ],
+        // rates: [
+        //   ...data?.rates?.filter(
+        //     (el) =>
+        //       el.wallet_purchase &&
+        //       ["840", "810", "978"].includes(el.currency_num)
+        //   ),
+        //   defaultRateTJ,
+        // ],
       };
       setCurrencyRate(body);
       console.log(body.rates?.[0]?.[`${type}_${sale}`]);

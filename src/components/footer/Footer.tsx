@@ -1,5 +1,5 @@
-// import googlePlay from "@/../public/icons/google_play_black.svg";
-// import appStore from "@/../public/icons/app_store_black.svg";
+import googlePlay from "@/../public/icons/google_play_black.svg";
+import appStore from "@/../public/icons/app_store_black.svg";
 import Image from "next/image";
 import React from "react";
 // import { useTranslations } from "next-intl";
@@ -56,15 +56,20 @@ function Footer() {
               />
             </div>
             <div>
-              {/* <div>
+              <div>
                 <p>Ҳамёни мобилӣ</p>
-                <div className="flex gap-[5px] mt-[10px]">
-                  <Image
-                    src={googlePlay}
-                    alt="google_play"
-                    width={136}
-                    height={40}
-                  />
+                <div className="flex gap-[5px] my-[10px]">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.smart.mobile_banking&hl=ru"
+                    target="_blank"
+                  >
+                    <Image
+                      src={googlePlay}
+                      alt="google_play"
+                      width={150}
+                      height={44}
+                    />
+                  </a>
                   <Image
                     src={appStore}
                     alt="app_store"
@@ -72,7 +77,7 @@ function Footer() {
                     height={40}
                   />
                 </div>
-              </div> */}
+              </div>
               <div className="">
                 <p>Соцмедиа</p>
                 <div className="flex flex-wrap gap-8 mt-[12px]">

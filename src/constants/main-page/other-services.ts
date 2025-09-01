@@ -2,6 +2,7 @@ import image1 from "@/../public/images/other-services/credit-card1.svg";
 import image2 from "@/../public/images/other-services/credit-card2.svg";
 import icon1 from "@/../public/images/other-services/icon1.svg";
 import icon2 from "@/../public/images/other-services/icon2.svg";
+import icon3 from "@/../public/images/other-services/icon3.png";
 
 export const moneyTrasferData = [
   {
@@ -15,6 +16,12 @@ export const moneyTrasferData = [
     description:
       "Бо пайгирии қулай ҳолати интиқол пулро бе мушкилиҳои нолозим фиристед ва қабул кунед.",
     img: icon2,
+  },
+  {
+    title: "Astrasend",
+    description:
+      "Бо пайгирии қулай ҳолати интиқол пулро бе мушкилиҳои нолозим фиристед ва қабул кунед.",
+    img: icon3,
   },
 ];
 

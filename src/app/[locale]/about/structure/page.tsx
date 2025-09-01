@@ -1,5 +1,5 @@
 import Image from "next/image";
-import structure from "@/../public/images/structure.svg";
+import structure from "@/../public/images/structure.jpg";
 import { useTranslations } from "next-intl";
 
 export default function Structure() {

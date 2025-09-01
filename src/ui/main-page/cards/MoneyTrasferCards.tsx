@@ -29,7 +29,7 @@ export default function MoneyTrasferCards({
                   alt={`transfer ${i}`}
                   width={200}
                   height={200}
-                  className="md:max-w-[200px] max-w-[120px] w-full md:max-h-[200px] max-h-[120px] h-full md:mx-0 mx-auto"
+                  className="md:max-w-[200px] max-w-[120px] w-full md:max-h-[200px] max-h-[120px] h-full md:mx-0 mx-auto rounded-[62px] border-2 border-[#F5F5F5]"
                 />
               </div>
               <div className="md:p-[14.5px_24px] p-[12px_24px_24px_24px] flex flex-col justify-between gap-3">
