@@ -106,19 +106,19 @@ export const homePageBanner = [
     subTitle: "HomePage.banner.subTitle1",
     href: "/",
     img: bannerImg,
-  },
-  {
-    title: "HomePage.banner.title2",
-    subTitle: "HomePage.banner.subTitle2",
-    href: "/",
-    img: bannerImg,
-  },
-  {
-    title: "HomePage.banner.title3",
-    subTitle: "HomePage.banner.subTitle3",
-    href: "/",
-    img: bannerImg,
-  },
+  }, 
+  // {
+  //   title: "HomePage.banner.title2",
+  //   subTitle: "HomePage.banner.subTitle2",
+  //   href: "/",
+  //   img: bannerImg,
+  // },
+  // {
+  //   title: "HomePage.banner.title3",
+  //   subTitle: "HomePage.banner.subTitle3",
+  //   href: "/",
+  //   img: bannerImg,
+  // },
   // {
   //   title: "HomePage.banner.title4",
   //   subTitle: "HomePage.banner.subTitle4",
