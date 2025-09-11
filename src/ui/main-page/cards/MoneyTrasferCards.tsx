@@ -41,7 +41,7 @@ export default function MoneyTrasferCards({
                 </p>
                 <Link href={`/personal/money_transfer/${i}`}>
                   <BorderButton className="md:max-w-[137px]">
-                    {t("buttons.detail")}x
+                    {t("buttons.detail")}
                   </BorderButton>
                 </Link>
               </div>

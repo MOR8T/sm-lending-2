@@ -47,9 +47,9 @@ export default function Loans() {
   return (
     <div className="text-[#595959]">
       <SectionInfo
-        title={'Кредит "Заррини аҷоиб"'}
+        title={'Қарзи "Заррини аҷоиб"'}
         description={
-          "Многоцелевой кредит, предоставляемый под залог ювелирных изделий"
+          "Қарзи бисёрмақсаднок  бо гарави маснуоти заргарӣ ба шахсони ҳуқуқӣ"
         }
         img={services_image}
         // textMaxWidth="max-w-[347px]"
