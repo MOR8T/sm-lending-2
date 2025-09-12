@@ -6,6 +6,7 @@ import "./style.css";
 import Input from "../input/Input";
 import ButtonFon from "../buttons/ButtonFon";
 import { useTranslations } from "next-intl";
+import { regions2 } from "@/constants/const";
 
 export default function CreditModal({
   options,
@@ -66,9 +67,9 @@ export default function CreditModal({
           <CreditSelect
             placeholder={t("CalculateCredit.region") + "*"}
             value=""
-            items={options.map((el) => ({
+            items={regions2.map((el) => ({
               label: el.label,
-              key: el.precent,
+              key: el.value,
             }))}
           />
           <div className="grid md:grid-cols-[2fr_1fr] gap-6 md:col-span-2">

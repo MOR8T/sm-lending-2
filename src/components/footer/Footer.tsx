@@ -83,14 +83,14 @@ function Footer() {
                 <div className="flex flex-wrap gap-8 mt-[12px]">
                   {footerLinks.map((el) => {
                     return (
-                      <Link href={el.href} key={el.alt}>
+                      <a href={el.href} key={el.alt} target="_blank">
                         <Image
                           src={el.img}
                           alt={el.alt}
                           width={40}
                           height={40}
                         />
-                      </Link>
+                      </a>
                     );
                   })}
                 </div>
@@ -119,12 +119,13 @@ function Footer() {
             <Link href="/about/about">
               <li>Дар бораи мо</li>
             </Link>
-            <li>Иҷозатнома</li>
+            {/* <li>Иҷозатнома</li> */}
             <Link href="/about/details">
-              <li>Тафсилот</li>
+              <li>Мушахассоти бонкӣ</li>
             </Link>
             <li>Контакты</li>
             <li>Вазифаҳои холӣ</li>
+            <li>Нишондиҳандаҳои молиявӣ</li>
           </ul>
           <ul className="flex md:gap-13 gap-8 flex-wrap justify-between">
             <li>© 2025</li>

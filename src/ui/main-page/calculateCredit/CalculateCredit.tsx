@@ -25,7 +25,7 @@ const creditsOption = {
       label: "Заррини аҷоиб (26%)",
       maxMoney: 250000,
       maxMonth: 24,
-      precent: 26,
+      precent: 260,
     },
     {
       label: "Заррини (26%)",
@@ -170,10 +170,12 @@ export default function CalculateCredit({
               )} ${t("CalculateCredit.somoni")}`}
               className="xl:col-span-2"
             />
-            <ShowInfo
-              label={t("CalculateCredit.youNeed")}
-              value={t("CalculateCredit.pasportRT")}
-            />
+            {type === "personal" ? (
+              <ShowInfo
+                label={t("CalculateCredit.youNeed")}
+                value={t("CalculateCredit.pasportRT")}
+              />
+            ) : null}
             {/* <ShowInfo
               label={t("CalculateCredit.probabilityOfOpproval")}
               value="+50%"
