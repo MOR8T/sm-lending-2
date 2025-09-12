@@ -45,7 +45,7 @@ export default function CreditModal({
             value=""
             items={options.map((el) => ({
               label: el.label,
-              key: el.precent,
+              key: el.id,
             }))}
             className="md:col-span-2"
           />
