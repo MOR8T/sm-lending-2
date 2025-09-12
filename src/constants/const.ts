@@ -10,7 +10,7 @@ import inst_icon from "@/../public/icons/footer/inst_black.svg";
 
 export const footerLinks = [
   {
-    href: "https://t.me/@SMoliyabank_bot",
+    href: "https://t.me/SMoliyabank_bot",
     img: tg_icon,
     alt: "tg_icon",
   },

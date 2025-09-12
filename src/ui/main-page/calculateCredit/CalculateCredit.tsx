@@ -64,7 +64,50 @@ const creditsOption = {
       precent: 0,
     },
   ],
-  business: [],
+  business: [
+     {
+      label: "Заррини аҷоиб (26%)",
+      maxMoney: 250000,
+      maxMonth: 24,
+      precent: 260,
+    },
+    {
+      label: "Заррини (26%)",
+      maxMoney: 250000,
+      maxMonth: 36,
+      precent: 26,
+    },
+    {
+      label: "Амонат (24%)",
+      maxMoney: 250000,
+      maxMonth: 36,
+      precent: 24,
+    },
+    {
+      label: "Дастгирӣ (20%)",
+      maxMoney: 250000,
+      maxMonth: 36,
+      precent: 20,
+    },
+    {
+      label: "Молҳо ба кредит (насия) (22%)",
+      maxMoney: 10000,
+      maxMonth: 18,
+      precent: 22,
+    },
+    {
+      label: "Ҳамсафари мо (28%)",
+      maxMoney: 200000,
+      maxMonth: 24,
+      precent: 28,
+    },
+    {
+      label: "Лаҳза (Овердрафт)",
+      maxMoney: 0,
+      maxMonth: 3,
+      precent: 0,
+    },
+  ],
 };
 
 export default function CalculateCredit({

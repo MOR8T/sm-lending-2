@@ -83,6 +83,26 @@ export default function Details() {
         },
       ],
     },
+    {
+      title: 'ПАО "ТРАСНКАПИТАЛБАНК"',
+      data: [
+        {
+          img: rub_flag,
+          title: "RUB",
+          code: "30111810000000000321",
+        },
+      ],
+    },
+    {
+      title: 'АО "Т БАНК"',
+      data: [
+        {
+          img: rub_flag,
+          title: "RUB",
+          code: "40807810800000000974",
+        },
+      ],
+    },
   ];
 
   return (
