@@ -93,6 +93,7 @@ export default function CalculateCredit({
     maxMoney: number;
     maxMonth: number;
     precent: number;
+    id: number;
   } | null>(null);
   const [formModal, setFormModal] = useState(false);
   const [successModal, setSuccessModal] = useState(false);

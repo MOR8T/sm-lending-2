@@ -19,6 +19,7 @@ export default function CreditModal({
     maxMoney: number;
     maxMonth: number;
     precent: number;
+    id: number;
   }[];
   open: boolean;
   setOpen: (e: boolean) => void;
