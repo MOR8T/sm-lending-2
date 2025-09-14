@@ -44,7 +44,9 @@ export interface oneBlueBannerT {
   title: string;
   subTitle: string;
   href: string;
-  img: StaticImageData;
+  img?: StaticImageData;
+  video?: string;
+  isImage: boolean;
 }
 
 export interface BlueBannerT {
