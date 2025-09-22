@@ -1,62 +1,77 @@
 {
   "HomePage": {
-    "news": "Ахбор",
-    "popularProducts": "Маҳсулоти маъмул",
-    "calculateCredit": "Ҳисоб кардани қарз",
-    "exchangeRate": "Қурби пул",
-    "infoForHelp": "Мушовирони мо омадаанд ба Шумо кӯмак расонанд",
+    "news": "News",
+    "popularProducts": "Popular products",
+    "calculateCredit": "Calculate the loan",
+    "exchangeRate": "Exchange rate",
+    "infoForHelp": "Our consultants are here to help you.",
     "infoBanner": {
       "title": "Ҳалли молиявии муосир ва дастрасро тариқи хизматрасонии фосилавӣ ба шахсони воқеӣ ва ҳуқуқӣ пешниҳод менамоем.",
       "description": "Ба хизматрасониҳои ройгон дар се моҳи аввал суратҳисб кушоед ва бе ҳаққи хизмат онро истифода баред",
       "button": "Суратҳисоб кушодан"
     },
     "banner": {
-      "title1": "Қарзи \"Заррини аҷоиб\" - то 500 000 сомонӣ!",
-      "subTitle1": "Ҳалли ҳадафҳои тиҷоратии шумо ва ниёзҳои шахсии шумо.",
+      "title1": "\"Заррини аҷоиб\" loan - up to 500,000 somoni!",
+      "subTitle1": "Solutions for your business goals and your personal needs.",
       "title2": "Паради асбобхои рузгор ибтидой гардид",
-      "subTitle2": "Ҳалли ҳадафҳои тиҷоратии шумо ва ниёзҳои шахсии шумо.",
-      "title3": "Шучоати мудофизони ХУКУКИ мо",
-      "subTitle3": "Ҳалли ҳадафҳои тиҷоратии шумо ва ниёзҳои шахсии шумо.",
-      "title4": "Биёед дар андешаҳои худ аз ҳад зиёд қавӣ нашавем",
-      "subTitle4": "Ҳалли ҳадафҳои тиҷоратии шумо ва ниёзҳои шахсии шумо."
+      "subTitle2": "Solutions for your business goals and your personal needs.",
+      "title3": "The bravery of our HUMAN RIGHTS defenders",
+      "subTitle3": "Solutions for your business goals and your personal needs.",
+      "title4": "Let's not be too strong in our opinions.",
+      "subTitle4": "Solutions for your business goals and your personal needs."
     }
   },
   "Header": {
-    "main": "Асосӣ",
+    "main": "Home",
     "personal": "Шахсони воқеӣ",
     "business": "Шахсони ҳуқуқӣ",
-    "about_us": "Дар бораи мо"
+    "about_us": "About us"
   },
   "Subheader": {
     "personal": {
-      "deposits": "Амонатҳо",
-      "loans": "Қарзҳо",
-      "tequirements_for_opening_an_account": "Кушодани суратҳисоб",
-      "tariffs": "Тарофаҳо",
-      "online_questionnaire": "Чат бот",
-      "other_services": "Дигар хизматрасониҳо"
+      "deposits": "Deposits",
+      "loans": "Loans",
+      "tequirements_for_opening_an_account": "Opening an account",
+      "tariffs": "Tariffs",
+      "online_questionnaire": "Chat bot",
+      "other_services": "Other services"
     },
     "business": {
-      "deposits": "Амонатҳо",
-      "loans": "Қарзҳо",
-      "tequirements_for_opening_an_account": "Кушодани суратҳисоб",
-      "tariffs": "Тарофаҳо",
-      "online_questionnaire": "Чат бот",
-      "other_services": "Дигар хизматрасониҳо"
+      "deposits": "Deposits",
+      "loans": "Loans",
+      "tequirements_for_opening_an_account": "Opening an account",
+      "tariffs": "Tariffs",
+      "online_questionnaire": "Chat bot",
+      "other_services": "Other services"
     },
     "about": {
-      "about_bank": "Дар бораи бонк",
-      "services": "Хизматрасонӣ",
-      "management": "Мақоми иҷроия",
-      "board_of_directors": "Шӯрои нозирон",
-      "org_structure": "Сохтори ташкилӣ",
-      "details": "Тафсилот"
+      "about_bank": "About the bunk",
+      "services": "Service",
+      "management": "Executive body",
+      "board_of_directors": "Supervisory Board",
+      "org_structure": "Organizational structure",
+      "details": "Details"
     }
   },
   "Footer": {
     "logo": "Стандарт Молия",
     "full_company_name": "ҶДММ ТАҚХ \"СТАНДАРТ МОЛИЯ\"",
-    "license": ""
+    "license": "Лицензия",
+    "address": "Душанбе, улица Шевченко 113",
+    "online_service": "Для онлайн-обращений",
+    "call_everywhere": "Для звонков из любой точки мира",
+    "call_number": "Телефон доверия Национального банка Таджикистана для жалоб и обращений",
+    "mobile_app": "Мобильное приложение",
+    "social": "Соцмедиа",
+    "consumer_right": "Права потребителей",
+    "main": "Главная",
+    "personal": "Частным лицам",
+    "business": "Юридическим лицам",
+    "about_us": "О нас",
+    "details": "Подробности",
+    "contact": "Контакты",
+    "free_vacant": "Вакантные должности",
+    "date": "№ 000331 от 8 ноября 2024 г."
   },
   "Manifest": {
     "name": "Стандарт Молия",
@@ -67,9 +82,9 @@
     "description": "Стандарт Молия"
   },
   "personalCards": {
-    "title1": "Суроғаҳои терминалҳо",
-    "subTitle1": "Насияро пардохт кунед ва ҳисоби корту ҳамёнро пур намоед — 0%",
-    "title2": "Таҳсил дастрас аст",
+    "title1": "Terminal addresses",
+    "subTitle1": "Pay off the loan and top up your card and wallet account — 0%",
+    "title2": "Education is available",
     "subTitle2": "Пули таҳсил дар донишгоҳ ё курсҳоро ба насия то 24 моҳ пардохт кунед",
     "title3": "Пардохт бо Google Pay",
     "subTitle3": "Visa ё Mastercard-и моро пайваст карда, дар кишвар ва хориҷа бетамос пардохт намоед"
@@ -190,6 +205,37 @@
       "title3": "Интиқолҳо ба ҳамёни мобилии SM",
       "subTitle3": "Молҳо ва хизматрасониҳоро тариқи ҳамёни мобилии SM пардохт намуда, КЕШБЕК гирифта маблағҳоятонро идора кунед."
     }
+  },
+  "helpSectionInfo": {
+    "full_company_name": "ҶДММ ТАҚХ \"СТАНДАРТ МОЛИЯ\"",
+    "pasport_for_register": "Свидетельство о государственной регистрации",
+    "value_of_pasport_for_register": "№ 0309053 от 18.06.2024",
+    "NBT_license": "Лицензия НБТ",
+    "value_of_NBT_license": "№0000331",
+    "index": "Индекс",
+    "value_of_index": "734025, ҶТ",
+    "address": "Адрес",
+    "value_of_address": "ш.Душанбе, н.И.Сомонӣ, куч.Шевченко 113",
+    "contact": "Контакт-центр",
+    "value_of_contact": "+992 44 603 20 20",
+    "general_question": "По общим вопросам",
+    "value_of_general_question": "+992 (44) 603 20 20, 44 603 15 15",
+    "gmail": "Электронная почта",
+    "value_of_gmail": "info@sm.tj",
+    "website": "Веб-сайт",
+    "value_of_website": "www.sm.tj",
+    "legal_address": "Юридический адрес",
+    "value_of_legal_address": "ш.Душанбе, н.И.Сомонӣ, куч.Шевченко 113",
+    "working_time": "Рабочее время",
+    "value_of_working_time": "от 08: 00 до 17: 00",
+    "weekends": "Выходные",
+    "value_of_weekends": "Суббота, Воскресенье",
+    "trust_num": "Тел. доверия НБТ",
+    "value_of_trust_num": "(44) 600 15 20 ё почтаи электронӣ: ALLOMUSHTARI@NBT.TJ",
+    "citizens": "Прием граждан",
+    "value_of_citizens": "Директори генералӣ",
+    "reception_day": "Дни и часы приема",
+    "value_of_reception_day": "Суббота с 09:00 до 11:00"
   },
   "CurrencyRate": {
     "cashRegister": "Дар хазина",
