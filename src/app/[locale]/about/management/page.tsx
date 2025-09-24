@@ -7,17 +7,17 @@ export default function Management() {
   const data = [
     {
       fullname: "Муовини директори генералӣ",
-      jobtitle: "",
+      jobtitle: t("Management.jobtitle_1"),
       img: default_img,
     },
     {
       fullname: "Ашуров Акмалҷон Нусратович",
-      jobtitle: "Директори генералӣ",
+      jobtitle: t("Management.jobtitle_2"),
       img: default_img,
     },
     {
       fullname: "Шарипова Гулнора Холбоевна",
-      jobtitle: "Сармуҳосиб",
+      jobtitle: t("Management.jobtitle_3"),
       img: default_img,
     },
   ];
