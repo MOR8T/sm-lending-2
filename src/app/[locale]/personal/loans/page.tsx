@@ -16,7 +16,7 @@ export default function Deposits() {
       <CalculateCredit isBusiness={false} />
       <InfoCards
         data={loansData}
-        title="Қарзҳо"
+        title={`${t("Subheader.personal.loans")}`}
         className="md:mt-[80px] mt-[40px] container"
       />
     </div>

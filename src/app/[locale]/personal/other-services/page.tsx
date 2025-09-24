@@ -24,37 +24,23 @@ export default function OtherServices() {
       />
       <div className="bg-[#F0F0F0] rounded-3xl md:p-10 p-6 md:grid md:grid-cols-[1fr_auto] flex flex-col-reverse gap-6 md:mt-[60px] mt-10">
         <div>
-          <SectionTitle className="md:mb-8 md:mt-0 mb-4 mt-0">SMS-банкинг</SectionTitle>
+          <SectionTitle className="md:mb-8 md:mt-0 mb-4 mt-0">
+            {t("Subheader.other_services.SMS")}
+          </SectionTitle>
           <div className="text-[14px] leading-4 text-[#262626] flex flex-col gap-5">
-            <p>
-              SMS - Banking хидматест, ки ба шумо имкон медиҳад, ки бо истифода
-              аз телефони мобилии худ аз ҳолати маблағҳои худ дар суратҳисоби
-              корти худ дар вақти воқеӣ огоҳ бошед.
-            </p>
-            <p>
-              Муштарие, ки ба хизматрасонии SMS-банкинг пайваст шудааст, имкони
-              иҷрои амалиёти зеринро дорад:
-            </p>
+            <p>{t("Subheader.other_services.SMS_Bunk")}</p>
+            <p>{t("Subheader.other_services.client")}</p>
             <div>
-              <p>Balance xxxx - Тавозуни суратҳисобро дархост кунед;</p>
-              <p>Active xxxx - Кортро фаъол созед;</p>
-              <p>ғайрифаъол xxxx - Хомӯш кардани корт;</p>
-              <p>Notifyoff xxxx - Хомӯш кардани огоҳии корт;</p>
-              <p>Notifyon xxxx - Огоҳии кортро фаъол созед;</p>
-              <p>Қурби xxxx - Қурби асъор;</p>
-              <p>xxxx - Рӯйхати фармонҳои имконпазир.</p>
-              <p>
-                Дар матни паём xxxx чор рақами охирини корти пластикӣ мебошад,
-                ки хидмат ба онҳо пайваст аст. Ин фармонҳо бояд ҳамчун SMS ба
-                рақами 5151 фиристода шаванд.
-              </p>
+              <p>{t("Subheader.other_services.balance")}</p>
+              <p>{t("Subheader.other_services.active")}</p>
+              <p>{t("Subheader.other_services.inactive")}</p>
+              <p>{t("Subheader.other_services.notifyoff")}</p>
+              <p>{t("Subheader.other_services.notifyon")}</p>
+              <p>{t("Subheader.other_services.rate")}</p>
+              <p>{t("Subheader.other_services.list_command")}</p>
+              <p>{t("Subheader.other_services.message_num")}</p>
             </div>
-            <p>
-              Функсия барои як сол 20 (бист) сомониро ташкил медиҳад. Шумо
-              метавонед функсияи «SMS - Бонкинг»-ро дар офиси марказӣ ё дар
-              тамоми филиалҳо ва марказҳои хизматрасонии ташкилоти мо пайваст
-              намоед.
-            </p>
+            <p>{t("Subheader.other_services.price_fun")}</p>
           </div>
         </div>
         <div>

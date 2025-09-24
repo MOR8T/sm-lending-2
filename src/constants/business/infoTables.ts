@@ -145,21 +145,3 @@ export const infoTableData = [
     ],
   },
 ];
-
-export const infoTableColumns = [
-  {
-    title: "№",
-    dataIndex: "key",
-    key: "key",
-  },
-  {
-    title: "Номгӯи хизматрасонӣ",
-    dataIndex: "service",
-    key: "service",
-  },
-  {
-    title: "Мувофиқи шартнома",
-    dataIndex: "contract",
-    key: "contract",
-  },
-];

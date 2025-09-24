@@ -36,35 +36,35 @@ export default function InfoCards({ data, className = "", title }: InfoCardsT) {
               <div className="flex flex-col justify-between lg:gap-2 gap-6">
                 <div>
                   <h3 className="text-[#262626] md:text-[24px] text-[20px] font-semibold mb-1">
-                    {el.title}
+                    {t(`${el.title}`)}
                   </h3>
                   <p className="text-[#595959] text-[14px] leading-[14px]">
-                    {el.description}
+                    {t(`${el.description}`)}
                   </p>
                 </div>
                 <div className="md:grid md:grid-cols-3 flex flex-wrap gap-4">
                   <div className="flex md:flex-col flex-col-reverse gap-1">
                     <p className="text-[#595959] text-[14px] leading-[14px]">
-                      {el.subTitle1}
+                      {t(`${el.subTitle1}`)}
                     </p>
                     <p className="text-[#141414] text-[16px] leading-5 font-semibold">
-                      {el.title1}
+                      {t(`${el.title1}`)}
                     </p>
                   </div>
                   <div className="flex md:flex-col flex-col-reverse gap-1">
                     <p className="text-[#595959] text-[14px] leading-[14px]">
-                      {el.subTitle2}
+                      {t(`${el.subTitle2}`)}
                     </p>
                     <p className="text-[#141414] text-[16px] leading-5 font-semibold">
-                      {el.title2}
+                      {t(`${el.title2}`)}
                     </p>
                   </div>
                   <div className="flex md:flex-col flex-col-reverse gap-1">
                     <p className="text-[#595959] text-[14px] leading-[14px]">
-                      {el.subTitle3}
+                      {t(`${el.subTitle3}`)}
                     </p>
                     <p className="text-[#141414] text-[16px] leading-5 font-semibold">
-                      {el.title3}
+                      {t(`${el.title3}`)}
                     </p>
                   </div>
                 </div>

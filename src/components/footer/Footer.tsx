@@ -71,12 +71,17 @@ function Footer() {
                       height={44}
                     />
                   </a>
-                  {/* <Image
-                    src={appStore}
-                    alt="app_store"
-                    width={128}
-                    height={44}
-                  /> */}
+                  <a
+                    href="https://apps.apple.com/tj/app/sm-pay/id6752281265"
+                    target="_blank"
+                  >
+                    <Image
+                      src={appStore}
+                      alt="app_store"
+                      width={128}
+                      height={44}
+                    />
+                  </a>
                 </div>
               </div>
               <div className="mt-8">

@@ -34,10 +34,10 @@ export default function MoneyTrasferCards({
               </div>
               <div className="md:p-[14.5px_24px] p-[12px_24px_24px_24px] flex flex-col justify-between gap-3">
                 <h2 className="text-[#141414] text-[24px] leading-6 font-semibold">
-                  {el.title}
+                  {t(`${el.title}`)}
                 </h2>
                 <p className="text-[#595959] text-[16px] leading-[24px] limitText3">
-                  {el.description}
+                  {t(`${el.description}`)}
                 </p>
                 <Link href={`/personal/money_transfer/${i}`}>
                   <BorderButton className="md:max-w-[137px]">
