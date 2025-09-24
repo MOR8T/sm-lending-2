@@ -22,49 +22,57 @@ const maxMoney = {
 const creditsOption = {
   personal: [
     {
-      label: "Заррини аҷоиб (26%)",
+      label: "Таҳсил (20%)",
       maxMoney: 250000,
       maxMonth: 24,
-      precent: 26,
+      precent: 20,
+      id: 101,
     },
     {
-      label: "Заррини (26%)",
-      maxMoney: 250000,
-      maxMonth: 36,
-      precent: 26,
-    },
-    {
-      label: "Амонат (24%)",
-      maxMoney: 250000,
-      maxMonth: 36,
-      precent: 24,
-    },
-    {
-      label: "Дастгирӣ (20%)",
+      label: "Заррини аҷоиб (20%)",
       maxMoney: 250000,
       maxMonth: 36,
       precent: 20,
+      id: 102,
     },
     {
-      label: "Молҳо ба кредит (насия) (22%)",
-      maxMoney: 10000,
-      maxMonth: 18,
-      precent: 22,
-    },
-    {
-      label: "Ҳамсафари мо (28%)",
-      maxMoney: 200000,
+      label: "Заррини оддӣ (20%)",
+      maxMoney: 250000,
       maxMonth: 24,
-      precent: 28,
+      precent: 20,
+      id: 103,
     },
     {
-      label: "Лаҳза (Овердрафт)",
-      maxMoney: 0,
-      maxMonth: 3,
-      precent: 0,
+      label: "Автомашина (22%)",
+      maxMoney: 250000,
+      maxMonth: 36,
+      precent: 22,
+      id: 104,
     },
   ],
-  business: [],
+  business: [
+    {
+      label: "Таҳсил (20%)",
+      maxMoney: 500000,
+      maxMonth: 24,
+      precent: 20,
+      id: 201,
+    },
+    {
+      label: "Заррини аҷоиб (22%)",
+      maxMoney: 500000,
+      maxMonth: 36,
+      precent: 22,
+      id: 202,
+    },
+    {
+      label: "Автомашина (24%)",
+      maxMoney: 500000,
+      maxMonth: 24,
+      precent: 24,
+      id: 203,
+    },
+  ],
 };
 
 export default function CalculateCredit({
@@ -85,6 +93,7 @@ export default function CalculateCredit({
     maxMoney: number;
     maxMonth: number;
     precent: number;
+    id: number;
   } | null>(null);
   const [formModal, setFormModal] = useState(false);
   const [successModal, setSuccessModal] = useState(false);
@@ -118,12 +127,12 @@ export default function CalculateCredit({
           <div>
             <CreditSelect
               value={creditType?.label || ""}
-              items={creditsOption?.["personal"].map((el) => {
+              items={creditsOption?.[type].map((el) => {
                 return {
                   onClick: () => {
                     setCreditType(el);
                   },
-                  key: el.label,
+                  key: el.id,
                   label: (
                     <button
                       className={`md:text-[16px] text-[18px] text-left w-full ${
@@ -170,10 +179,12 @@ export default function CalculateCredit({
               )} ${t("CalculateCredit.somoni")}`}
               className="xl:col-span-2"
             />
-            <ShowInfo
-              label={t("CalculateCredit.youNeed")}
-              value={t("CalculateCredit.pasportRT")}
-            />
+            {type === "personal" ? (
+              <ShowInfo
+                label={t("CalculateCredit.youNeed")}
+                value={t("CalculateCredit.pasportRT")}
+              />
+            ) : null}
             {/* <ShowInfo
               label={t("CalculateCredit.probabilityOfOpproval")}
               value="+50%"
@@ -198,7 +209,7 @@ export default function CalculateCredit({
       <CreditModal
         open={formModal}
         setOpen={setFormModal}
-        options={creditsOption.personal}
+        options={creditsOption?.[type]}
         onFinish={() => {
           setFormModal(false);
           setSuccessModal(true);

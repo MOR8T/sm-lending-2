@@ -89,14 +89,14 @@ function Footer() {
                 <div className="flex flex-wrap gap-8 mt-[12px]">
                   {footerLinks.map((el) => {
                     return (
-                      <Link href={el.href} key={el.alt}>
+                      <a href={el.href} key={el.alt} target="_blank">
                         <Image
                           src={el.img}
                           alt={el.alt}
                           width={40}
                           height={40}
                         />
-                      </Link>
+                      </a>
                     );
                   })}
                 </div>
