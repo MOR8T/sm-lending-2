@@ -1,7 +1,9 @@
 import Image from "next/image";
 import operator_img from "@/../public/images/operator.svg";
+import { useTranslations } from "next-intl";
 
 export default function HelpSectionInfo() {
+  const t = useTranslations("helpSectionInfo");
   return (
     <div className="container">
       <div className="bg-[#F5F5F5] rounded-3xl grid md:grid-cols-[auto_1fr] md:gap-5">
@@ -16,74 +18,75 @@ export default function HelpSectionInfo() {
         </div>
         <div className="md:p-[40px_40px_40px_0px] p-[0px_24px_24px_24px] text-[#141414] text-[16px] leading-5">
           <h2 className="md:text-[20px] text-[18px] md:leading-6 leading-[22px] font-semibold">
-            ҶДММ ТАҚҲ “СТАНДАРТ МОЛИЯ”
+            {t("full_company_name")}
           </h2>
           <ul className="mb-[8px] mt-6">
             <li>
-              Шаҳодатнома дар бораи бақайдгирии давлатӣ:{" "}
-              <span className="font-medium"> №0309053 аз 18.06.2024</span>
+              {t("pasport_for_register")}:{" "}
+              <span className="font-medium">
+                {t("value_of_pasport_for_register")}
+              </span>
             </li>
             <li>
-              №0309053 аз 18.06.2024 Иҷозатномаи БМТ:{" "}
-              <span className="font-medium">№0000331 </span>
+              {t("NBT_license")}:{" "}
+              <span className="font-medium">{t("value_of_NBT_license")}</span>
             </li>
             <li>
-              Индекс: <span className="font-medium">734025, ҶТ</span>
+              {t("index")}:{" "}
+              <span className="font-medium">{t("value_of_index")}</span>
             </li>
           </ul>
           <ul>
             <li>
-              Суроға:{" "}
+              {t("address")}:{" "}
+              <span className="font-medium">{t("value_of_address")}</span>
+            </li>
+            <li>
+              {t("contact")}:{" "}
+              <span className="font-medium">{t("value_of_contact")}</span>
+            </li>
+            <li>
+              {t("general_question")}:{" "}
               <span className="font-medium">
-                ш.Душанбе, н.И.Сомонӣ, куч.Шевченко 113
+                {t("value_of_general_question")}
               </span>
             </li>
             <li>
-              Маркази тамос:{" "}
-              <span className="font-medium"> +992 44 603 20 20 </span>
+              {t("gmail")}:{" "}
+              <span className="font-medium">{t("value_of_gmail")}</span>
             </li>
             <li>
-              Барои саволҳои умумӣ:{" "}
-              <span className="font-medium">
-                +992 (44) 603 20 20, 44 603 15 15
-              </span>
+              {t("website")}:{" "}
+              <span className="font-medium">{t("value_of_website")}</span>
             </li>
             <li>
-              Почтаи электронӣ: <span className="font-medium"> info@sm.tj</span>
-            </li>
-            <li>
-              Сомона: <span className="font-medium"> www.sm.tj</span>
-            </li>
-            <li>
-              Суроғаи ҳуқуқӣ:{" "}
+              {t("legal_address")}:{" "}
               <span className="font-medium">
                 {" "}
-                ш.Душанбе, н.И.Сомонӣ, куч.Шевченко 113
+                {t("value_of_legal_address")}
               </span>
             </li>
             <li>
-              Реҷаи корӣ:{" "}
-              <span className="font-medium">аз 08: 00 то 17: 00</span>
+              {t("working_time")}:{" "}
+              <span className="font-medium">{t("value_of_working_time")}</span>
             </li>
             <li>
-              Рӯзҳои истироҳатӣ:{" "}
-              <span className="font-medium">Шанбе,Якшанбе</span>
+              {t("weekends")}:{" "}
+              <span className="font-medium">{t("value_of_weekends")}</span>
             </li>
             <li>
-              Тел.боварӣ БМТ:{" "}
-              <span className="font-medium">
-                (44) 600 15 20 ё почтаи электронӣ: ALLOMUSHTARI@NBT.TJ
-              </span>
+              {t("trust_num")}:{" "}
+              <span className="font-medium">{t("value_of_trust_num")}</span>
             </li>
           </ul>
           <ul className="mt-[8px]">
             <li>
-              Қабули шаҳрвандон:{" "}
-              <span className="font-medium">Директори генералӣ</span>
+              {t("citizens")}:{" "}
+              <span className="font-medium">{t("value_of_citizens")}</span>
             </li>
             <li>
-              Рӯз ва соатҳои қабул:{" "}
-              <span className="font-medium">Шанбе аз 09:00 то 11:00</span>
+              {t("reception_day")}:{" "}
+              <span className="font-medium">{t("value_of_reception_day")}</span>
             </li>
           </ul>
         </div>

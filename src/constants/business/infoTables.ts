@@ -1,165 +1,141 @@
 export const infoTableData = [
   {
-    title: "АМОНАТҲО",
+    title: "personalData.tariffs.title_1",
     tables: [
       {
-        description: "Амалиётҳо бо пули миллӣ ва асъори хориҷӣ",
-        requirement:
-          "*барои тасдиқи бақияи ҳисоби амонатии муҳлатнок ҳаққи хизмат ситонида намешавад.",
+        description: "personalData.tariffs.description_1",
+        requirement: "personalData.tariffs.requirement",
         dataSource: [
           {
-            key: "1.1",
-            service: "Гузоштани маблағ ба амонатҳои муҳлатнок",
-            contract: "Мувофиқи шартнома",
+            key: "personalData.tariffs.dataSource_1.key_1",
+            service: "personalData.tariffs.dataSource_1.service_1",
+            contract: "personalData.tariffs.dataSource_1.contract_1",
           },
           {
-            key: "1.2",
-            service: "Пасандози  суғуртавӣ",
-            contract: "Бе ҳаққи хизмат",
+            key: "personalData.tariffs.dataSource_1.key_2",
+            service: "personalData.tariffs.dataSource_1.service_2",
+            contract: "personalData.tariffs.dataSource_1.contract_2",
           },
           {
-            key: "1.3",
-            service:
-              "Додани тасдиқнома оиди бақияи суратҳисоби пасандозӣ дар варақаи расмии Ташкилот",
-            contract: "0,05% аз маблағи тасдиқнома, на камтар аз 20,0 сомонӣ",
+            key: "personalData.tariffs.dataSource_1.key_3",
+            service: "personalData.tariffs.dataSource_1.service_3",
+            contract: "personalData.tariffs.dataSource_1.contract_3",
           },
           {
-            key: "1.4",
-            service: "Нусхаи иқтибос аз ҳисоб дар давраи муайян",
-            contract: "5,0 сомонӣ",
+            key: "personalData.tariffs.dataSource_1.key_4",
+            service: "personalData.tariffs.dataSource_1.service_4",
+            contract: "personalData.tariffs.dataSource_1.contract_4",
           },
         ],
       },
     ],
   },
   {
-    title: "ҚАРЗДИҲӢ",
+    title: "personalData.tariffs.title_2",
     tables: [
       {
-        description: "Амалиётҳо бо пули миллӣ ва асъори хориҷӣ  ",
-        requirement: "",
+        description: "personalData.tariffs.description_2",
+        requirement: "personalData.tariffs.requirement_2",
         dataSource: [
           {
-            key: "2.1",
-            service: "Додани қарзҳо",
-            contract: "мувофиқи шартномаи қарзӣ",
+            key: "personalData.tariffs.dataSource_2.key_1",
+            service: "personalData.tariffs.dataSource_2.service_1",
+            contract: "personalData.tariffs.dataSource_2.contract_1",
           },
           {
-            key: "2.2",
-            service: "Пардохти қарз пеш аз мӯҳлат:...",
+            key: "personalData.tariffs.dataSource_2.key_2",
+            service: "personalData.tariffs.dataSource_2.service_2",
             contract: "",
           },
           {
-            key: "2.2.1",
-            service: "- бо асъори миллӣ",
-            contract: "бе ҳаққи хизмат ва ё ҷарима",
+            key: "personalData.tariffs.dataSource_2.key_3",
+            service: "personalData.tariffs.dataSource_2.service_3",
+            contract: "personalData.tariffs.dataSource_2.contract_3",
           },
           {
-            key: "2.2.2",
-            service: "- бо асъори хориҷӣ",
-            contract: "мувофиқи шартномаи қарзӣ",
+            key: "personalData.tariffs.dataSource_2.key_4",
+            service: "personalData.tariffs.dataSource_2.service_4",
+            contract: "personalData.tariffs.dataSource_2.contract_4",
           },
           {
-            key: "2.3",
-            service: "Иваз намудан  ва ё қисман озод намудани гарав",
-            contract:
-              "0,5% аз маблағи бақияи қарз (меъёри  минималӣ 10 сомонӣ ва максималӣ   50 сомонӣ)",
+            key: "personalData.tariffs.dataSource_2.key_5",
+            service: "personalData.tariffs.dataSource_2.service_5",
+            contract: "personalData.tariffs.dataSource_2.contract_5",
           },
           {
-            key: "2.4",
-            service:
-              "Пешниҳод намудани иқтибос аз ҳисобҳои қарзӣ дар варақаи расмии Ташкилот (барои ҳар 1 қарз)",
-            contract: "Бе ҳаққи хизматрасонӣ",
+            key: "personalData.tariffs.dataSource_2.key_6",
+            service: "personalData.tariffs.dataSource_2.service_6",
+            contract: "personalData.tariffs.dataSource_2.contract_6",
           },
           {
-            key: "2.5",
-            service: "Барои тасдиқномаи бақияи суратҳисоби қарзӣ",
-            contract: "Бе ҳаққи хизматрасонӣ",
+            key: "personalData.tariffs.dataSource_2.key_7",
+            service: "personalData.tariffs.dataSource_2.service_7",
+            contract: "personalData.tariffs.dataSource_2.contract_7",
           },
         ],
       },
     ],
   },
   {
-    title: "АМАЛИЁТҲО БО ПУЛИ НАҚД",
+    title: "personalData.tariffs.title_3",
     tables: [
       {
-        description: "Амалиётҳо бо пули миллӣ",
+        description: "personalData.tariffs.description_3",
         requirement: "",
         dataSource: [
           {
-            key: "3.1",
-            service: "Қабули пули нақд ба суратҳисоб...",
-            contract: "бе ҳаққи хизмат",
+            key: "personalData.tariffs.dataSource_3.key_1",
+            service: "personalData.tariffs.dataSource_3.service_1",
+            contract: "personalData.tariffs.dataSource_3.contract_1",
           },
           {
-            key: "3.2",
-            service: "Пардохти пули нақд аз суратҳисоби муштариён, ки тав...",
-            contract: "Мувофиқи шартнома ва на зиёда...",
+            key: "personalData.tariffs.dataSource_3.key_2",
+            service: "personalData.tariffs.dataSource_3.service_2",
+            contract: "personalData.tariffs.dataSource_3.contract_2",
           },
           {
-            key: "3.3",
-            service:
-              "Зудпардохти пули нақд аз суратҳисоби муштарӣ дар рӯзи воридшавӣ",
-            contract: "Мувофиқи шартнома ва на зиёда аз 1% аз маблағ",
+            key: "personalData.tariffs.dataSource_3.key_3",
+            service: "personalData.tariffs.dataSource_3.service_3",
+            contract: "personalData.tariffs.dataSource_3.contract_3",
           },
         ],
       },
       {
-        description: "Амалиётҳо бо асъори хориҷӣ",
+        description: "personalData.tariffs.description_4",
         requirement: "",
         dataSource: [
           {
-            key: "3.4",
-            service: "Қабули пули нақд ба суратҳисоб...",
-            contract: "бе ҳаққи хизмат",
+            key: "personalData.tariffs.dataSource_4.key_1",
+            service: "personalData.tariffs.dataSource_4.service_1",
+            contract: "personalData.tariffs.dataSource_4.contract_1",
           },
           {
-            key: "3.5",
-            service: "Пардохти пули нақд аз суратҳисоби муштариён, ки тав...",
-            contract: "Мувофиқи шартнома ва на зиёда...",
+            key: "personalData.tariffs.dataSource_4.key_2",
+            service: "personalData.tariffs.dataSource_4.service_2",
+            contract: "personalData.tariffs.dataSource_4.contract_2",
           },
           {
-            key: "3.6",
-            service:
-              "Зудпардохти пули нақд аз суратҳисоби муштарӣ дар рӯзи воридшавӣ",
-            contract: "Мувофиқи шартнома ва на зиёда аз 1% аз маблағ",
+            key: "personalData.tariffs.dataSource_4.key_3",
+            service: "personalData.tariffs.dataSource_4.service_3",
+            contract: "personalData.tariffs.dataSource_4.contract_3",
           },
           {
-            key: "3.7",
-            service: "Қабули пули нақд ба суратҳисоб...",
-            contract: "Мувофиқи шартнома ва на зиёда...",
+            key: "personalData.tariffs.dataSource_4.key_4",
+            service: "personalData.tariffs.dataSource_4.service_4",
+            contract: "personalData.tariffs.dataSource_4.contract_4",
           },
           {
-            key: "3.8",
-            service: "Қабули пули нақд ба суратҳисоб...",
-            contract: "Мувофиқи шартнома ва на зиёда...",
+            key: "personalData.tariffs.dataSource_4.key_5",
+            service: "personalData.tariffs.dataSource_4.service_5",
+            contract: "personalData.tariffs.dataSource_4.contract_5",
           },
           {
-            key: "3.9",
-            service: "Қабули пули нақд ба суратҳисоб...",
-            contract: "Мувофиқи шартнома ва на зиёда...",
+            key: "personalData.tariffs.dataSource_4.key_6",
+            service: "personalData.tariffs.dataSource_4.service_6",
+            contract: "personalData.tariffs.dataSource_4.contract_6",
           },
         ],
       },
     ],
-  },
-];
-
-export const infoTableColumns = [
-  {
-    title: "№",
-    dataIndex: "key",
-    key: "key",
-  },
-  {
-    title: "Номгӯи хизматрасонӣ",
-    dataIndex: "service",
-    key: "service",
-  },
-  {
-    title: "Мувофиқи шартнома",
-    dataIndex: "contract",
-    key: "contract",
   },
 ];

@@ -8,29 +8,28 @@ export default function Services() {
   const t = useTranslations("Services");
   const data = [
     {
-      title: "Ҷалби амонат ва пасандозҳои шахсони воқеӣ ва ҳуқуқӣ;",
+      title: t("title_1"),
     },
     {
-      title: "Пешниҳоди қарзи хурд ",
+      title: t("title_2"),
     },
     {
-      title: "Интиқоли маблағҳои пулӣ",
+      title: t("title_3"),
     },
     {
-      title: "Додани кафолат ба мизоҷон",
+      title: t("title_4"),
     },
     {
-      title: "Анҷом додани қарордодҳои форвардӣ ва своп",
+      title: t("title_5"),
     },
     {
-      title:
-        "Хизматрасониҳои амалиёти кассавӣ бо пули миллӣ ва асъорҳои хориҷӣ",
+      title: t("title_6"),
     },
     {
-      title: "Амалиёти ҳисоббаробаркунӣ ва мубодилавӣ",
+      title: t("title_7"),
     },
     {
-      title: "Барориши кортҳои пардохтии бонкӣ ва амалиёт бо онҳо.",
+      title: t("title_8"),
     },
   ];
   return (

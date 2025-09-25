@@ -10,36 +10,36 @@ export default function Loans() {
   const t = useTranslations();
   const data = [
     {
-      title: "Мақсад",
-      description: "Бисёрмақсаднок",
+      title: t("business_data.credit.title_1"),
+      description: t("business_data.credit.description_1"),
     },
     {
-      title: "Муҳлат",
-      description: "то 24 моҳ",
+      title: t("business_data.credit.title_2"),
+      description: t("business_data.credit.description_2"),
     },
     {
-      title: "Давраи имтиёз",
-      description: "то 3 моҳ",
+      title: t("business_data.credit.title_3"),
+      description: t("business_data.credit.description_3"),
     },
     {
-      title: "Ҳаҷм",
-      description: "то 500 000 сомонӣ",
+      title: t("business_data.credit.title_4"),
+      description: t("business_data.credit.description_4"),
     },
     {
-      title: "Фоизи солона",
-      description: "30% ба шахсони ҳуқуқӣ",
+      title: t("business_data.credit.title_5"),
+      description: t("business_data.credit.description_5"),
     },
     {
-      title: "Таъминот",
-      description: "Маснуоти заргарии истифоданашуда",
+      title: t("business_data.credit.title_6"),
+      description: t("business_data.credit.description_6"),
     },
     {
-      title: "Ҳуҷҷатҳои зарурӣ",
+      title: t("business_data.credit.title_7"),
       description: (
         <>
-          <p>- ташхиси маснуоти заргарӣ;</p>
-          <p>- ҳуҷҷатҳои таъсисёбӣ;</p>
-          <p>- маълумотнома аз мақомоти андоз оид ба надоштани қарз</p>
+          <p>{t("business_data.credit.description_7.disc_1")}</p>
+          <p>{t("business_data.credit.description_7.disc_2")}</p>
+          <p>{t("business_data.credit.description_7.disc_3")}</p>
         </>
       ),
     },

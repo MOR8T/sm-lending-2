@@ -5,6 +5,7 @@ import React from "react";
 // import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { footerLinks } from "@/constants/const";
+import { useTranslations } from "next-intl";
 
 function TitleWithDesc({
   title,
@@ -22,7 +23,7 @@ function TitleWithDesc({
 }
 
 function Footer() {
-  // const t = useTranslations("Footer");
+  const t = useTranslations("Footer");
 
   return (
     <div className="bg-[rgba(34,34,34,1)] min-h-[614px] md:p-[80px_0px] p-[24px_0px_29px_0px] mt-[150px]">
@@ -39,25 +40,25 @@ function Footer() {
                   className="pt-[6px]"
                 />
               </div>
-              <p>ш.Душанбе, кучаи Шевченко 113 </p>
+              <p>{t("address")} </p>
               <TitleWithDesc
                 title="info@sm.tj"
-                description="Барои дархостҳои онлайн"
+                description={`${t("online_service")}`}
               />
             </div>
             <div className="flex flex-col gap-8 max-w-[192px] ">
               <TitleWithDesc
                 title="44-603-20-20"
-                description="Барои зангҳо аз ҳар гӯшаи ҷаҳон"
+                description={`${t("call_everywhere")}`}
               />{" "}
               <TitleWithDesc
                 title="+992 44 600 1520"
-                description="Телефони боварии Бонки миллии Тоҷикистон"
+                description={`${t("call_number")}`}
               />
             </div>
             <div>
               <div>
-                <p>Ҳамёни мобилӣ</p>
+                <p>{t("mobile_app")}</p>
                 <div className="flex flex-wrap gap-[14px] my-[10px]">
                   <a
                     href="https://play.google.com/store/apps/details?id=com.smart.mobile_banking&hl=ru"
@@ -70,27 +71,32 @@ function Footer() {
                       height={44}
                     />
                   </a>
-                  {/* <Image
-                    src={appStore}
-                    alt="app_store"
-                    width={128}
-                    height={44}
-                  /> */}
+                  <a
+                    href="https://apps.apple.com/tj/app/sm-pay/id6752281265"
+                    target="_blank"
+                  >
+                    <Image
+                      src={appStore}
+                      alt="app_store"
+                      width={128}
+                      height={44}
+                    />
+                  </a>
                 </div>
               </div>
               <div className="mt-8">
-                <p>Соцмедиа</p>
+                <p>{t("social")}</p>
                 <div className="flex flex-wrap gap-8 mt-[12px]">
                   {footerLinks.map((el) => {
                     return (
-                      <Link href={el.href} key={el.alt}>
+                      <a href={el.href} key={el.alt} target="_blank">
                         <Image
                           src={el.img}
                           alt={el.alt}
                           width={40}
                           height={40}
                         />
-                      </Link>
+                      </a>
                     );
                   })}
                 </div>
@@ -100,7 +106,7 @@ function Footer() {
                     download
                     className="underline"
                   >
-                    Ҳуқуқи истеъмолкунанда
+                    {t("consumer_right")}
                   </a>
                 </div>
               </div>
@@ -108,27 +114,27 @@ function Footer() {
           </div>
           <ul className="md:py-[38px] py-[24px] md:mb-[40px] mb-[24px] md:mt-[60px] mt-[40px] flex flex-wrap md:justify-between md:gap-13 gap-6 border-y border-[rgba(255,255,255,0.1)]">
             <Link href="/">
-              <li>Асосӣ</li>
+              <li>{t("main")}</li>
             </Link>
             <Link href="/personal/deposits">
-              <li> Шахсони воқеӣ</li>
+              <li>{t("personal")}</li>
             </Link>
             <Link href="/business/deposits">
-              <li>Шахсони ҳуқуқӣ</li>
+              <li>{t("business")}</li>
             </Link>
             <Link href="/about/about">
-              <li>Дар бораи мо</li>
+              <li>{t("about_us")}</li>
             </Link>
-            <li>Иҷозатнома</li>
+            <li>{t("license")}</li>
             <Link href="/about/details">
-              <li>Тафсилот</li>
+              <li>{t("details")}</li>
             </Link>
-            <li>Контакты</li>
-            <li>Вазифаҳои холӣ</li>
+            <li>{t("contact")}</li>
+            <li>{t("free_vacant")}</li>
           </ul>
           <ul className="flex md:gap-13 gap-8 flex-wrap justify-between">
             <li>© 2025</li>
-            <li>№000331 аз 8 ноябри соли 2024</li>
+            <li>{t("date")}</li>
           </ul>
         </div>
       </div>
