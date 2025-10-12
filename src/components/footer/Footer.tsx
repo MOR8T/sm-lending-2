@@ -129,8 +129,10 @@ function Footer() {
             <Link href="/about/details">
               <li>{t("details")}</li>
             </Link>
-            <li>{t("contact")}</li>
+            {/* <li>{t("contact")}</li> */}
+            <Link href='/about/free_vacant'>
             <li>{t("free_vacant")}</li>
+            </Link>
           </ul>
           <ul className="flex md:gap-13 gap-8 flex-wrap justify-between">
             <li>© 2025</li>

@@ -1,4 +1,5 @@
 {
+  "lng": "ru",
   "HomePage": {
     "news": "Новости",
     "popularProducts": "Популярные продукты",
@@ -48,9 +49,10 @@
       "about_bank": "О банке",
       "services": "Услуги",
       "management": "Руководство",
-      "board_of_directors": "Совет директоров",
+      "board_of_directors": "Наблюдательный совет",
       "org_structure": "Организационная структура",
-      "details": "Реквизиты"
+      "details": "Реквизиты",
+      "free_vacant": "Вакансии"
     },
     "other_services": {
       "SMS": "SMS-банкинг",
@@ -84,7 +86,7 @@
     "about_us": "О нас",
     "details": "Подробности",
     "contact": "Контакты",
-    "free_vacant": "Вакантные должности",
+    "free_vacant": "Вакансии",
     "date": "№ 000331 от 8 ноября 2024 г."
   },
   "Manifest": {
@@ -215,7 +217,7 @@
       },
       "list_of_services": "Список услуг",
       "according_contract": "Согласно контракту",
-      "title_2": "ЗАЕМ",
+      "title_2": "КРЕДИТОВАНИЕ",
       "description_2": "Операции с национальной и иностранной валютой",
       "requirement_2": "",
       "dataSource_2": {
@@ -386,7 +388,7 @@
       },
       "list_of_services": "Список услуг",
       "according_contract": "Согласно контракту",
-      "title_2": "ЗАЕМ",
+      "title_2": "КРЕДИТОВАНИЕ",
       "description_2": "Операции с национальной и иностранной валютой",
       "requirement_2": "",
       "dataSource_2": {
@@ -561,15 +563,15 @@
     }
   },
   "helpSectionInfo": {
-    "full_company_name": "ҶДММ ТАҚХ \"СТАНДАРТ МОЛИЯ\"",
+    "full_company_name": "ООО МДО \"СТАНДАРТ ФИНАНС\"",
     "pasport_for_register": "Свидетельство о государственной регистрации",
     "value_of_pasport_for_register": "№ 0309053 от 18.06.2024",
     "NBT_license": "Лицензия НБТ",
     "value_of_NBT_license": "№0000331",
     "index": "Индекс",
-    "value_of_index": "734025, ҶТ",
+    "value_of_index": "734025, РТ",
     "address": "Адрес",
-    "value_of_address": "ш.Душанбе, н.И.Сомонӣ, куч.Шевченко 113",
+    "value_of_address": "г.Душанбе, р.И.Сомони, ул.Шевченко 113",
     "contact": "Контакт-центр",
     "value_of_contact": "+992 44 603 20 20",
     "general_question": "По общим вопросам",
@@ -579,15 +581,15 @@
     "website": "Веб-сайт",
     "value_of_website": "www.sm.tj",
     "legal_address": "Юридический адрес",
-    "value_of_legal_address": "ш.Душанбе, н.И.Сомонӣ, куч.Шевченко 113",
+    "value_of_legal_address": "г.Душанбе, р.И.Сомони, ул.Шевченко 113",
     "working_time": "Рабочее время",
     "value_of_working_time": "от 08: 00 до 17: 00",
     "weekends": "Выходные",
     "value_of_weekends": "Суббота, Воскресенье",
     "trust_num": "Тел. доверия НБТ",
-    "value_of_trust_num": "(44) 600 15 20 ё почтаи электронӣ: ALLOMUSHTARI@NBT.TJ",
+    "value_of_trust_num": "(44) 600 15 20 или по электронной почте: ALLOMUSHTARI@NBT.TJ",
     "citizens": "Прием граждан",
-    "value_of_citizens": "Директори генералӣ",
+    "value_of_citizens": "Генеральный директор",
     "reception_day": "Дни и часы приема",
     "value_of_reception_day": "Суббота с 09:00 до 11:00"
   },
@@ -706,9 +708,12 @@
     "title_8": "Выпуск банковских платежных карточек и операции с ними."
   },
   "Management": {
-    "jobtitle_1" : "",
-    "jobtitle_2" : "Директори генералӣ",
-    "jobtitle_3" : "Сармуҳосиб"
+    "fullname_1": "Заместитель генерального директора",
+    "jobtitle_1": "",
+    "fullname_2": "Ашуров Акмалжон Нусратович",
+    "jobtitle_2": "Генеральный директор",
+    "fullname_3": "Шарипова Гулнора Холбоевна",
+    "jobtitle_3": "Главный бухгалтер"
   },
   "OnlineQuestionnaire": {
     "title": "Чат бот",
@@ -737,5 +742,9 @@
   },
   "InDevelopment": {
     "title": "Страница находится в стадии разработки"
+  },
+  "Free_vacant": {
+    "title": "Вакансии",
+    "empty": "На данный момент нет вакансий"
   }
 }

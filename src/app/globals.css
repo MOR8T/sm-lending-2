@@ -127,3 +127,7 @@ code {
     -webkit-line-clamp: 7;
   }
 }
+
+.ant-dropdown-menu{
+  max-height: 300px;
+}

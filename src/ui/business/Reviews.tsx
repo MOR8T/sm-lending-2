@@ -9,8 +9,6 @@ export default function Reviews({ items }: ReviewsT) {
   const limitLeft = slide !== 0;
   const limitNext = slide !== items.length - 1;
 
-  console.log("slide", slide);
-
   useEffect(() => {
     const intervalId = setInterval(() => {
       if (limitNext) {

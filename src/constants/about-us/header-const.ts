@@ -23,4 +23,8 @@ export const about_navbar = [
     href: "/about/details",
     label: "about.details",
   },
+  {
+    href: "/about/free_vacant",
+    label: "about.free_vacant",
+  },
 ];
