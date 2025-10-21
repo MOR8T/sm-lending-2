@@ -115,6 +115,13 @@ export const homePageBanner = [
     video: "/videos/rus.webm",
     isImage: false,
   },
+  {
+    title: "HomePage.banner.title3",
+    subTitle: "HomePage.banner.subTitle3",
+    href: "",
+    video: "/videos/Hamyemi_mobili_SM.webm",
+    isImage: false,
+  },
   // {
   //   title: "HomePage.banner.title3",
   //   subTitle: "HomePage.banner.subTitle3",
