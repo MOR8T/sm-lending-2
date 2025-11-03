@@ -38,7 +38,7 @@ export default function BlueBanner({ items }: BlueBannerT) {
           autoplay={{ delay: 5000, disableOnInteraction: true }}
           className="w-full md:h-[520px] h-[600px]"
         >
-          {items.map((el) => {
+          {items.map((el, i: number) => {
             if (el.isImage) {
               return (
                 <SwiperSlide key={el.title} className="">
@@ -50,17 +50,19 @@ export default function BlueBanner({ items }: BlueBannerT) {
                       <p className="md:text-[18px] max-w-[380px] text-[16px] md:mt-[24px] mt-3 md:mb-[54px] mb-8">
                         {t(el.subTitle)}
                       </p>
-                      <ButtonFon className="md:py-4 py-3">
-                        {t("buttons.detail")}
-                      </ButtonFon>
+                      {i == 0 ? (
+                        <ButtonFon className="md:py-4 py-3">
+                          {t("buttons.detail")}
+                        </ButtonFon>
+                      ) : null}
                     </div>
 
                     <div className="md:absolute top-0 right-0 md:p-0 z-10 md:pb-0 pb-[0px]">
                       <Image
                         src={el?.img?.src || ""}
                         alt="banner"
-                        width={100}
-                        height={50}
+                        width={500}
+                        height={500}
                         className="w-full md:max-w-none"
                       />
                     </div>
