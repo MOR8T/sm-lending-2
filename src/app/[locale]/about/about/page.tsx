@@ -12,7 +12,7 @@ export default function About() {
         title={t("title")}
         description={t("disc")}
         img={bank_image}
-        textMaxWidth="max-w-[347px]"
+        textMaxWidth="max-w-[447px]"
       />
       <div className="container-2md md:mt-[60px] mt-[40px]">
         <h2 className="text-[#262626] md:text-[24px] text-[20px] leading-5 mb-6 font-semibold">

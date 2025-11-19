@@ -8,7 +8,6 @@ export const getCurrencyRate = async (): Promise<CurrencyRateT | null> => {
       `${app_url}currency_rate/v1/get_latest_currency_rates/`
     );
     const data: CurrencyRateT = await response.json();
-    console.log("data");
     return data;
   } catch (error) {
     console.error(error);

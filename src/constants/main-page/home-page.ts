@@ -15,6 +15,7 @@ import sell from "@/../public/icons/servise/sell.svg";
 import documents from "@/../public/icons/servise/documents.svg";
 
 import bannerImg from "@/../public/images/banners/cash_banner.svg";
+import bannerImg4 from '@/../public/images/banners/banner_img_4.png'
 
 export const items = [
   {
@@ -114,6 +115,20 @@ export const homePageBanner = [
     href: "",
     video: "/videos/rus.webm",
     isImage: false,
+  },
+  {
+    title: "HomePage.banner.title3",
+    subTitle: "HomePage.banner.subTitle3",
+    href: "",
+    video: "/videos/Hamyemi_mobili_SM.webm",
+    isImage: false,
+  },
+  {
+    title: "HomePage.banner.title4",
+    subTitle: "HomePage.banner.subTitle4",
+    href: "/",
+    img: bannerImg4,
+    isImage: true,
   },
   // {
   //   title: "HomePage.banner.title3",

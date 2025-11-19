@@ -95,7 +95,7 @@ function CurrencyRate() {
         // ],
       };
       setCurrencyRate(body);
-      console.log(body.rates?.[0]?.[`${type}_${sale}`]);
+      // console.log(body.rates?.[0]?.[`${type}_${sale}`]);
       const reciveCurrency = body.rates?.[0];
       setReciveCurrency(reciveCurrency);
       setPay(countCurrency(recive, reciveCurrency?.[`${type}_${sale}`], 1));

@@ -4,6 +4,7 @@ import Input from "../input/Input";
 import ButtonFon from "../buttons/ButtonFon";
 import CreditSelect from "../select/CreditSelect";
 import { Link } from "@/i18n/navigation";
+import { regions2 } from "@/constants/const";
 
 interface OpenAnAccountFormT {
   className?: string;
@@ -46,12 +47,10 @@ export default function OpenAnAccountForm({
         <CreditSelect
           placeholder={t("CalculateCredit.region") + "*"}
           value=""
-          items={[
-            {
-              label: "",
-              key: "1",
-            },
-          ]}
+          items={regions2.map((el) => ({
+            label: el.label,
+            key: el.value,
+          }))}
         />
         <div className="grid md:grid-cols-[2fr_1fr] gap-6 md:col-span-2">
           <Input

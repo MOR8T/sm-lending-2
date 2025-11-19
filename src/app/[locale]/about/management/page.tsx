@@ -6,17 +6,17 @@ export default function Management() {
   const t = useTranslations();
   const data = [
     {
-      fullname: "Муовини директори генералӣ",
+      fullname: t("Management.fullname_1"),
       jobtitle: t("Management.jobtitle_1"),
       img: default_img,
     },
     {
-      fullname: "Ашуров Акмалҷон Нусратович",
+      fullname: t("Management.fullname_2"),
       jobtitle: t("Management.jobtitle_2"),
       img: default_img,
     },
     {
-      fullname: "Шарипова Гулнора Холбоевна",
+      fullname: t("Management.fullname_3"),
       jobtitle: t("Management.jobtitle_3"),
       img: default_img,
     },
