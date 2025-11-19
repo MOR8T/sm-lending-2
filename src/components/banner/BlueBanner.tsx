@@ -49,7 +49,7 @@ export default function BlueBanner({ items }: BlueBannerT) {
                       </h1>
                       <p className="md:text-[18px] max-w-[380px] text-[16px] md:mt-[24px] mt-3 md:mb-[54px] mb-8">
                         {t(el.subTitle)}
-                      </p>
+                      </p> 
                       {i == 0 ? (
                         <ButtonFon className="md:py-4 py-3">
                           {t("buttons.detail")}
