@@ -207,11 +207,11 @@ function CurrencyRate() {
           items={[
             {
               label: t("CurrencyRate.cashRegister"),
-              value: "exchange",
+              value: "wallet",
             },
             {
               label: t("CurrencyRate.transfer"),
-              value: "transfer",
+              value: "card",
             },
             // {
             //   label: "Денежные переводы",
@@ -219,7 +219,7 @@ function CurrencyRate() {
             // },
             {
               label: t("CurrencyRate.card"),
-              value: "card",
+              value: "exchange",
             },
           ]}
         />
